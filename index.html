@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yoni 365 Spa — Sensual Yoni Healing Home Spa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Yoni 365 Spa — Home Spa riêng tư dành cho nữ, tập trung Yoni Healing, body flow & nữ tính. Vị trí 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP.HCM."
+  />
+  <style>
+    :root {
+      --bg: #08020d;
+      --bg-soft: #140716;
+      --accent: #f9a8d4;
+      --accent-strong: #fb7185;
+      --accent-soft: rgba(249, 168, 212, 0.25);
+      --text: #fef9fb;
+      --muted: #f5d0e7;
+      --border-soft: rgba(255, 255, 255, 0.12);
+      --radius-xl: 26px;
+      --radius-lg: 18px;
+      --shadow-soft: 0 24px 48px rgba(0, 0, 0, 0.65);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #3b0f2c 0, #08020d 55%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 16px 80px;
+    }
+
+    /* TOP HINT */
+    .top-hint {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .top-hint span {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: rgba(0, 0, 0, 0.35);
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .top-hint-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #f97316;
+      box-shadow: 0 0 10px rgba(249, 115, 22, 0.9);
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      min-height: 72vh;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+      background:
+        radial-gradient(circle at top left, rgba(251, 113, 133, 0.42), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(219, 39, 119, 0.5), transparent 55%),
+        #08020d;
+      box-shadow: var(--shadow-soft);
+    }
+
+    @media (max-width: 840px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: auto;
+      }
+    }
+
+    .hero-left {
+      padding: 26px 26px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 28px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 34px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent));
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 3.2vw, 2.7rem);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .hero-badges {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .hero-badge {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid var(--border-soft);
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.92rem;
+      font-weight: 500;
+      background: linear-gradient(135deg, #fb7185, #f9a8d4);
+      color: #2b0b16;
+      box-shadow: 0 14px 34px rgba(251, 113, 133, 0.6);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-primary span {
+      font-size: 1.1rem;
+    }
+
+    .btn-ghost {
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: rgba(0, 0, 0, 0.45);
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn-ghost-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+
+    .hero-footnote {
+      margin-top: 16px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .hero-right {
+      position: relative;
+      padding: 16px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    @media (max-width: 840px) {
+      .hero-right {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    .hero-image-card {
+      position: relative;
+      flex: 1;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background-image: url("https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200");
+      background-size: cover;
+      background-position: center;
+      min-height: 230px;
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.86),
+        rgba(24, 0, 18, 0.45),
+        transparent 40%
+      );
+    }
+
+    .hero-image-caption {
+      position: absolute;
+      inset-inline: 16px;
+      bottom: 16px;
+      font-size: 0.85rem;
+      color: #ffe4f0;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+
+    .hero-meta-item {
+      border-radius: 18px;
+      border: 1px solid var(--border-soft);
+      background: rgba(0, 0, 0, 0.55);
+      padding: 8px 9px;
+    }
+
+    .hero-meta-label {
+      color: var(--muted);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .hero-meta-value {
+      margin-top: 4px;
+    }
+
+    /* SECTION BASE */
+    section {
+      margin-top: 40px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(
+          circle at top,
+          rgba(248, 187, 208, 0.12),
+          transparent 55%
+        ),
+        #08020d;
+      padding: 22px 20px 24px;
+      box-shadow: 0 20px 36px rgba(0, 0, 0, 0.62);
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    section h3 {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+    }
+
+    section p {
+      font-size: 0.96rem;
+    }
+
+    .section-intro {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* STORY */
+    .story-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 840px) {
+      .story-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .story-pill-list {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .story-pill {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      color: var(--muted);
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .story-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .story-thumb {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(248, 250, 252, 0.06);
+      height: 80px;
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.06) contrast(1.04);
+    }
+
+    @media (max-width: 560px) {
+      .story-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .story-thumb {
+        height: 64px;
+      }
+    }
+
+    /* MENU / PRICING */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 640px) {
+      .cards-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(
+          circle at top,
+          rgba(251, 113, 133, 0.16),
+          transparent 60%
+        ),
+        #08020d;
+      padding: 12px 12px 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-tag {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .card-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .card-desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .card-price {
+      margin-top: 4px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .card-meta {
+      margin-top: 4px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* BOOKING */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .steps {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .step {
+      border-radius: 18px;
+      border: 1px solid var(--border-soft);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 12px 12px;
+      font-size: 0.9rem;
+    }
+
+    .step-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .step-title {
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .step-btn {
+      margin-top: 8px;
+      display: inline-flex;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: rgba(24, 0, 18, 0.9);
+      font-size: 0.82rem;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+    }
+
+    .step-btn span {
+      font-size: 1rem;
+    }
+
+    .step-hint {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* TESTIMONIAL */
+    .testimonial-quote {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    .testimonial-name {
+      margin-top: 6px;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* FAQ */
+    .faq-list {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    details {
+      border-radius: 15px;
+      border: 1px solid var(--border-soft);
+      background: rgba(0, 0, 0, 0.55);
+      padding: 7px 9px;
+      font-size: 0.9rem;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary span {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+    }
+
+    details[open] {
+      background: linear-gradient(
+        135deg,
+        rgba(24, 0, 18, 0.96),
+        rgba(24, 0, 30, 0.7)
+      );
+    }
+
+    details p {
+      margin-top: 6px;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2.3fr) minmax(0, 2.2fr);
+      gap: 14px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .contact-item-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+
+    .contact-item-value {
+      margin-top: 4px;
+    }
+
+    .contact-map-link {
+      margin-top: 8px;
+      font-size: 0.86rem;
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border-soft);
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- TOP HINT -->
+    <div class="top-hint">
+      <span>
+        <span class="top-hint-dot"></span>
+        Trước khi bắt đầu · Hít sâu · Thả mềm vai · Quay về với Yoni & cơ thể
+      </span>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-left">
+        <div>
+          <div class="hero-eyebrow">Yoni 365 Spa — Home Spa cho Nữ</div>
+          <h1 class="hero-title">
+            Nghi thức <span>Yoni Healing</span> & Body Flow  
+            dành riêng cho năng lượng nữ tính của bạn.
+          </h1>
+          <p class="hero-sub">
+            Không phải spa đại trà. Không ồn ào, không vội.  
+            Yoni 365 Spa là home spa riêng tư tại Quận 1, nơi mỗi buổi trị liệu
+            là một hành trình chậm, sâu và nâng niu trọn vẹn thân – tâm – Yoni.
+          </p>
+
+          <div class="hero-badges">
+            <span class="hero-badge">Yoni Healing · Feminine</span>
+            <span class="hero-badge">Chỉ nhận nữ · 1–1</span>
+            <span class="hero-badge">By Booking Only</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#book">
+              <button class="btn-primary">
+                Đặt lịch Yoni Session
+                <span>♡</span>
+              </button>
+            </a>
+            <a href="#menu">
+              <button class="btn-ghost">
+                <span class="btn-ghost-dot"></span>
+                Xem Signature Yoni Menu
+              </button>
+            </a>
+          </div>
+
+          <p class="hero-footnote">
+            Sau khi bạn đặt lịch, Yoni 365 Spa sẽ xác nhận lại qua Zalo  
+            <strong>035 336 1684</strong> trong khung giờ làm việc.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image-card">
+          <div class="hero-image-overlay"></div>
+          <div class="hero-image-caption">
+            Ánh sáng ấm, mùi hương dịu, tiếng nhạc chậm và sự có mặt dịu dàng.  
+            Mọi thứ được sắp đặt để bạn cảm thấy an toàn, nữ tính và được đón nhận.
+          </div>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-label">Thời lượng</div>
+            <div class="hero-meta-value">90 – 150 phút / session</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-label">Đối tượng</div>
+            <div class="hero-meta-value">Chỉ nhận khách nữ · Private 1–1</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-label">Đặt trước</div>
+            <div class="hero-meta-value">Tối thiểu 24 giờ qua Zalo / Form</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- STORY -->
+    <section id="story">
+      <h2>Our Story & Philosophy</h2>
+      <h3>Chạm vào Yoni một cách ý thức · Nâng niu nữ tính mỗi ngày</h3>
+      <p class="section-intro">
+        Yoni 365 Spa được tạo ra như một “vùng an toàn” cho nữ giới – nơi cơ thể,
+        cảm xúc, Yoni và năng lượng nữ tính được lắng nghe mà không phán xét.
+      </p>
+
+      <div class="story-grid">
+        <div>
+          <p>
+            Sau nhiều năm chạy theo công việc, deadline, kỳ vọng, rất nhiều
+            chị em chia sẻ rằng: Yoni và cơ thể là thứ cuối cùng được chăm sóc.
+            Yoni 365 Spa là lời mời bạn quay về – qua hơi thở, làn da và những
+            chạm chậm rãi, có chủ đích.
+          </p>
+          <p style="margin-top: 8px;">
+            Mỗi session là một nghi thức khép kín:  
+            giữ không gian riêng tư, sạch sẽ, ấm áp;  
+            tôn trọng ranh giới;  
+            đặt sự an toàn và thoải mái của bạn lên trước.
+          </p>
+
+          <div class="story-pill-list">
+            <span class="story-pill">Yoni Healing nhẹ nhàng</span>
+            <span class="story-pill">Body flow nữ tính</span>
+            <span class="story-pill">Không gian private · an toàn</span>
+            <span class="story-pill">Thở · Thả · Mở mềm</span>
+          </div>
+        </div>
+
+        <div class="story-gallery">
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738346/pexels-photo-3738346.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738374/pexels-photo-3738374.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/6628850/pexels-photo-6628850.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738416/pexels-photo-3738416.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738345/pexels-photo-3738345.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738371/pexels-photo-3738371.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738408/pexels-photo-3738408.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+          <div
+            class="story-thumb"
+            style="background-image:url('https://images.pexels.com/photos/3738390/pexels-photo-3738390.jpeg?auto=compress&cs=tinysrgb&w=600');"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <h2>Signature Yoni Menu & Pricing</h2>
+      <h3>Những hành trình dành cho Yoni & năng lượng nữ tính</h3>
+      <p class="section-intro">
+        Mỗi gói là một hành trình khác nhau. Trước khi bắt đầu, Yoni 365 Spa
+        sẽ luôn hỏi kỹ về cảm nhận cơ thể, ranh giới, vùng cần được nâng niu
+        và mức độ bạn cảm thấy thoải mái.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-tag">90 phút</div>
+          <div class="card-title">Soft Feminine Reset</div>
+          <p class="card-desc">
+            Body flow toàn thân nhẹ nhàng, tập trung thả lỏng vai – cổ – lưng,
+            kết hợp hơi thở để cơ thể “tan chảy” và thư giãn sâu.
+          </p>
+          <div class="card-price">990.000đ</div>
+          <div class="card-meta">
+            Phù hợp sau những ngày quá tải, muốn quay về với cơ thể một cách
+            mềm mại, không quá mạnh.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">120 phút</div>
+          <div class="card-title">Yoni 365 Gentle Healing</div>
+          <p class="card-desc">
+            Nghi thức body flow nữ tính kết hợp tập trung vùng bụng – hông – xương chậu
+            nhẹ nhàng, hỗ trợ kết nối lại với Yoni & vùng sáng tạo.
+          </p>
+          <div class="card-price">1.200.000đ</div>
+          <div class="card-meta">
+            Dành cho nữ muốn lắng nghe cơ thể, Yoni và cảm xúc sâu hơn nhưng vẫn
+            trong biên độ êm ái, an toàn.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">150 phút</div>
+          <div class="card-title">Sacred Feminine Ritual</div>
+          <p class="card-desc">
+            Ngâm chân / bồn thảo mộc ấm, body flow, chăm sóc da mặt cơ bản
+            và thời gian tích hợp sau trị liệu để cơ thể “thấm” trọn.
+          </p>
+          <div class="card-price">1.400.000đ</div>
+          <div class="card-meta">
+            Lý tưởng cho những cột mốc quan trọng: sinh nhật, kết thúc / khởi đầu
+            một giai đoạn mới, tự thưởng cho chính mình.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">150 phút</div>
+          <div class="card-title">Rose Glow Body & Yoni Care</div>
+          <p class="card-desc">
+            Tẩy tế bào chết body dịu nhẹ, body flow, chăm sóc da mặt thư giãn và nghi thức
+            tắm ấm với hương hoa, giúp cơ thể sáng – mềm – thơm.
+          </p>
+          <div class="card-price">1.400.000đ</div>
+          <div class="card-meta">
+            Dành cho ngày bạn muốn mình trở nên “glow” từ trong ra ngoài.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">120 phút</div>
+          <div class="card-title">Heart & Womb Connection</div>
+          <p class="card-desc">
+            Hành trình nhẹ nhàng kết nối tim – bụng – Yoni, thông qua hơi thở,
+            body flow và giữ không gian cảm xúc an toàn cho bạn.
+          </p>
+          <div class="card-price">1.200.000đ</div>
+          <div class="card-meta">
+            Phù hợp khi bạn cảm thấy disconnect với cơ thể, cảm xúc hoặc cần
+            một khoảng lắng cho riêng mình.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">90 phút</div>
+          <div class="card-title">Pink Sunday Self-care</div>
+          <p class="card-desc">
+            Liệu trình gọn cho cuối tuần: body flow êm ái, chăm sóc da mặt cơ bản,
+            kết thúc bằng nghi thức thư giãn ngắn.
+          </p>
+          <div class="card-price">890.000đ</div>
+          <div class="card-meta">
+            Lịch trình bận nhưng vẫn muốn giữ hẹn với cơ thể và nữ tính.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section id="book">
+      <h2>Book</h2>
+      <h3>Đặt lịch Yoni Session tại Yoni 365 Spa</h3>
+      <p class="section-intro">
+        Bạn có thể làm lần lượt 3 bước dưới đây. Nếu thấy phức tạp quá, chỉ cần
+        nhắn Zalo <strong>035 336 1684</strong>, Yoni 365 Spa sẽ hỗ trợ từng bước.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-label">Bước 1</div>
+          <div class="step-title">Chọn ngày & giờ phù hợp</div>
+          <a
+            href="https://calendar.google.com/"
+            target="_blank"
+            class="step-btn"
+          >
+            Ghi chú lịch hẹn của bạn
+            <span>↗</span>
+          </a>
+          <p class="step-hint">
+            Chọn ngày giờ bạn mong muốn (ưu tiên buổi tối / cuối tuần nếu lịch bận),
+            sau đó chụp màn hình hoặc note lại để gửi qua Zalo.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-label">Bước 2</div>
+          <div class="step-title">Điền form chia sẻ về cơ thể</div>
+          <a href="https://forms.gle/" target="_blank" class="step-btn">
+            Mở Form Yoni 365 Spa
+            <span>↗</span>
+          </a>
+          <p class="step-hint">
+            Form giúp Yoni 365 Spa hiểu hơn về cơ địa, ranh giới, vùng nhạy cảm
+            cần lưu ý và mức độ bạn cảm thấy an toàn khi được chạm.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-label">Bước 3</div>
+          <div class="step-title">Xác nhận qua Zalo</div>
+          <a
+            href="https://zalo.me/0353361684"
+            target="_blank"
+            class="step-btn"
+          >
+            Chat với Yoni 365 Spa
+            <span>↗</span>
+          </a>
+          <p class="step-hint">
+            Gửi thời gian mong muốn + tên + nhu cầu ngắn.  
+            Yoni 365 Spa sẽ xác nhận, gửi địa chỉ chi tiết và lưu ý trước khi đến.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section id="testimonial">
+      <h2>What Clients Say</h2>
+      <h3>“Cảm giác là được ôm lại chính mình.”</h3>
+      <p class="testimonial-quote">
+        “Mình đến trong trạng thái khá căng, người nặng và đầu rất ồn.  
+        Sau session, cảm giác như cơ thể mềm ra, ngực dễ thở hơn, bụng ấm lên.
+        Không phải kiểu massage mạnh tay, mà là sự hiện diện rất dịu, rất nữ,
+        vừa chạm vào cơ thể vừa chạm vào cảm xúc.”
+      </p>
+      <div class="testimonial-name">
+        — Khách nữ (ẩn danh), sau buổi Sacred Feminine Ritual
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>FAQ</h2>
+      <h3>Các câu hỏi thường gặp tại Yoni 365 Spa</h3>
+      <div class="faq-list">
+        <details>
+          <summary><span>Yoni 365 Spa có làm cho nam không?</span></summary>
+          <p>
+            Không. Yoni 365 Spa là home spa riêng tư chỉ nhận khách nữ, tập trung
+            vào Yoni Healing, body flow và nữ tính. Điều này giúp chúng tôi giữ
+            không gian an toàn, rõ ranh giới và đúng định hướng.
+          </p>
+        </details>
+
+        <details>
+          <summary><span>Yoni Healing ở đây có an toàn & tôn trọng ranh giới?</span></summary>
+          <p>
+            Có. Trước session, Yoni 365 Spa sẽ trao đổi rõ ràng về ranh giới,
+            khu vực bạn thoải mái / không thoải mái, mức độ chạm và nhịp độ.
+            Bạn có thể dừng lại bất kỳ lúc nào nếu thấy không ổn.  
+            Ưu tiên số 1 luôn là sự an toàn, tôn trọng cơ thể và cảm xúc của bạn.
+          </p>
+        </details>
+
+        <details>
+          <summary><span>Lần đầu đến có cần chuẩn bị gì không?</span></summary>
+          <p>
+            Bạn chỉ cần:
+            <br />· Đến đúng giờ đã hẹn
+            <br />· Hạn chế ăn quá no trước session
+            <br />· Mang quần áo thoải mái để thay sau khi trị liệu
+            <br />
+            Và quan trọng nhất: cho phép mình được chậm lại, không phải gồng
+            lên “hoàn hảo” khi bước vào không gian này.
+          </p>
+        </details>
+
+        <details>
+          <summary><span>Có thể đi cùng bạn / người thân nữ khác không?</span></summary>
+          <p>
+            Không gian hiện tại được set up cho mô hình 1–1.  
+            Nếu bạn muốn đi cùng người thân nữ, có thể đặt 2 khung giờ liền nhau,
+            mỗi người trải nghiệm lần lượt. Liên hệ Zalo
+            <strong>035 336 1684</strong> để sắp xếp.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <h3>Liên hệ Yoni 365 Spa</h3>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-item-label">Liên hệ</div>
+          <div class="contact-item-value">
+            Phone / Zalo: <strong>035 336 1684</strong><br />
+            Email: <strong>365yoni@gmail.com</strong>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div class="contact-item-label">Địa chỉ</div>
+            <div class="contact-item-value">
+              Yoni 365 Spa · Home Spa riêng tư<br />
+              <strong>182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, Thành phố Hồ Chí Minh</strong>
+            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=182%2F2+Nguyen+Van+Thu%2C+Da+Kao%2C+Quan+1%2C+Ho+Chi+Minh"
+              target="_blank"
+              class="contact-map-link"
+            >
+              <span>↗</span> Mở trong Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-item-label">Lời nhắn từ Yoni 365 Spa</div>
+          <div class="contact-item-value" style="margin-top: 6px;">
+            Mỗi cuộc hẹn là khoảng thời gian Yoni 365 Spa giữ riêng cho bạn –
+            không chen lịch, không vội vàng.  
+            Cảm ơn bạn vì đã tin tưởng trao Yoni, cơ thể và những câu chuyện rất riêng
+            của mình cho chúng tôi trong vài tiếng quý giá đó.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        © 2025 Yoni 365 Spa — Sensual Yoni Healing Home Spa.  
+        Ngôi nhà nhỏ của bạn giữa lòng Quận 1, tách khỏi ồn ào nhưng vẫn đủ gần để quay về bất cứ khi nào cần.
+      </div>
+    </section>
+  </div>
+</body>
+</html>
