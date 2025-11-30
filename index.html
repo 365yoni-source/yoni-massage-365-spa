@@ -2,10 +2,12 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoni 365 Spa Quận 1 | Yoni Healing & Massage nữ riêng tư</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Yoni 365 Spa – Yoni Healing & massage nữ tại Quận 1. Không gian home spa riêng tư, ấm áp, kín đáo. Đặt lịch Zalo: 035 336 1684." />
+  <title>Yoni 365 Spa Quận 1 | Yoni Healing & Massage Nữ Riêng Tư</title>
+
+  <meta name="description"
+        content="Yoni 365 Spa Quận 1 - Home spa nữ riêng tư tại 182/2 Nguyễn Văn Thủ. Chuyên Yoni Healing, bodyflow, massage nữ thư giãn, kín đáo. Đặt lịch Zalo 035 336 1684." />
 
   <style>
     body {
@@ -17,14 +19,14 @@
     }
 
     .page {
-      max-width: 1080px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
     }
 
     h1, h2, h3 {
-      margin: 0 0 10px;
       font-weight: 600;
+      margin: 0 0 10px;
     }
 
     h2 {
@@ -33,89 +35,111 @@
     }
 
     h3 {
-      font-size: 20px;
       color: #ffd6ea;
+      font-size: 20px;
+    }
+
+    section {
+      background: #140914;
+      border-radius: 20px;
+      padding: 22px;
+      margin-top: 40px;
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, #2d0a1c, #12010c);
-      padding: 24px;
-      border-radius: 20px;
       display: grid;
       grid-template-columns: 1.2fr 1fr;
       gap: 20px;
+      background: linear-gradient(135deg,#2d0a1c,#11000c);
+      border-radius: 24px;
+      padding: 24px;
     }
 
     @media (max-width: 780px) {
       .hero { grid-template-columns: 1fr; }
     }
 
-    .hero img {
+    .hero-img {
       width: 100%;
-      border-radius: 16px;
       height: 260px;
       object-fit: cover;
+      border-radius: 18px;
     }
 
-    /* SECTION WRAPPER */
-    section {
-      background: #140914;
-      margin-top: 40px;
-      padding: 20px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    /* GALLERY FIX — không bao giờ bị lỗi layout */
+    /* GALLERY */
     .gallery {
-      margin-top: 14px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 12px;
+      margin-top: 16px;
     }
 
-    @media (max-width: 680px) {
-      .gallery { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 660px) {
+      .gallery { grid-template-columns: repeat(2,1fr); }
     }
 
     .gallery-thumb {
       width: 100%;
-      padding-top: 100%; /* hình vuông chuẩn */
+      padding-top: 100%;
       border-radius: 16px;
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       border: 1px solid rgba(255,255,255,0.15);
     }
 
     /* MENU */
     .menu-grid {
-      margin-top: 16px;
       display: grid;
       grid-template-columns: repeat(3,1fr);
-      gap: 14px;
+      gap: 16px;
+      margin-top: 16px;
     }
 
     @media (max-width: 800px) {
       .menu-grid { grid-template-columns: repeat(2,1fr); }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 560px) {
       .menu-grid { grid-template-columns: 1fr; }
     }
 
     .card {
-      background: #1b0b1b;
       padding: 16px;
       border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: #1b0b1b;
+      border: 1px solid rgba(255,255,255,0.15);
     }
 
     .price {
-      margin-top: 6px;
-      color: #ff9acb;
+      margin-top: 8px;
       font-weight: bold;
+      color: #ff9acb;
+    }
+
+    /* CONTACT BUTTONS */
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .contact-btn {
+      padding: 8px 14px;
+      background: #1f0d1f;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #ffe9f4;
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    .contact-btn span {
+      margin-right: 6px;
+      opacity: 0.85;
     }
   </style>
 </head>
@@ -126,28 +150,30 @@
     <!-- HERO -->
     <section class="hero">
       <div>
-        <h1>Yoni 365 Spa — Yoni Healing & Massage nữ Quận 1</h1>
+        <h1>Yoni 365 Spa Quận 1</h1>
+        <h3>Yoni Healing · Massage nữ riêng tư · Bodyflow</h3>
         <p>
-          Không gian home spa riêng tư tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1.
-          Chuyên Yoni Healing – bodyflow – thư giãn nữ tính.
+          Home spa dành cho nữ tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1.  
+          Không gian ấm, an toàn, riêng tư – nơi bạn được buông, được mềm, 
+          được kết nối với cơ thể & Yoni của mình.
         </p>
         <p><b>Zalo đặt lịch: 035 336 1684</b></p>
       </div>
 
-      <img src="https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+      <img class="hero-img"
+           src="https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200" />
     </section>
 
     <!-- STORY -->
     <section>
       <h2>Câu chuyện</h2>
-      <h3>Không gian an toàn – nữ tính – ấm áp</h3>
+      <h3>Nơi nữ tính được nâng niu</h3>
 
       <p>
-        Yoni 365 Spa được tạo ra như một home spa nhỏ dành riêng cho phụ nữ, nơi bạn
-        được thả lỏng, được lắng nghe, được nâng niu.
+        Yoni 365 Spa được tạo ra như một góc nhỏ dành cho phụ nữ – nơi bạn có thể
+        thở nhẹ, được chạm nhẹ, được thư giãn sâu và cảm nhận lại chính mình.
       </p>
 
-      <!-- GALLERY — 9 hình chuẩn -->
       <div class="gallery">
         <div class="gallery-thumb" style="background-image:url('https://images.pexels.com/photos/3738346/pexels-photo-3738346.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
         <div class="gallery-thumb" style="background-image:url('https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
@@ -169,31 +195,52 @@
 
       <div class="menu-grid">
         <div class="card">
-          <h3>Soft Feminine Reset – 70’</h3>
-          <p>Bodyflow nhẹ – thư giãn sâu – mềm cơ thể.</p>
-          <div class="price">1.000.000đ</div>
+          <h3>Soft Feminine Reset – 90’</h3>
+          <p>Bodyflow nhẹ nhàng, thư giãn sâu toàn thân.</p>
+          <div class="price">990.000đ</div>
         </div>
 
         <div class="card">
-          <h3>Yoni Gentle Healing – 90’</h3>
-          <p>Kết nối Yoni – bụng – hông – thả lỏng cảm xúc.</p>
-          <div class="price">1.300.000đ</div>
+          <h3>Yoni Gentle Healing – 120’</h3>
+          <p>Kết nối Yoni – bụng – hông, giúp mở – thả – mềm.</p>
+          <div class="price">1.200.000đ</div>
         </div>
 
         <div class="card">
-          <h3>Sacred Feminine Ritual – 120’</h3>
-          <p>Nghi thức sâu – bodyflow – thảo dược – mặt.</p>
-          <div class="price">1.600.000đ</div>
+          <h3>Sacred Feminine Ritual – 150’</h3>
+          <p>Nghi thức sâu, thảo mộc ấm, bodyflow & chăm sóc mặt.</p>
+          <div class="price">1.400.000đ</div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section>
-      <h2>Đặt lịch</h2>
-      <p><b>Zalo / Phone:</b> 035 336 1684</p>
+      <h2>Liên hệ</h2>
+
+      <p><b>Số điện thoại / Zalo:</b> 035 336 1684</p>
       <p><b>Email:</b> 365yoni@gmail.com</p>
-      <p><b>Địa chỉ:</b> 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1</p>
+      <p><b>Địa chỉ:</b> 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP. Hồ Chí Minh</p>
+
+      <div class="contact-links">
+        <a class="contact-btn" href="https://zalo.me/0353361684" target="_blank">
+          <span>💬</span> Zalo
+        </a>
+
+        <a class="contact-btn" href="viber://chat?number=%2B84353361684">
+          <span>📞</span> Viber
+        </a>
+
+        <a class="contact-btn" href="https://t.me/+84353361684" target="_blank">
+          <span>📨</span> Telegram
+        </a>
+
+        <a class="contact-btn"
+           href="https://www.google.com/maps/search/?api=1&query=182%2F2+Nguyen+Van+Thu%2C+Quan+1%2C+Ho+Chi+Minh"
+           target="_blank">
+          <span>📍</span> Google Map
+        </a>
+      </div>
     </section>
 
   </div>
