@@ -4,27 +4,382 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual | Ho Chi Minh City</title>
-  <meta name="description" content="Yoni 365 Spa – private home spa for women only in District 1, Ho Chi Minh City. Yoni Healing, bodyflow and feminine rituals in a safe, warm and intimate space." />
+  <title>Yoni 365 Spa – Yoni Healing & Feminine Ritual | Ho Chi Minh City</title>
+  <meta name="description" content="Yoni 365 Spa – private home spa for women only in District 1, Ho Chi Minh City. Yoni Healing, bodyflow and feminine rituals in a soft, intimate and safe space." />
   <meta name="keywords" content="Yoni massage, Yoni healing, women only spa, private spa Saigon, feminine ritual, bodywork for women, Ho Chi Minh City" />
 
-  <meta property="og:title" content="Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual" />
-  <meta property="og:description" content="Feminine, intimate and warm space for women only. Yoni Healing &amp; Bodyflow in District 1, Ho Chi Minh City." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://365yoni-source.github.io/yoni-massage-365-spa/en.html" />
-  <meta property="og:image" content="https://365yoni-source.github.io/yoni-massage-365-spa/og-image.jpg" />
+  <style>
+    /* RESET */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body { height: 100%; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: #faf5f7;
+      color: #28131a;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://365yoni-source.github.io/yoni-massage-365-spa/favicon.ico" />
+    /* LAYOUT */
+    .container {
+      width: min(1120px, 100% - 40px);
+      margin: 0 auto;
+    }
+    .section { padding: 80px 0; }
+    .section-soft { background: #fdf8fb; }
+    .section-head { text-align: center; margin-bottom: 40px; }
+    .section-head h2 {
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 10px;
+    }
+    .section-head p { opacity: 0.8; }
+
+    /* HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid rgba(214, 173, 193, 0.4);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 12px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: conic-gradient(from 180deg, #f6c5dc, #f3a7ca, #fbe0ef, #f6c5dc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3f0f21;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 0 0 1px rgba(255, 229, 244, 0.8);
+    }
+    .logo-title {
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .logo-subtitle {
+      font-size: 11px;
+      opacity: 0.7;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 18px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+    .main-nav a {
+      position: relative;
+      opacity: 0.8;
+    }
+    .main-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 1px;
+      background: linear-gradient(90deg, #f2a6cb, #f8cde3);
+      transition: width 0.18s ease;
+    }
+    .main-nav a:hover::after { width: 100%; }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      padding: 70px 0 60px;
+      background-image: url("https://images.pexels.com/photos/3738341/pexels-photo-3738341.jpeg?auto=compress&cs=tinysrgb&w=1600");
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, rgba(255, 255, 255, 0.96), rgba(255, 249, 252, 0.92)),
+        radial-gradient(circle at top left, rgba(246, 203, 221, 0.5), transparent 60%);
+      mix-blend-mode: screen;
+    }
+    .hero-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 32px;
+      align-items: center;
+    }
+    .hero-location {
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+    .hero-text h1 {
+      font-size: clamp(30px, 4vw, 40px);
+      line-height: 1.12;
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-size: 15px;
+      opacity: 0.9;
+      max-width: 480px;
+      margin-bottom: 16px;
+    }
+    .hero-highlights {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .hero-highlights li {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      border-radius: 999px;
+      padding: 4px 10px;
+      border: 1px solid rgba(214, 149, 178, 0.6);
+      background: #fff;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .hero-note {
+      font-size: 13px;
+      opacity: 0.8;
+      max-width: 420px;
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 22px;
+      padding: 22px 20px;
+      box-shadow:
+        0 18px 40px rgba(187, 144, 165, 0.3),
+        0 0 0 1px rgba(242, 207, 226, 0.9);
+    }
+    .hero-card-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 8px;
+    }
+    .hero-card-text {
+      font-size: 14px;
+      opacity: 0.88;
+    }
+
+    /* GRID */
+    .two-cols {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+      gap: 28px;
+    }
+    .two-cols p { margin-bottom: 10px; }
+
+    .story-card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 20px 18px;
+      box-shadow: 0 16px 32px rgba(195, 147, 167, 0.22);
+      border: 1px solid rgba(232, 188, 210, 0.9);
+    }
+    .story-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .story-card ul {
+      list-style: disc;
+      margin-left: 18px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* CARDS – SERVICES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 20px 18px;
+      box-shadow: 0 14px 30px rgba(193, 149, 170, 0.22);
+      border: 1px solid rgba(231, 184, 208, 0.9);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card-featured {
+      box-shadow:
+        0 18px 40px rgba(189, 132, 164, 0.3),
+        0 0 0 1px rgba(229, 156, 197, 0.9);
+    }
+    .card-badge {
+      align-self: flex-start;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      border-radius: 999px;
+      padding: 4px 9px;
+      border: 1px solid rgba(214, 149, 178, 0.9);
+      background: #fff5fb;
+    }
+    .card h3 { font-size: 18px; }
+    .card-price {
+      font-size: 18px;
+      font-weight: 600;
+      color: #b24378;
+    }
+    .card-text {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .card-list {
+      list-style: disc;
+      margin-left: 18px;
+      font-size: 14px;
+      opacity: 0.9;
+      margin-bottom: 8px;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 30px;
+    }
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+    }
+    .contact-note {
+      margin-top: 16px;
+      font-size: 13px;
+      opacity: 0.85;
+    }
+    .contact-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid rgba(209, 147, 176, 0.9);
+      background: #ffffff;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, #f8c2dd, #f3a4c9);
+      color: #3f0f21;
+      border-color: rgba(243, 160, 201, 0.95);
+      box-shadow:
+        0 10px 26px rgba(195, 133, 167, 0.38);
+    }
+    .btn.full { width: 100%; }
+    .btn.ghost {
+      background: transparent;
+    }
+    .btn.outline {
+      background: transparent;
+      border-style: dashed;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 26px rgba(188, 137, 162, 0.35);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      border-top: 1px solid rgba(214, 173, 193, 0.6);
+      background: #fff9fc;
+      padding: 16px 0 22px;
+      font-size: 12px;
+      color: #5c3443;
+    }
+    .footer-inner {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .footer-seo {
+      max-width: 640px;
+      margin: 0 auto;
+      opacity: 0.85;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: minmax(0, 1fr); }
+      .hero-card { margin-top: 18px; }
+      .two-cols, .cards, .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+    @media (max-width: 720px) {
+      .header-inner {
+        flex-wrap: wrap;
+        row-gap: 8px;
+      }
+      .main-nav { display: none; }
+      .hero { padding-top: 56px; }
+      .section { padding: 64px 0; }
+    }
+    @media (max-width: 480px) {
+      .hero-text h1 { font-size: 26px; }
+    }
+  </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">
         <div class="logo-mark">Y</div>
         <div class="logo-text">
           <span class="logo-title">Yoni 365 Spa</span>
-          <span class="logo-subtitle">Yoni Healing &amp; Feminine Ritual</span>
+          <span class="logo-subtitle">Yoni Healing & Feminine Ritual</span>
         </div>
       </div>
 
@@ -33,25 +388,19 @@
         <a href="#menu">Menu</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <div class="lang-switcher">
-        <a href="index.html" class="lang" title="Tiếng Việt">🇻🇳</a>
-        <a href="en.html" class="lang active" title="English">🇺🇸</a>
-        <a href="jp.html" class="lang" title="日本語">🇯🇵</a>
-        <a href="kr.html" class="lang" title="한국어">🇰🇷</a>
-        <a href="cn.html" class="lang" title="中文">🇨🇳</a>
-      </div>
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-overlay"></div>
     <div class="container hero-inner">
       <div class="hero-text">
         <p class="hero-location">Home spa · 182/2 Nguyen Van Thu, Da Kao, District 1</p>
-        <h1>Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual</h1>
+        <h1>Yoni 365 Spa – Yoni Healing & Feminine Ritual</h1>
         <p class="hero-subtitle">
-          A feminine, intimate and warm space for women only – where you can soften, exhale and reconnect with your body, emotions and Yoni.
+          A feminine, intimate and warm space for women only – where you can soften,
+          exhale and reconnect with your body, emotions and Yoni.
         </p>
         <ul class="hero-highlights">
           <li>Women only</li>
@@ -72,34 +421,36 @@
       <div class="hero-card">
         <p class="hero-card-title">Warm light · Soft scent · Slow music</p>
         <p class="hero-card-text">
-          Every detail is curated so your body can slowly unwind, soften and return to its feminine rhythm.
+          Every detail is curated so your body can slowly unwind, soften and return
+          to its feminine rhythm.
         </p>
       </div>
     </div>
   </section>
 
+  <!-- STORY -->
   <section class="section" id="story">
     <div class="container two-cols">
       <div class="col">
-        <h2>Feminine energy, gentleness &amp; safety</h2>
+        <h2>Feminine energy, gentleness & safety</h2>
         <p>
-          Yoni 365 Spa is a small corner for women who want to pause for a moment
-          in the middle of a busy life and listen to their body, Yoni and emotions
-          in a private, warm space.
+          Yoni 365 Spa is a small corner for women who want to pause for a moment in the
+          middle of a busy life and listen to their body, Yoni and emotions in a private,
+          warm space.
         </p>
         <p>
-          We believe every Yoni is a sacred creative center. When she is listened to
-          and held with care, she reminds you of your worth and your soft yet powerful
-          feminine energy within.
+          We believe every Yoni is a sacred creative center. When she is listened to and held
+          with care, she reminds you of your worth and your soft yet powerful feminine energy
+          within.
         </p>
         <p>
-          Each session is a small ritual: slow, respectful of your boundaries,
-          with no pressure – just presence, gentle touch and breath.
+          Each session is a small ritual: slow, respectful of your boundaries, with no pressure –
+          just presence, gentle touch and breath.
         </p>
       </div>
       <div class="col">
         <div class="story-card">
-          <h3>Safe space &amp; boundaries</h3>
+          <h3>Safe space & boundaries</h3>
           <ul>
             <li>We only work with one guest per time slot.</li>
             <li>Your limits and body signals are always respected.</li>
@@ -111,6 +462,7 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section class="section section-soft" id="menu">
     <div class="container">
       <div class="section-head">
@@ -119,6 +471,7 @@
       </div>
 
       <div class="cards">
+        <!-- 90 min -->
         <article class="card">
           <div class="card-badge">90 minutes</div>
           <h3>Soft Feminine Reset</h3>
@@ -136,6 +489,7 @@
           </a>
         </article>
 
+        <!-- 120 min -->
         <article class="card">
           <div class="card-badge">120 minutes</div>
           <h3>Yoni Gentle Healing</h3>
@@ -153,6 +507,7 @@
           </a>
         </article>
 
+        <!-- 150 min -->
         <article class="card card-featured">
           <div class="card-badge">150 minutes</div>
           <h3>Sacred Feminine Ritual</h3>
@@ -161,7 +516,7 @@
             Deep ritual with warm herbs, bodyflow and gentle integration at the end.
           </p>
           <ul class="card-list">
-            <li>Warm herbal support for circulation &amp; relaxation.</li>
+            <li>Warm herbal support for circulation & relaxation.</li>
             <li>Perfect for birthdays, transitions or self-honoring moments.</li>
             <li>Extra time for your body to truly slow down.</li>
           </ul>
@@ -173,10 +528,11 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
       <div class="section-head">
-        <h2>Contact &amp; Booking</h2>
+        <h2>Contact & Booking</h2>
         <p>Please book in advance so we can prepare the space just for you.</p>
       </div>
 
@@ -188,7 +544,6 @@
             <li><strong>Email:</strong> <a href="mailto:365yoni@gmail.com">365yoni@gmail.com</a></li>
             <li><strong>Address:</strong> 182/2 Nguyen Van Thu, Da Kao, District 1, Ho Chi Minh City</li>
           </ul>
-
           <p class="contact-note">
             When you text on Zalo, you can write:<br />
             <em>“Hi Yoni 365 Spa, I’d like to book [session name] on [date/time].”</em><br />
@@ -209,20 +564,21 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2025 Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual · Women-only home spa in District 1.</p>
+      <p>© 2025 Yoni 365 Spa – Yoni Healing & Feminine Ritual · Women-only home spa in District 1.</p>
       <p class="footer-seo">
-        Yoni massage · Yoni healing · Women only spa Saigon · Feminine ritual · Private bodywork for women.
+        Yoni massage · Yoni healing · Women-only spa Saigon · Feminine ritual · Private bodywork for women.
       </p>
     </div>
   </footer>
 
   <script>
+    // smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
