@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Yoni 365 Spa – Luxury Yoni Healing</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Yoni 365 Spa – Yoni Healing & Feminine Ritual</title>
 
   <style>
     body{
@@ -12,89 +12,114 @@
     }
     .page{max-width:1100px;margin:auto;padding:20px;}
 
-    /* LUX STYLE */
-    .section{background:#140915;border-radius:20px;padding:24px;margin-top:40px;
+    h2{color:#ff9acb;font-size:28px;margin:0 0 10px;font-weight:700;}
+    h3{color:#ffd6ea;font-size:20px;margin-bottom:8px;}
+    section{
+      background:#140915;padding:24px;border-radius:20px;margin-top:40px;
       border:1px solid rgba(255,255,255,0.15);
-      box-shadow:0 0 35px -10px rgba(255,150,200,0.35);}
-    h2{color:#ff9acb;font-size:28px;margin:0 0 12px;font-weight:700;}
-    h3{color:#ffd6ea;margin-bottom:10px;font-size:20px;}
-    p{font-size:16px;}
+      box-shadow:0 0 30px -8px rgba(255,160,200,0.35);
+    }
 
-    /* HERO */
-    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;
-      background:linear-gradient(135deg,#401025,#150012);
-      border-radius:24px;padding:28px;}
+    /* --- HERO --- */
+    .hero{
+      display:grid;grid-template-columns:1.2fr 1fr;gap:20px;
+      background:linear-gradient(135deg,#401025,#160012);
+      padding:30px;border-radius:24px;
+    }
     @media(max-width:760px){.hero{grid-template-columns:1fr;}}
-    .heroimg{width:100%;border-radius:18px;height:280px;object-fit:cover;}
+    .heroimg{
+      width:100%;height:280px;object-fit:cover;border-radius:18px;
+    }
 
-    /* LANGUAGE SWITCHER */
-    .lang-box{display:flex;justify-content:flex-end;margin-bottom:10px;}
-    select{
-      padding:6px 12px;background:#1d0c1d;color:#ffddec;
-      border-radius:999px;border:1px solid rgba(255,255,255,0.25);}
-      
-    /* GALLERY */
-    .gallery{margin-top:14px;display:grid;gap:12px;
-      grid-template-columns:repeat(3,1fr);}
+    /* --- LANG FLAGS --- */
+    .lang-box{
+      display:flex;justify-content:flex-end;gap:8px;margin-bottom:12px;
+    }
+    .lang-btn{
+      font-size:20px;padding:4px 8px;
+      background:#1c0c1d;border-radius:999px;
+      border:1px solid rgba(255,255,255,0.25);
+      cursor:pointer;
+      transition:0.2s;
+    }
+    .lang-btn.active{
+      background:#ff9acb;color:#2b0020;border-color:#ff9acb;
+      transform:scale(1.05);
+    }
+
+    /* --- GALLERY --- */
+    .gallery{
+      display:grid;gap:12px;margin-top:16px;
+      grid-template-columns:repeat(3,1fr);
+    }
     @media(max-width:660px){.gallery{grid-template-columns:repeat(2,1fr);}}
     .thumb{
       width:100%;padding-top:100%;border-radius:16px;
       background-size:cover;background-position:center;
-      border:1px solid rgba(255,255,255,0.18);}
-      
-    /* MENU */
-    .menu-grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);}
-    @media(max-width:700px){.menu-grid{grid-template-columns:1fr 1fr;}}
+      border:1px solid rgba(255,255,255,0.18);
+    }
+
+    /* --- MENU --- */
+    .menu-grid{
+      display:grid;gap:16px;margin-top:16px;
+      grid-template-columns:repeat(3,1fr);
+    }
+    @media(max-width:700px){.menu-grid{grid-template-columns:repeat(2,1fr);}}
     @media(max-width:520px){.menu-grid{grid-template-columns:1fr;}}
     .card{
       background:#1c0c1b;border-radius:16px;padding:16px;
-      border:1px solid rgba(255,255,255,0.18);}
-    .price{color:#ff9acb;font-weight:bold;margin-top:8px;}
+      border:1px solid rgba(255,255,255,0.18);
+    }
+    .price{color:#ff9acb;margin-top:6px;font-weight:bold;}
 
-    /* CONTACT BUTTONS */
-    .contact-links{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;}
+    /* --- CONTACT BUTTONS --- */
+    .contact-links{
+      display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;
+    }
     .btn{
       padding:8px 14px;border-radius:999px;background:#1f0d1f;
       border:1px solid rgba(255,255,255,0.2);color:#ffe9f4;
-      text-decoration:none;font-size:14px;display:inline-block;}
-    .btn span{opacity:0.8;margin-right:6px;}
+      text-decoration:none;font-size:15px;
+      display:inline-block;
+    }
+    .btn span{margin-right:6px;opacity:0.8;}
   </style>
 </head>
 
 <body>
 <div class="page">
 
-  <!-- LANGUAGE SWITCHER -->
+  <!-- FLAGS -->
   <div class="lang-box">
-    <select id="language" onchange="setLang(this.value)">
-      <option value="vi">🇻🇳 Tiếng Việt</option>
-      <option value="en">🇺🇸 English</option>
-      <option value="jp">🇯🇵 日本語</option>
-      <option value="kr">🇰🇷 한국어</option>
-      <option value="cn">🇨🇳 中文</option>
-    </select>
+    <button class="lang-btn active" data-lang="vi" onclick="setLang('vi')">🇻🇳</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">🇺🇸</button>
+    <button class="lang-btn" data-lang="jp" onclick="setLang('jp')">🇯🇵</button>
+    <button class="lang-btn" data-lang="kr" onclick="setLang('kr')">🇰🇷</button>
+    <button class="lang-btn" data-lang="cn" onclick="setLang('cn')">🇨🇳</button>
   </div>
 
   <!-- HERO -->
-  <section class="hero section">
+  <section class="hero">
     <div>
       <h2 data-text="hero_title">Yoni 365 Spa – Yoni Healing Quận 1</h2>
       <h3 data-text="hero_sub">Không gian nữ tính – riêng tư – ấm áp</h3>
       <p data-text="hero_desc">
-        Home spa dành cho nữ tại 182/2 Nguyễn Văn Thủ. Nơi bạn được thả lỏng, kết nối cơ thể & Yoni.
+        Home spa dành cho nữ tại 182/2 Nguyễn Văn Thủ. 
+        Nơi bạn được thả lỏng, kết nối cơ thể & Yoni.
       </p>
       <p><b>Zalo: 035 336 1684</b></p>
     </div>
+
     <img class="heroimg"
-         src="https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+         src="https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200"/>
   </section>
 
   <!-- STORY -->
-  <section class="section">
+  <section>
     <h2 data-text="story_title">Câu chuyện</h2>
     <h3 data-text="story_sub">Năng lượng nữ tính – sự nâng niu – an toàn</h3>
     <p data-text="story_desc">
-      Yoni 365 Spa là không gian dành riêng cho phụ nữ. Nơi bạn quay về với hơi thở, cảm xúc và cơ thể mình.
+      Yoni 365 Spa là nơi bạn quay về với hơi thở, cảm giác và sự mềm của cơ thể.
     </p>
 
     <div class="gallery">
@@ -113,7 +138,7 @@
   </section>
 
   <!-- MENU -->
-  <section class="section">
+  <section>
     <h2 data-text="menu_title">Dịch vụ</h2>
 
     <div class="menu-grid">
@@ -138,24 +163,24 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section">
+  <section>
     <h2 data-text="contact_title">Liên hệ</h2>
+
     <p><b data-text="contact_phone_label">Số điện thoại / Zalo:</b> 035 336 1684</p>
     <p><b>Email:</b> 365yoni@gmail.com</p>
-    <p><b data-text="contact_addr_label">Địa chỉ:</b> 182/2 Nguyễn Văn Thủ, Quận 1</p>
+    <p><b data-text="contact_addr_label">Địa chỉ:</b> 182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM</p>
 
     <div class="contact-links">
       <a class="btn" href="https://zalo.me/0353361684" target="_blank"><span>💬</span>Zalo</a>
       <a class="btn" href="viber://chat?number=%2B84353361684"><span>📞</span>Viber</a>
       <a class="btn" href="https://t.me/+84353361684" target="_blank"><span>📨</span>Telegram</a>
-      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=182%2F2+Nguyen+Van+Thu+Quan+1" target="_blank">
-        <span>📍</span>Google Map
-      </a>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=182+Nguyen+Van+Thu+Quan+1" target="_blank"><span>📍</span>Map</a>
     </div>
   </section>
 
 </div>
 
+<!-- MULTI-LANGUAGE SCRIPT -->
 <script>
 const text = {
   vi:{
@@ -164,7 +189,7 @@ const text = {
     hero_desc:"Home spa dành cho nữ tại 182/2 Nguyễn Văn Thủ. Nơi bạn được thả lỏng, kết nối cơ thể & Yoni.",
     story_title:"Câu chuyện",
     story_sub:"Năng lượng nữ tính – sự nâng niu – an toàn",
-    story_desc:"Yoni 365 Spa là không gian dành riêng cho phụ nữ. Nơi bạn quay về với hơi thở, cảm xúc và cơ thể mình.",
+    story_desc:"Yoni 365 Spa là nơi bạn quay về với hơi thở, cảm giác và sự mềm của cơ thể.",
     menu_title:"Dịch vụ",
     m1_title:"Soft Feminine Reset – 90’",
     m1_desc:"Bodyflow nhẹ – thư giãn sâu.",
@@ -179,11 +204,11 @@ const text = {
 
   en:{
     hero_title:"Yoni 365 Spa – Feminine Yoni Healing",
-    hero_sub:"Soft – Private – Gentle Space",
-    hero_desc:"A private home spa for women. A place to reconnect with your body, emotion, breath and Yoni.",
+    hero_sub:"Soft · Private · Warm feminine space",
+    hero_desc:"A private home spa for women. A place to soften and reconnect with your body & Yoni.",
     story_title:"Our Story",
-    story_sub:"A safe & feminine space",
-    story_desc:"Yoni 365 Spa is created as a sanctuary for women to soften, breathe and feel again.",
+    story_sub:"Feminine energy · Soft · Safe",
+    story_desc:"A sanctuary for women to breathe, soften, and feel again.",
     menu_title:"Services",
     m1_title:"Soft Feminine Reset – 90’",
     m1_desc:"Light bodyflow – deep relaxation.",
@@ -199,17 +224,17 @@ const text = {
   jp:{
     hero_title:"Yoni 365 Spa – ヨニヒーリング",
     hero_sub:"女性のためのプライベートスパ",
-    hero_desc:"女性専用ホームスパ。心と体、ヨニを優しくつなぐ場所。",
+    hero_desc:"女性専用ホームスパ。心・身体・ヨニと再びつながる場所。",
     story_title:"ストーリー",
-    story_sub:"安心・女性性・癒し",
-    story_desc:"女性が自分の呼吸と感情に戻るための安全な空間。",
+    story_sub:"女性性 · 安心 · 癒し",
+    story_desc:"呼吸と感情、身体に戻るための安全な空間です。",
     menu_title:"サービス",
     m1_title:"ソフトフェミニンリセット – 90’",
-    m1_desc:"軽いボディフロー、深いリラックス。",
+    m1_desc:"軽いボディフロー・深いリラックス。",
     m2_title:"ヨニジェントルヒーリング – 120’",
-    m2_desc:"ヨニ・お腹・感情とのつながり。",
-    m3_title:"セイクリッドフェムリチュアル – 150’",
-    m3_desc:"ハーブ温熱＋深い施術。",
+    m2_desc:"ヨニ・お腹・感情とつながる。",
+    m3_title:"セイクレッドフェミニンリチュアル – 150’",
+    m3_desc:"ハーブ温熱・深い施術。",
     contact_title:"お問い合わせ",
     contact_phone_label:"電話 / Zalo:",
     contact_addr_label:"住所:"
@@ -220,34 +245,34 @@ const text = {
     hero_sub:"여성을 위한 프라이빗 스파",
     hero_desc:"여성 전용 홈스파. 몸·감정·요니와 다시 연결되는 공간입니다.",
     story_title:"스토리",
-    story_sub:"여성성·안전·부드러움",
-    story_desc:"호흡과 감정, 몸으로 돌아오는 안전한 공간입니다.",
+    story_sub:"여성성 · 안전 · 치유",
+    story_desc:"호흡과 감정, 몸으로 돌아올 수 있는 안전한 공간입니다.",
     menu_title:"서비스",
     m1_title:"소프트 페미닌 리셋 – 90’",
-    m1_desc:"라이트 바디플로우·심신완화.",
+    m1_desc:"가벼운 바디플로우·심신 안정.",
     m2_title:"요니 젠틀 힐링 – 120’",
     m2_desc:"요니·복부·감정 연결.",
     m3_title:"세이크리드 페미닌 리추얼 – 150’",
-    m3_desc:"허브 온열 + 딥 케어.",
+    m3_desc:"허브온열·딥케어.",
     contact_title:"연락처",
     contact_phone_label:"전화 / Zalo:",
     contact_addr_label:"주소:"
   },
 
   cn:{
-    hero_title:"Yoni 365 Spa – 女性私密能量疗愈",
-    hero_sub:"女性专属 · 私密 · 放松",
-    hero_desc:"女性专属的私密Home Spa，帮助你重新连接身体、情绪与Yoni能量。",
+    hero_title:"Yoni 365 Spa – 女性私密疗愈",
+    hero_sub:"女性专属 · 私密 · 温柔",
+    hero_desc:"为女性打造的私密Home Spa，连接身体、情绪与Yoni能量。",
     story_title:"故事",
-    story_sub:"女性能量 · 安全 · 温柔",
-    story_desc:"让女性重新回到呼吸与身体的安全空间。",
+    story_sub:"女性能量 · 安全 · 疗愈",
+    story_desc:"帮助女性回到呼吸、感受与身体的安全空间。",
     menu_title:"服务",
     m1_title:"柔性身体重启 – 90’",
-    m1_desc:"轻触放松 · 深层舒缓。",
+    m1_desc:"轻放松 · 深层舒缓。",
     m2_title:"Yoni温和疗愈 – 120’",
-    m2_desc:"Yoni · 腹部 · 情绪连接。",
+    m2_desc:"连接Yoni · 腹部 · 情绪。",
     m3_title:"女性神圣仪式 – 150’",
-    m3_desc:"深层仪式 + 草本暖疗。",
+    m3_desc:"草本暖疗 + 深层仪式。",
     contact_title:"联系",
     contact_phone_label:"电话 / Zalo:",
     contact_addr_label:"地址:"
@@ -258,7 +283,13 @@ function setLang(lang){
   document.querySelectorAll("[data-text]").forEach(el=>{
     el.innerHTML = text[lang][el.getAttribute("data-text")];
   });
+
+  document.querySelectorAll(".lang-btn").forEach(btn=>{
+    btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+  });
 }
+
+setLang("vi");
 </script>
 
 </body>
