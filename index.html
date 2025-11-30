@@ -1,623 +1,263 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Yoni 365 Spa – Luxury Yoni Healing & Feminine Ritual</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{
-      --bg:#05020a;
-      --bg-soft:#140915;
-      --accent:#ff9acb;
-      --accent-strong:#ff5fa3;
-      --text:#ffe9f4;
-      --muted:#f8cfe4;
-      --border:rgba(255,255,255,0.16);
-    }
+  <title>Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual | Quận 1</title>
+  <meta name="description" content="Yoni 365 Spa – Home spa nữ riêng tư ở Quận 1, TP.HCM. Yoni Healing, Bodyflow, nghi thức nữ tính sâu, không gian ấm áp, chỉ nhận khách nữ, đặt lịch qua Zalo." />
+  <meta name="keywords" content="Yoni Massage, Yoni Healing, massage nữ riêng tư, spa nữ Quận 1, home spa nữ, feminine ritual, trị liệu nữ tính, 182 Nguyễn Văn Thủ" />
 
-    *{box-sizing:border-box;margin:0;padding:0;}
-    html{scroll-behavior:smooth;}
-    body{
-      background:radial-gradient(circle at top,#3a1028 0,#05020a 45%,#020008 100%);
-      color:var(--text);
-      font-family:system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text","Segoe UI",sans-serif;
-      line-height:1.6;
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual" />
+  <meta property="og:description" content="Không gian nữ tính – riêng tư – ấm áp dành riêng cho nữ. Yoni Healing &amp; Bodyflow tại Quận 1, TP.HCM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://365yoni-source.github.io/yoni-massage-365-spa/" />
+  <meta property="og:image" content="https://365yoni-source.github.io/yoni-massage-365-spa/og-image.jpg" />
 
-    a{text-decoration:none;color:var(--accent);}
-    .page{max-width:1120px;margin:0 auto;padding:18px 14px 40px;}
-
-    /* HEADER */
-    .header{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:10px 12px 6px;margin-bottom:14px;
-    }
-    .brand{
-      display:flex;align-items:flex-end;gap:6px;
-    }
-    .brand-mark{
-      width:30px;height:30px;border-radius:999px;
-      background:radial-gradient(circle at 30% 10%,#ffdce9,#ff6aa8);
-      box-shadow:0 0 18px rgba(255,140,190,0.8);
-    }
-    .brand-text{
-      font-weight:650;font-size:17px;letter-spacing:0.04em;
-      text-transform:uppercase;
-    }
-    .nav{
-      display:flex;align-items:center;gap:18px;font-size:14px;
-    }
-    .nav a{
-      color:var(--muted);opacity:.8;
-    }
-    .nav a:hover{opacity:1;}
-
-    @media(max-width:720px){
-      .nav-links{display:none;}
-    }
-
-    /* LANG FLAGS */
-    .lang-box{
-      display:flex;gap:6px;
-    }
-    .lang-btn{
-      font-size:18px;padding:3px 7px;
-      background:#1c0c1d;border-radius:999px;
-      border:1px solid rgba(255,255,255,0.25);
-      cursor:pointer;transition:.18s;
-    }
-    .lang-btn.active{
-      background:var(--accent);color:#2b0018;border-color:var(--accent);
-      transform:scale(1.05);
-    }
-
-    /* SECTIONS */
-    section{
-      background:rgba(10,4,16,0.94);
-      border-radius:22px;
-      padding:24px 20px;
-      margin-top:32px;
-      border:1px solid var(--border);
-      box-shadow:0 0 32px -10px rgba(255,150,205,0.45);
-    }
-    h2{
-      color:var(--accent);
-      font-size:26px;
-      margin-bottom:8px;
-      letter-spacing:0.03em;
-    }
-    h3{
-      color:var(--muted);
-      font-size:19px;
-      margin-bottom:8px;
-    }
-    p{font-size:15px;}
-
-    /* HERO */
-    .hero{
-      display:grid;
-      grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
-      gap:20px;
-      background:radial-gradient(circle at top left,#ff6aa833,transparent 55%),
-                 radial-gradient(circle at bottom right,#f9731633,transparent 55%),
-                 #170413;
-      padding:26px 22px 22px;
-    }
-    @media(max-width:780px){
-      .hero{grid-template-columns:1fr;}
-    }
-    .hero-eyebrow{
-      font-size:11px;text-transform:uppercase;
-      letter-spacing:.26em;color:var(--muted);opacity:.85;margin-bottom:6px;
-    }
-    .hero-title{
-      font-size:clamp(24px,3.1vw,30px);
-      font-weight:650;margin-bottom:8px;
-    }
-    .hero-title span{color:var(--accent);}
-    .hero-tagline{font-size:14px;color:var(--muted);margin-bottom:6px;}
-    .hero-pills{
-      margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;
-    }
-    .pill{
-      font-size:11px;padding:4px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,0.18);
-      background:rgba(7,2,12,0.9);color:var(--muted);
-      text-transform:uppercase;letter-spacing:.14em;
-    }
-    .hero-actions{
-      display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;
-    }
-    .btn-primary,.btn-ghost{
-      padding:9px 16px;border-radius:999px;font-size:13px;
-      display:inline-flex;align-items:center;gap:7px;
-      border:none;cursor:pointer;
-    }
-    .btn-primary{
-      background:linear-gradient(135deg,#ff5fa3,#ff9acb);
-      color:#2c0017;font-weight:600;
-      box-shadow:0 10px 25px rgba(255,120,190,0.5);
-    }
-    .btn-ghost{
-      background:transparent;
-      border:1px solid rgba(255,255,255,0.3);
-      color:var(--muted);
-    }
-    .hero-note{
-      margin-top:10px;font-size:12px;color:var(--muted);
-      opacity:.9;
-    }
-
-    .hero-img-wrap{
-      position:relative;border-radius:18px;overflow:hidden;
-      height:260px;
-      box-shadow:0 22px 40px rgba(0,0,0,0.8);
-    }
-    .hero-img{
-      width:100%;height:100%;object-fit:cover;
-      transform:scale(1.03);transition:.7s;
-    }
-    .hero-img-wrap:hover .hero-img{transform:scale(1.06);}
-    .hero-chip{
-      position:absolute;left:12px;bottom:12px;
-      padding:6px 10px;border-radius:999px;
-      background:rgba(6,2,12,0.8);
-      border:1px solid rgba(255,255,255,0.3);
-      font-size:11px;
-    }
-
-    /* STORY + GALLERY */
-    .gallery{
-      display:grid;gap:10px;margin-top:16px;
-      grid-template-columns:repeat(3,1fr);
-    }
-    @media(max-width:640px){
-      .gallery{grid-template-columns:repeat(2,1fr);}
-    }
-    .thumb{
-      width:100%;padding-top:100%;
-      border-radius:15px;
-      background-size:cover;background-position:center;
-      border:1px solid rgba(255,255,255,0.2);
-      box-shadow:0 10px 22px rgba(0,0,0,0.6);
-    }
-
-    /* MENU */
-    .menu-grid{
-      display:grid;gap:14px;margin-top:14px;
-      grid-template-columns:repeat(3,1fr);
-    }
-    @media(max-width:840px){.menu-grid{grid-template-columns:repeat(2,1fr);}}
-    @media(max-width:580px){.menu-grid{grid-template-columns:1fr;}}
-    .card{
-      background:#190816;padding:14px 14px 16px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,0.18);
-      box-shadow:0 16px 24px rgba(0,0,0,0.7);
-      font-size:14px;
-      transition:.2s;
-    }
-    .card:hover{
-      border-color:var(--accent);
-      transform:translateY(-3px);
-      box-shadow:0 22px 32px rgba(0,0,0,0.8);
-    }
-    .card-tag{
-      font-size:11px;color:var(--muted);text-transform:uppercase;
-      letter-spacing:.18em;margin-bottom:4px;
-    }
-    .card-title{font-weight:600;margin-bottom:4px;}
-    .price{
-      margin-top:6px;color:var(--accent);font-weight:600;font-size:14px;
-    }
-    .card-note{
-      margin-top:4px;font-size:12px;color:var(--muted);
-    }
-
-    /* CONTACT + BUTTONS */
-    .contact-grid{
-      display:grid;gap:18px;margin-top:10px;
-      grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);
-    }
-    @media(max-width:760px){.contact-grid{grid-template-columns:1fr;}}
-
-    .contact-links{
-      display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;
-    }
-    .btn-contact{
-      padding:7px 13px;border-radius:999px;
-      font-size:13px;
-      background:#1f0d1f;color:var(--text);
-      border:1px solid rgba(255,255,255,0.24);
-      display:inline-flex;align-items:center;gap:6px;
-    }
-    .btn-contact span{opacity:.9;}
-    .footer{
-      margin-top:14px;padding-top:8px;border-top:1px solid var(--border);
-      font-size:11px;color:var(--muted);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://365yoni-source.github.io/yoni-massage-365-spa/favicon.ico" />
 </head>
-
 <body>
-<div class="page">
-
   <!-- HEADER -->
-  <header class="header">
-    <div class="brand">
-      <div class="brand-mark"></div>
-      <div class="brand-text">Yoni 365 Spa</div>
-    </div>
-    <div class="nav">
-      <div class="nav-links">
-        <a href="#story">Story</a>
-        <a href="#services">Menu</a>
-        <a href="#contact">Contact</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark">Y</div>
+        <div class="logo-text">
+          <span class="logo-title">Yoni 365 Spa</span>
+          <span class="logo-subtitle">Yoni Healing &amp; Feminine Ritual</span>
+        </div>
       </div>
-      <div class="lang-box">
-        <button class="lang-btn active" data-lang="vi" onclick="setLang('vi')">🇻🇳</button>
-        <button class="lang-btn" data-lang="en" onclick="setLang('en')">🇺🇸</button>
-        <button class="lang-btn" data-lang="jp" onclick="setLang('jp')">🇯🇵</button>
-        <button class="lang-btn" data-lang="kr" onclick="setLang('kr')">🇰🇷</button>
-        <button class="lang-btn" data-lang="cn" onclick="setLang('cn')">🇨🇳</button>
+
+      <nav class="main-nav">
+        <a href="#story">Story</a>
+        <a href="#menu">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <!-- LANGUAGE FLAGS -->
+      <div class="lang-switcher">
+        <a href="index.html" class="lang active" title="Tiếng Việt">🇻🇳</a>
+        <a href="en.html" class="lang" title="English">🇺🇸</a>
+        <a href="jp.html" class="lang" title="日本語">🇯🇵</a>
+        <a href="kr.html" class="lang" title="한국어">🇰🇷</a>
+        <a href="cn.html" class="lang" title="中文">🇨🇳</a>
       </div>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="top">
-    <div>
-      <div class="hero-eyebrow" data-text="hero_eyebrow">Yoni 365 Spa · Quận 1</div>
-      <h1 class="hero-title" data-text="hero_title">
-        Yoni 365 Spa – <span>Yoni Healing</span> & Feminine Ritual
-      </h1>
-      <p class="hero-tagline" data-text="hero_sub">
-        Không gian nữ tính – riêng tư – ấm áp dành riêng cho nữ.
-      </p>
-      <p data-text="hero_desc">
-        Home spa tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1. Nơi bạn được thả lỏng, 
-        kết nối lại với cơ thể, cảm xúc và Yoni.
-      </p>
-
-      <div class="hero-pills">
-        <div class="pill" data-text="pill_1">Chỉ nhận khách nữ</div>
-        <div class="pill" data-text="pill_2">Yoni Healing · Bodyflow</div>
-        <div class="pill" data-text="pill_3">Không gian riêng tư 1–1</div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-location">Home spa · 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1</p>
+        <h1>Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual</h1>
+        <p class="hero-subtitle">
+          Không gian nữ tính – riêng tư – ấm áp dành riêng cho nữ.  
+          Nơi bạn được thả lỏng, kết nối lại với cơ thể, cảm xúc &amp; Yoni.
+        </p>
+        <ul class="hero-highlights">
+          <li>Chỉ nhận khách nữ</li>
+          <li>Không gian riêng tư 1–1</li>
+          <li>Yoni Healing · Bodyflow · Feminine Ritual</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="#menu" class="btn primary">Xem dịch vụ</a>
+          <a href="https://zalo.me/0353361684" class="btn ghost" target="_blank" rel="noopener">
+            Đặt lịch qua Zalo
+          </a>
+        </div>
+        <p class="hero-note">
+          Sau khi bạn nhắn, tụi mình xác nhận lịch, gửi hướng dẫn &amp; giữ không gian an toàn cho bạn.
+        </p>
       </div>
 
-      <div class="hero-actions">
-        <a href="#services" class="btn-primary" data-text="btn_services">
-          Xem dịch vụ
-        </a>
-        <a href="#contact" class="btn-ghost" data-text="btn_contact">
-          Đặt lịch qua Zalo
-        </a>
+      <div class="hero-card">
+        <p class="hero-card-title">Ánh sáng ấm · Mùi hương nhẹ · Nhạc chậm</p>
+        <p class="hero-card-text">
+          Mọi chi tiết được sắp đặt để cơ thể bạn có thể từ từ hạ xuống, mềm ra
+          và trở về với nhịp nữ tính bên trong.
+        </p>
       </div>
-
-      <div class="hero-note" data-text="hero_note">
-        Sau khi bạn nhắn, tụi mình xác nhận lịch, gửi hướng dẫn & giữ không gian an toàn cho bạn.
-      </div>
-    </div>
-
-    <div class="hero-img-wrap">
-      <img class="hero-img"
-           src="https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200"
-           alt="Yoni spa không gian ấm, riêng tư"/>
-      <div class="hero-chip" data-text="hero_chip">Ánh sáng ấm · Mùi hương nhẹ · Nhạc chậm</div>
     </div>
   </section>
 
-  <!-- STORY / GALLERY -->
-  <section id="story">
-    <h2 data-text="story_title">Câu chuyện</h2>
-    <h3 data-text="story_sub">Năng lượng nữ tính – sự nâng niu – an toàn</h3>
-    <p data-text="story_desc">
-      Yoni 365 Spa là góc nhỏ dành cho phụ nữ muốn dừng lại một chút giữa cuộc sống bận rộn, 
-      để lắng nghe cơ thể, Yoni và cảm xúc của mình trong một không gian riêng tư, ấm áp.
-    </p>
-
-    <div class="gallery">
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738346/pexels-photo-3738346.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738374/pexels-photo-3738374.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/6628850/pexels-photo-6628850.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738416/pexels-photo-3738416.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738345/pexels-photo-3738345.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738371/pexels-photo-3738371.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738408/pexels-photo-3738408.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-      <div class="thumb" style="background-image:url('https://images.pexels.com/photos/3738390/pexels-photo-3738390.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+  <!-- STORY -->
+  <section class="section" id="story">
+    <div class="container two-cols">
+      <div class="col">
+        <h2>Năng lượng nữ tính – sự nâng niu – an toàn</h2>
+        <p>
+          Yoni 365 Spa là góc nhỏ dành cho phụ nữ muốn dừng lại một chút giữa
+          cuộc sống bận rộn, để lắng nghe cơ thể, Yoni và cảm xúc của mình
+          trong một không gian riêng tư, ấm áp.
+        </p>
+        <p>
+          Tụi mình tin rằng mỗi Yoni đều là vùng sáng tạo linh thiêng. Khi được
+          lắng nghe và nâng niu đúng cách, cô ấy sẽ nhắc bạn về giá trị của
+          chính mình, về sự dịu dàng nhưng đầy sức mạnh bên trong.
+        </p>
+        <p>
+          Mỗi buổi trị liệu là một nghi thức nhỏ: chậm rãi, tôn trọng giới
+          hạn, không phán xét, chỉ có sự hiện diện, chạm chậm và hơi thở.
+        </p>
+      </div>
+      <div class="col">
+        <div class="story-card">
+          <h3>Không gian &amp; biên giới an toàn</h3>
+          <ul>
+            <li>Chỉ làm việc với 1 khách trong mỗi khung giờ.</li>
+            <li>Tôn trọng giới hạn &amp; tín hiệu cơ thể của bạn.</li>
+            <li>Không quay/chụp nếu không có sự đồng ý.</li>
+            <li>Thông tin &amp; câu chuyện của bạn được giữ kín.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services">
-    <h2 data-text="menu_title">Dịch vụ Yoni Healing</h2>
-    <h3 data-text="menu_sub">Chọn hành trình phù hợp với cơ thể & nhịp của bạn</h3>
-
-    <div class="menu-grid">
-      <div class="card">
-        <div class="card-tag" data-text="m1_tag">90 phút</div>
-        <div class="card-title" data-text="m1_title">Soft Feminine Reset</div>
-        <p data-text="m1_desc">Bodyflow nhẹ toàn thân, thư giãn sâu, giúp cơ thể mềm và nhẹ hơn.</p>
-        <div class="price">990.000đ</div>
-        <div class="card-note" data-text="m1_note">
-          Phù hợp sau những ngày stress, nhiều suy nghĩ, cần reset lại năng lượng nữ.
-        </div>
+  <section class="section section-soft" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <h2>Dịch vụ Yoni Healing</h2>
+        <p>Chọn hành trình phù hợp với cơ thể &amp; nhịp của bạn</p>
       </div>
 
-      <div class="card">
-        <div class="card-tag" data-text="m2_tag">120 phút</div>
-        <div class="card-title" data-text="m2_title">Yoni Gentle Healing</div>
-        <p data-text="m2_desc">Kết nối bụng – hông – vùng chậu & Yoni một cách nhẹ nhàng, an toàn.</p>
-        <div class="price">1.200.000đ</div>
-        <div class="card-note" data-text="m2_note">
-          Dành cho nữ muốn quay lại lắng nghe cơ thể, cảm xúc và vùng sáng tạo bên trong.
-        </div>
-      </div>
+      <div class="cards">
+        <!-- Gói 1 -->
+        <article class="card">
+          <div class="card-badge">90 phút</div>
+          <h3>Soft Feminine Reset</h3>
+          <p class="card-price">1.100.000đ</p>
+          <p class="card-text">
+            Bodyflow nhẹ toàn thân, thư giãn sâu, giúp cơ thể mềm và nhẹ hơn.
+          </p>
+          <ul class="card-list">
+            <li>Thư giãn cơ thể từ đầu đến chân.</li>
+            <li>Giảm căng thẳng sau những ngày nhiều suy nghĩ.</li>
+            <li>Phù hợp khi bạn cần một lần “reset” nhẹ nhàng.</li>
+          </ul>
+          <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
+            Đặt lịch gói 90 phút
+          </a>
+        </article>
 
-      <div class="card">
-        <div class="card-tag" data-text="m3_tag">150 phút</div>
-        <div class="card-title" data-text="m3_title">Sacred Feminine Ritual</div>
-        <p data-text="m3_desc">Nghi thức sâu: thảo mộc ấm, bodyflow, kết thúc bằng tích hợp nhẹ nhàng.</p>
-        <div class="price">1.400.000đ</div>
-        <div class="card-note" data-text="m3_note">
-          Lý tưởng cho dịp tự thưởng, sinh nhật, chuyển giao một giai đoạn mới trong cuộc đời.
-        </div>
+        <!-- Gói 2 -->
+        <article class="card">
+          <div class="card-badge">120 phút</div>
+          <h3>Yoni Gentle Healing</h3>
+          <p class="card-price">1.400.000đ</p>
+          <p class="card-text">
+            Kết nối bụng – hông – vùng chậu &amp; Yoni một cách nhẹ nhàng, an toàn.
+          </p>
+          <ul class="card-list">
+            <li>Nhịp chạm chậm, lắng nghe phản hồi cơ thể.</li>
+            <li>Hỗ trợ quay lại với cảm xúc &amp; vùng sáng tạo bên trong.</li>
+            <li>Lý tưởng cho hành trình chữa lành mềm mại.</li>
+          </ul>
+          <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
+            Đặt lịch gói 120 phút
+          </a>
+        </article>
+
+        <!-- Gói 3 -->
+        <article class="card card-featured">
+          <div class="card-badge">150 phút</div>
+          <h3>Sacred Feminine Ritual</h3>
+          <p class="card-price">1.700.000đ</p>
+          <p class="card-text">
+            Nghi thức sâu với thảo mộc ấm, bodyflow &amp; tích hợp nhẹ nhàng ở cuối buổi.
+          </p>
+          <ul class="card-list">
+            <li>Thảo mộc ấm hỗ trợ tuần hoàn &amp; thư giãn.</li>
+            <li>Nghi thức dành cho cột mốc chuyển giao, sinh nhật, tự thưởng.</li>
+            <li>Thời lượng dài hơn để cơ thể thực sự hạ nhịp.</li>
+          </ul>
+          <a href="https://zalo.me/0353361684" class="btn full primary" target="_blank" rel="noopener">
+            Đặt lịch gói 150 phút
+          </a>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <h2 data-text="contact_title">Liên hệ & Đặt lịch</h2>
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Liên hệ &amp; Đặt lịch</h2>
+        <p>Vui lòng đặt lịch trước để tụi mình chuẩn bị không gian chỉ dành cho bạn.</p>
+      </div>
 
-    <div class="contact-grid">
-      <div>
-        <p><b data-text="contact_phone_label">Số điện thoại / Zalo:</b> 035 336 1684</p>
-        <p><b>Email:</b> 365yoni@gmail.com</p>
-        <p><b data-text="contact_addr_label">Địa chỉ:</b> 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP.HCM</p>
-        <p data-text="contact_hint">
-          Vui lòng đặt lịch trước khi đến để tụi mình chuẩn bị không gian & thời gian chỉ dành cho bạn.
-        </p>
+      <div class="contact-grid">
+        <div>
+          <h3>Thông tin</h3>
+          <ul class="contact-list">
+            <li><strong>Số điện thoại / Zalo:</strong> <a href="tel:+84353361684">035 336 1684</a></li>
+            <li><strong>Email:</strong> <a href="mailto:365yoni@gmail.com">365yoni@gmail.com</a></li>
+            <li><strong>Địa chỉ:</strong> 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP.HCM</li>
+          </ul>
 
-        <div class="contact-links">
-          <a class="btn-contact" href="https://zalo.me/0353361684" target="_blank">
-            <span>💬</span>Zalo
-          </a>
-          <a class="btn-contact" href="viber://chat?number=%2B84353361684">
-            <span>📞</span>Viber
-          </a>
-          <a class="btn-contact" href="https://t.me/+84353361684" target="_blank">
-            <span>📨</span>Telegram
-          </a>
-          <a class="btn-contact" href="https://www.google.com/maps/search/?api=1&query=182+Nguyen+Van+Thu+Quan+1" target="_blank">
-            <span>📍</span>Google Map
-          </a>
+          <p class="contact-note">
+            Khi nhắn Zalo, bạn có thể ghi:<br />
+            <em>“Chào Yoni 365 Spa, mình muốn đặt lịch [tên gói] vào [ngày/giờ].”</em><br />
+            Tụi mình sẽ phản hồi xác nhận và gửi hướng dẫn chi tiết.
+          </p>
+        </div>
+
+        <div>
+          <h3>Kênh liên lạc nhanh</h3>
+          <div class="contact-actions">
+            <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
+              Zalo
+            </a>
+            <a href="viber://chat?number=%2B84353361684" class="btn full" >
+              Viber
+            </a>
+            <a href="https://t.me/+84353361684" class="btn full" target="_blank" rel="noopener">
+              Telegram
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=182+Nguyen+Van+Thu+Quan+1" class="btn full" target="_blank" rel="noopener">
+              Google Map
+            </a>
+            <a href="tel:+84353361684" class="btn outline full">
+              Gọi 1 chạm
+            </a>
+          </div>
         </div>
       </div>
 
-      <div>
-        <p data-text="contact_note">
-          Khi nhắn Zalo, bạn có thể ghi:  
-          “Chào Yoni 365 Spa, mình muốn đặt lịch [tên gói] vào [ngày/giờ].”  
-          Tụi mình sẽ phản hồi xác nhận và gửi hướng dẫn chi tiết.
-        </p>
-      </div>
-    </div>
-
-    <div class="footer" data-text="footer">
-      © 2025 Yoni 365 Spa – Yoni Healing & Feminine Ritual · Home spa nữ riêng tư tại Quận 1.
     </div>
   </section>
 
-</div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © 2025 Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual ·
+        Home spa nữ riêng tư tại Quận 1.
+      </p>
+      <p class="footer-seo">
+        Yoni Massage · Yoni Healing · Massage nữ riêng tư Quận 1 · Home spa nữ ·
+        Feminine Ritual · Trị liệu năng lượng nữ tính.
+      </p>
+    </div>
+  </footer>
 
-<!-- MULTI-LANGUAGE SCRIPT -->
-<script>
-const text = {
-  vi:{
-    hero_eyebrow:"Yoni 365 Spa · Quận 1",
-    hero_title:"Yoni 365 Spa – Yoni Healing & Feminine Ritual",
-    hero_sub:"Không gian nữ tính – riêng tư – ấm áp dành riêng cho nữ.",
-    hero_desc:"Home spa tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1. Nơi bạn được thả lỏng, kết nối lại với cơ thể, cảm xúc và Yoni.",
-    pill_1:"Chỉ nhận khách nữ",
-    pill_2:"Yoni Healing · Bodyflow",
-    pill_3:"Không gian riêng tư 1–1",
-    btn_services:"Xem dịch vụ",
-    btn_contact:"Đặt lịch qua Zalo",
-    hero_note:"Sau khi bạn nhắn, tụi mình xác nhận lịch, gửi hướng dẫn & giữ không gian an toàn cho bạn.",
-    hero_chip:"Ánh sáng ấm · Mùi hương nhẹ · Nhạc chậm",
-    story_title:"Câu chuyện",
-    story_sub:"Năng lượng nữ tính – sự nâng niu – an toàn",
-    story_desc:"Yoni 365 Spa là góc nhỏ dành cho phụ nữ muốn dừng lại một chút giữa cuộc sống bận rộn, để lắng nghe cơ thể, Yoni và cảm xúc của mình trong một không gian riêng tư, ấm áp.",
-    menu_title:"Dịch vụ Yoni Healing",
-    menu_sub:"Chọn hành trình phù hợp với cơ thể & nhịp của bạn",
-    m1_tag:"90 phút",
-    m1_title:"Soft Feminine Reset",
-    m1_desc:"Bodyflow nhẹ toàn thân, thư giãn sâu, giúp cơ thể mềm và nhẹ hơn.",
-    m1_note:"Phù hợp sau những ngày stress, nhiều suy nghĩ, cần reset lại năng lượng nữ.",
-    m2_tag:"120 phút",
-    m2_title:"Yoni Gentle Healing",
-    m2_desc:"Kết nối bụng – hông – vùng chậu & Yoni một cách nhẹ nhàng, an toàn.",
-    m2_note:"Dành cho nữ muốn quay lại lắng nghe cơ thể, cảm xúc và vùng sáng tạo bên trong.",
-    m3_tag:"150 phút",
-    m3_title:"Sacred Feminine Ritual",
-    m3_desc:"Nghi thức sâu: thảo mộc ấm, bodyflow, kết thúc bằng tích hợp nhẹ nhàng.",
-    m3_note:"Lý tưởng cho dịp tự thưởng, sinh nhật, chuyển giao một giai đoạn mới trong cuộc đời.",
-    contact_title:"Liên hệ & Đặt lịch",
-    contact_phone_label:"Số điện thoại / Zalo:",
-    contact_addr_label:"Địa chỉ:",
-    contact_hint:"Vui lòng đặt lịch trước khi đến để tụi mình chuẩn bị không gian & thời gian chỉ dành cho bạn.",
-    contact_note:"Khi nhắn Zalo, bạn có thể ghi: “Chào Yoni 365 Spa, mình muốn đặt lịch [tên gói] vào [ngày/giờ].” Tụi mình sẽ phản hồi xác nhận và gửi hướng dẫn chi tiết.",
-    footer:"© 2025 Yoni 365 Spa – Yoni Healing & Feminine Ritual · Home spa nữ riêng tư tại Quận 1."
-  },
-
-  en:{
-    hero_eyebrow:"Yoni 365 Spa · District 1",
-    hero_title:"Yoni 365 Spa – Yoni Healing & Feminine Ritual",
-    hero_sub:"A soft, private, feminine space for women.",
-    hero_desc:"A private home spa in District 1, Saigon. A place to soften, breathe and reconnect with your body, emotions and Yoni.",
-    pill_1:"Women only",
-    pill_2:"Yoni Healing · Bodyflow",
-    pill_3:"1–1 private space",
-    btn_services:"View services",
-    btn_contact:"Book via Zalo",
-    hero_note:"Once you message us, we confirm the time, share directions and hold a safe space for you.",
-    hero_chip:"Warm light · Soft scent · Slow music",
-    story_title:"Our story",
-    story_sub:"Feminine energy · Tender care · Safety",
-    story_desc:"Yoni 365 Spa is a small sanctuary for women who want to pause, exhale and feel their bodies and emotions again in a private, warm setting.",
-    menu_title:"Yoni Healing services",
-    menu_sub:"Choose the journey that matches your body and rhythm",
-    m1_tag:"90 mins",
-    m1_title:"Soft Feminine Reset",
-    m1_desc:"Light full-body flow for deep relaxation and softness.",
-    m1_note:"Perfect after stressful days, overthinking and emotional overload.",
-    m2_tag:"120 mins",
-    m2_title:"Yoni Gentle Healing",
-    m2_desc:"Gentle, safe connection with belly, hips, pelvic area & Yoni.",
-    m2_note:"For women who want to listen again to their body, emotions and creative center.",
-    m3_tag:"150 mins",
-    m3_title:"Sacred Feminine Ritual",
-    m3_desc:"Deep ritual with warm herbs, bodyflow and soft integration.",
-    m3_note:"Ideal as a self-gift, birthday ritual or transition between life phases.",
-    contact_title:"Contact & Booking",
-    contact_phone_label:"Phone / Zalo:",
-    contact_addr_label:"Address:",
-    contact_hint:"Please book in advance so we can prepare the space and time just for you.",
-    contact_note:"When texting Zalo, you can write: “Hi Yoni 365 Spa, I’d like to book [session name] on [date/time].” We’ll reply with confirmation and details.",
-    footer:"© 2025 Yoni 365 Spa – Yoni Healing & Feminine Ritual · Private women-only home spa in District 1, Saigon."
-  },
-
-  jp:{
-    hero_eyebrow:"Yoni 365 Spa · 1区",
-    hero_title:"Yoni 365 Spa – ヨニヒーリング & フェミニンリチュアル",
-    hero_sub:"女性のためだけの、やわらかくてプライベートな空間。",
-    hero_desc:"ホーチミン1区の女性専用ホームスパ。身体・感情・ヨニともう一度つながるための場所です。",
-    pill_1:"女性専用",
-    pill_2:"ヨニヒーリング · ボディフロー",
-    pill_3:"1対1のプライベート空間",
-    btn_services:"メニューを見る",
-    btn_contact:"Zaloで予約",
-    hero_note:"ご連絡いただいたあと、時間の確認・アクセス・当日の流れなどを丁寧にお伝えします。",
-    hero_chip:"あたたかな光 · ほのかな香り · ゆっくりした音楽",
-    story_title:"ストーリー",
-    story_sub:"女性性・やさしさ・安心感",
-    story_desc:"Yoni 365 Spaは、忙しい毎日の中で一度立ち止まり、自分の身体と感情、ヨニにそっと戻っていける小さなサンクチュアリです。",
-    menu_title:"ヨニヒーリング メニュー",
-    menu_sub:"あなたの身体とリズムに合うコースをお選びください",
-    m1_tag:"90分",
-    m1_title:"ソフト・フェミニン・リセット",
-    m1_desc:"全身のやさしいボディフローで、深くリラックスします。",
-    m1_note:"ストレスや考えすぎで疲れた心と身体をリセットしたい方へ。",
-    m2_tag:"120分",
-    m2_title:"ヨニ・ジェントル・ヒーリング",
-    m2_desc:"おなか・腰・骨盤・ヨニと安心してつながっていくセッション。",
-    m2_note:"自分の身体と感情、内側のクリエイティブな力をもう一度感じたい女性に。",
-    m3_tag:"150分",
-    m3_title:"セイクリッド・フェミニン・リチュアル",
-    m3_desc:"ハーブ温浴＋ボディフロー＋静かな統合の時間を含む、深いリチュアル。",
-    m3_note:"自分へのご褒美や誕生日、ライフステージの変化の節目におすすめです。",
-    contact_title:"お問い合わせ・ご予約",
-    contact_phone_label:"電話 / Zalo:",
-    contact_addr_label:"住所:",
-    contact_hint:"完全予約制のため、ご来店前にご予約いただくとスムーズです。",
-    contact_note:"Zaloのメッセージ例：「こんにちは、Yoni 365 Spaさん。[希望メニュー] を [希望日時] に予約したいです。」と送っていただければ、詳細をご案内します。",
-    footer:"© 2025 Yoni 365 Spa – ヨニヒーリング & フェミニンリチュアル · ホーチミン1区の女性専用ホームスパ。"
-  },
-
-  kr:{
-    hero_eyebrow:"Yoni 365 Spa · 1군",
-    hero_title:"Yoni 365 Spa – 요니 힐링 & 페미닌 리추얼",
-    hero_sub:"여성만을 위한 부드럽고 프라이빗한 공간.",
-    hero_desc:"호치민 1군에 위치한 여성 전용 홈스파. 몸·감정·요니와 다시 연결될 수 있는 공간입니다.",
-    pill_1:"여성 전용",
-    pill_2:"요니 힐링 · 바디플로우",
-    pill_3:"1:1 프라이빗 공간",
-    btn_services:"서비스 보기",
-    btn_contact:"Zalo로 예약",
-    hero_note:"메시지를 보내주시면, 예약 시간 확인과 위치, 유의사항 등을 안내드립니다.",
-    hero_chip:"따뜻한 조명 · 은은한 향 · 잔잔한 음악",
-    story_title:"스토리",
-    story_sub:"여성성 · 다정함 · 안전함",
-    story_desc:"Yoni 365 Spa는 바쁜 삶 속에서 잠시 멈춰 숨을 고르고, 몸과 감정, 요니로 다시 돌아올 수 있는 작은 안식처입니다.",
-    menu_title:"요니 힐링 서비스",
-    menu_sub:"당신의 몸과 리듬에 맞는 코스를 선택해 보세요",
-    m1_tag:"90분",
-    m1_title:"소프트 페미닌 리셋",
-    m1_desc:"전신을 부드럽게 풀어주는 바디플로우로 깊은 이완을 돕습니다.",
-    m1_note:"스트레스와 생각이 많아 지친 상태를 리셋하고 싶은 분께 추천.",
-    m2_tag:"120분",
-    m2_title:"요니 젠틀 힐링",
-    m2_desc:"배·골반·요니를 안전하고 섬세하게 연결하는 여정.",
-    m2_note:"자신의 몸과 감정, 여성 에너지를 다시 느끼고 싶은 여성에게.",
-    m3_tag:"150분",
-    m3_title:"세이크리드 페미닌 리추얼",
-    m3_desc:"허브 온열, 바디플로우, 조용한 통합 시간을 포함한 깊은 의식.",
-    m3_note:"자기 선물, 생일, 인생 전환기의 작은 의식으로 좋습니다.",
-    contact_title:"문의 & 예약",
-    contact_phone_label:"전화 / Zalo:",
-    contact_addr_label:"주소:",
-    contact_hint:"완전 예약제로 운영되므로 방문 전 예약을 부탁드립니다.",
-    contact_note:"Zalo 메시지 예시: “안녕하세요, Yoni 365 Spa입니다. [원하는 코스]를 [원하는 날짜/시간]에 예약하고 싶어요.” 라고 보내주시면 자세히 안내드립니다.",
-    footer:"© 2025 Yoni 365 Spa – 요니 힐링 & 페미닌 리추얼 · 호치민 1군 여성 전용 홈스파."
-  },
-
-  cn:{
-    hero_eyebrow:"Yoni 365 Spa · 第一郡",
-    hero_title:"Yoni 365 Spa – 私密Yoni疗愈 & 女性仪式",
-    hero_sub:"只为女性准备的 · 私密 · 柔软的空间",
-    hero_desc:"位于胡志明市一郡的女性专属Home Spa，在这里你可以重新连接身体、情绪与Yoni能量。",
-    pill_1:"仅限女性",
-    pill_2:"Yoni疗愈 · 身体流动",
-    pill_3:"一对一私密空间",
-    btn_services:"查看服务",
-    btn_contact:"通过Zalo预约",
-    hero_note:"发消息后，我们会确认时间、发送地址与注意事项，并为你守护安全空间。",
-    hero_chip:"温暖灯光 · 淡淡香气 · 慢节奏音乐",
-    story_title:"我们的故事",
-    story_sub:"女性能量 · 温柔承托 · 安全感",
-    story_desc:"Yoni 365 Spa是为女性打造的小小避风港，让你在忙碌生活中按下暂停键，回到身体、Yoni与真实感受之中。",
-    menu_title:"Yoni疗愈服务",
-    menu_sub:"选择与你的身体与节奏相呼应的旅程",
-    m1_tag:"90分钟",
-    m1_title:"柔性女性重启",
-    m1_desc:"全身轻柔流动，帮助深度放松与松解紧绷。",
-    m1_note:"适合压力大、思绪多、需要重启女性能量的你。",
-    m2_tag:"120分钟",
-    m2_title:"Yoni温柔疗愈",
-    m2_desc:"以温和、安全的方式，连接腹部、骨盆与Yoni。",
-    m2_note:"适合想重新聆听身体、情绪与内在创造力的女性。",
-    m3_tag:"150分钟",
-    m3_title:"神圣女性仪式",
-    m3_desc:"草本温疗、身体流动与安静整合，层层深入的疗愈仪式。",
-    m3_note:"适合作为犒赏自己、生日仪式或人生阶段转折的小仪式。",
-    contact_title:"联系与预约",
-    contact_phone_label:"电话 / Zalo:",
-    contact_addr_label:"地址:",
-    contact_hint:"建议提前预约，以便我们为你准备好专属空间与时间。",
-    contact_note:"Zalo可这样发消息：“你好，Yoni 365 Spa，我想在[日期/时间]预约[项目名称]。” 我们会回复确认与详细说明。",
-    footer:"© 2025 Yoni 365 Spa – 私密Yoni疗愈 & 女性仪式 · 胡志明市一郡女性专属Home Spa。"
-  }
-};
-
-function setLang(lang){
-  document.querySelectorAll("[data-text]").forEach(el=>{
-    const key = el.getAttribute("data-text");
-    if(text[lang][key]) el.innerHTML = text[lang][key];
-  });
-
-  document.querySelectorAll(".lang-btn").forEach(btn=>{
-    btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
-  });
-}
-
-// default VI
-setLang("vi");
-</script>
-
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
