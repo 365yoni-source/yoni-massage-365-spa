@@ -1,103 +1,239 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yoni Massage HCM | Massage nữ riêng tư Quận 1</title>
-  <meta name="description" content="Yoni Massage HCM – Massage nữ riêng tư, kín đáo tại Quận 1. Đặt lịch qua Zalo 0353 361 684.">
-  <link rel="canonical" href="https://yonimassagehcm.com/">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description"
+    content="Yoni Massage HCM – Massage nữ riêng tư, kín đáo tại Quận 1. Liệu trình thư giãn trọn vẹn, tôn trọng và an toàn tuyệt đối dành cho khách nữ." />
+  <link rel="canonical" href="https://yonimassagehcm.com/" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-649HRZRYXM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-649HRZRYXM');
+  </script>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, document, 'script');
+
+    fbq('init', '2257337971414232');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2257337971414232&ev=PageView&noscript=1" />
+  </noscript>
+
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">Y</span>
         <div class="logo-text">
           <span class="logo-main">Yoni Massage HCM</span>
-          <span class="logo-sub">Massage nữ riêng tư • Q1</span>
+          <span class="logo-sub">Massage nữ riêng tư • Quận 1</span>
         </div>
       </div>
+
       <nav class="nav">
         <a href="#about">Giới thiệu</a>
         <a href="#services">Liệu trình</a>
         <a href="#pricing">Bảng giá</a>
         <a href="#booking">Đặt lịch</a>
       </nav>
-      <div class="lang-switch">
-        <a href="index.html" class="active">🇻🇳</a>
-        <a href="en.html">🇺🇸</a>
-        <a href="jp.html">🇯🇵</a>
-        <a href="kr.html">🇰🇷</a>
-        <a href="cn.html">🇨🇳</a>
-      </div>
+
+      <nav class="lang">
+        <a href="index.html"><img src="https://flagcdn.com/w20/vn.png" /></a>
+        <a href="en.html"><img src="https://flagcdn.com/w20/gb.png" /></a>
+        <a href="jp.html"><img src="https://flagcdn.com/w20/jp.png" /></a>
+        <a href="kr.html"><img src="https://flagcdn.com/w20/kr.png" /></a>
+        <a href="cn.html"><img src="https://flagcdn.com/w20/cn.png" /></a>
+      </nav>
+
     </div>
   </header>
 
-  <section class="hero">
+
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
     <div class="container hero-inner">
-      <div class="hero-text">
-        <div class="hero-tag">Dành riêng cho khách nữ</div>
-        <div class="hero-tag">Home spa kín đáo tại Quận 1</div>
-        <h1>Không gian massage ấm áp &amp; riêng tư dành cho nữ giới</h1>
-        <p class="hero-desc">
-          Thư giãn cơ thể, nhẹ đầu óc trong phòng riêng yên tĩnh. Nhắn Zalo trước để đặt lịch.
-        </p>
-        <div class="hero-actions">
-          <a href="#booking" class="btn btn-primary">Đặt lịch ngay</a>
-          <a href="tel:+84353361684" class="btn btn-ghost">Gọi: 0353 361 684</a>
-        </div>
+
+      <div>
+        <h1>Không gian massage ấm áp & riêng tư cho khách nữ</h1>
+        <p>Liệu trình Yoni thư giãn – an toàn – tôn trọng – kín đáo tuyệt đối.</p>
+
+        <a href="https://zalo.me/0353361684" class="btn btn-primary" target="_blank" onclick="trackZaloClick()">
+          Nhắn Zalo đặt lịch
+        </a>
       </div>
-      <div class="hero-media">
-        <div class="hero-card main">
-          <span class="hero-label">Không gian phòng</span>
-          <p>Đèn vàng ấm, mùi thơm nhẹ, nhạc nhỏ – chỉ có bạn và khoảng thời gian cho riêng mình.</p>
-        </div>
+
+      <div class="hero-img">
+        <img src="images/cover.jpg" alt="Yoni Massage HCM" />
       </div>
+
     </div>
   </section>
 
-  <section id="about" class="section section-dark">
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
     <div class="container">
       <h2>Vì sao có Yoni Massage HCM?</h2>
-      <p>Nơi nhỏ, kín đáo dành cho khách nữ cần thư giãn cơ thể &amp; cảm xúc, tránh ồn ào của spa đại trà.</p>
+      <p>Không gian riêng tư 1–1, sạch sẽ và kín đáo – dành cho khách nữ cần sự an tâm tuyệt đối.</p>
+
+      <ul class="check-list">
+        <li>Chỉ phục vụ NỮ – không nhận khách nam</li>
+        <li>Không chia sẻ bất kỳ thông tin cá nhân</li>
+        <li>Không gian sạch – thơm – ấm áp</li>
+        <li>Massage tôn trọng – chuyên nghiệp – an toàn</li>
+      </ul>
     </div>
   </section>
 
-  <section id="services" class="section">
+
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
     <div class="container">
       <h2>Liệu trình</h2>
-      <ul>
-        <li>Thả lỏng cơ bản ~90 phút</li>
-        <li>Chăm sóc sâu ~120 phút</li>
-        <li>Chăm sóc toàn diện ~150 phút</li>
+
+      <ul class="service-list">
+        <li><strong>Basic Relax</strong> – Thư giãn cơ bản, giải tỏa nhẹ nhàng.</li>
+        <li><strong>Deep Yoni Therapy</strong> – Cân bằng cảm xúc & giảm stress sâu.</li>
+        <li><strong>Premium Body & Yoni</strong> – Chăm sóc toàn thân + Yoni chuyên sâu.</li>
       </ul>
     </div>
   </section>
 
-  <section id="pricing" class="section section-dark">
+
+
+  <!-- PRICING -->
+  <section id="pricing" class="section">
     <div class="container">
       <h2>Bảng giá</h2>
-      <ul>
-        <li>90 phút: 1.100.000đ</li>
-        <li>120 phút: 1.400.000đ</li>
-        <li>150 phút: 1.700.000đ</li>
-      </ul>
+
+      <div class="pricing-box">
+        <div class="price-item">
+          <h3>Basic</h3>
+          <p class="price">1.100.000đ</p>
+        </div>
+
+        <div class="price-item">
+          <h3>Deep</h3>
+          <p class="price">1.400.000đ</p>
+        </div>
+
+        <div class="price-item">
+          <h3>Premium</h3>
+          <p class="price">1.700.000đ</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="booking" class="section">
+
+
+  <!-- BOOKING -->
+  <section id="booking" class="section section-accent">
+    <div class="container booking-inner">
+
+      <div>
+        <h2>Đặt lịch trước khi đến</h2>
+
+        <ul class="check-list">
+          <li>Không tiếp khách vãng lai</li>
+          <li>Riêng tư 1–1</li>
+          <li>Địa chỉ gửi sau khi chốt lịch</li>
+        </ul>
+
+        <!-- Google Map -->
+        <div class="map-wrapper" style="margin-top:14px;">
+          <p style="font-size:13px;color:#e8e8e8;margin-bottom:6px;">
+            Khu vực: Quận 1, TP.HCM (địa chỉ chi tiết sẽ gửi riêng sau khi đặt lịch)
+          </p>
+
+          <div
+            style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);box-shadow:0 10px 25px rgba(0,0,0,0.5);">
+            <iframe src="https://www.google.com/maps?q=10.78636,106.69569&z=16&output=embed" width="100%" height="260"
+              loading="lazy" style="border:0;"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="booking-contact">
+        <h3>Liên hệ</h3>
+
+        <a href="https://zalo.me/0353361684" class="btn btn-primary btn-block" target="_blank"
+          onclick="trackZaloClick()">Zalo</a>
+
+        <a href="viber://chat?number=0353361684" class="btn btn-secondary btn-block">Viber</a>
+
+        <a href="https://t.me/0353361684" class="btn btn-secondary btn-block" target="_blank">Telegram</a>
+
+        <a href="https://www.instagram.com/yoni365sg/" class="btn btn-secondary btn-block" target="_blank">Instagram</a>
+
+        <a href="https://www.youtube.com/@yonimassagesaigon" class="btn btn-secondary btn-block"
+          target="_blank">YouTube</a>
+
+        <a href="https://www.tiktok.com/@365yonisaigon" class="btn btn-secondary btn-block"
+          target="_blank">TikTok</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
-      <h2>Đặt lịch</h2>
-      <p>Nhắn Zalo hoặc gọi trực tiếp trước khi đến để giữ sự riêng tư.</p>
-      <p>Zalo: <a href="https://zalo.me/0353361684">0353 361 684</a></p>
+      <p>© 2025 Yoni Massage HCM – Massage nữ riêng tư, an toàn & kín đáo.</p>
     </div>
-  </section>
+  </footer>
 
-  <a href="https://zalo.me/0353361684" class="chat-float" target="_blank">
-    <span class="chat-float-icon">💬</span>
-    <span class="chat-float-label">Chat Zalo</span>
-  </a>
+
+
+  <!-- Tracking click Zalo -->
+  <script>
+    function trackZaloClick() {
+      try { gtag('event', 'zalo_click'); } catch (e) { }
+      try { fbq('trackCustom', 'ZaloClick'); } catch (e) { }
+    }
+  </script>
 
 </body>
+
 </html>
