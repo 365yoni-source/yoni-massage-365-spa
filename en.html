@@ -1,591 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Yoni 365 Spa – Yoni Healing & Feminine Ritual | Ho Chi Minh City</title>
-  <meta name="description" content="Yoni 365 Spa – private home spa for women only in District 1, Ho Chi Minh City. Yoni Healing, bodyflow and feminine rituals in a soft, intimate and safe space." />
-  <meta name="keywords" content="Yoni massage, Yoni healing, women only spa, private spa Saigon, feminine ritual, bodywork for women, Ho Chi Minh City" />
+  <!-- SEO Title -->
+  <title>Yoni Massage HCM | Private Women’s Massage in District 1 Saigon | Home Spa for Women</title>
 
-  <style>
-    /* RESET */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html, body { height: 100%; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Segoe UI", sans-serif;
-      background: #faf5f7;
-      color: #28131a;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-decoration: none; }
+  <!-- SEO Description -->
+  <meta name="description" content="Yoni Massage HCM – a private home spa space for women in District 1, Saigon. 1-on-1 sessions, warm and discreet atmosphere, 90–150 minute treatments. Book via Zalo for a safe and gentle relaxation experience.">
 
-    /* LAYOUT */
-    .container {
-      width: min(1120px, 100% - 40px);
-      margin: 0 auto;
-    }
-    .section { padding: 80px 0; }
-    .section-soft { background: #fdf8fb; }
-    .section-head { text-align: center; margin-bottom: 40px; }
-    .section-head h2 {
-      font-size: 30px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      margin-bottom: 10px;
-    }
-    .section-head p { opacity: 0.8; }
+  <meta name="robots" content="index, follow">
 
-    /* HEADER */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(16px);
-      background: rgba(255, 255, 255, 0.9);
-      border-bottom: 1px solid rgba(214, 173, 193, 0.4);
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      padding: 12px 0;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo-mark {
-      width: 30px;
-      height: 30px;
-      border-radius: 999px;
-      background: conic-gradient(from 180deg, #f6c5dc, #f3a7ca, #fbe0ef, #f6c5dc);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #3f0f21;
-      font-weight: 700;
-      font-size: 18px;
-      box-shadow: 0 0 0 1px rgba(255, 229, 244, 0.8);
-    }
-    .logo-title {
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-    .logo-subtitle {
-      font-size: 11px;
-      opacity: 0.7;
-    }
+  <!-- Canonical (adjust if you host EN on a different URL) -->
+  <link rel="canonical" href="https://yonimassagehcm.com/en.html">
 
-    .main-nav {
-      display: flex;
-      gap: 18px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-    }
-    .main-nav a {
-      position: relative;
-      opacity: 0.8;
-    }
-    .main-nav a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0;
-      height: 1px;
-      background: linear-gradient(90deg, #f2a6cb, #f8cde3);
-      transition: width 0.18s ease;
-    }
-    .main-nav a:hover::after { width: 100%; }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yoni Massage HCM">
+  <meta property="og:title" content="Yoni Massage HCM – Private Women’s Massage in District 1 Saigon">
+  <meta property="og:description" content="A warm, discreet massage space exclusively for women in District 1, Saigon. 1-on-1 sessions by appointment only.">
+  <meta property="og:url" content="https://yonimassagehcm.com/en.html">
+  <meta property="og:image" content="https://yonimassagehcm.com/images/cover.jpg">
+  <meta property="og:locale" content="en_US">
 
-    /* HERO */
-    .hero {
-      position: relative;
-      padding: 70px 0 60px;
-      background-image: url("https://images.pexels.com/photos/3738341/pexels-photo-3738341.jpeg?auto=compress&cs=tinysrgb&w=1600");
-      background-size: cover;
-      background-position: center;
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(to right, rgba(255, 255, 255, 0.96), rgba(255, 249, 252, 0.92)),
-        radial-gradient(circle at top left, rgba(246, 203, 221, 0.5), transparent 60%);
-      mix-blend-mode: screen;
-    }
-    .hero-inner {
-      position: relative;
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-      gap: 32px;
-      align-items: center;
-    }
-    .hero-location {
-      text-transform: uppercase;
-      font-size: 11px;
-      letter-spacing: 0.2em;
-      opacity: 0.8;
-      margin-bottom: 8px;
-    }
-    .hero-text h1 {
-      font-size: clamp(30px, 4vw, 40px);
-      line-height: 1.12;
-      margin-bottom: 12px;
-    }
-    .hero-subtitle {
-      font-size: 15px;
-      opacity: 0.9;
-      max-width: 480px;
-      margin-bottom: 16px;
-    }
-    .hero-highlights {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-    .hero-highlights li {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      border-radius: 999px;
-      padding: 4px 10px;
-      border: 1px solid rgba(214, 149, 178, 0.6);
-      background: #fff;
-    }
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 8px;
-    }
-    .hero-note {
-      font-size: 13px;
-      opacity: 0.8;
-      max-width: 420px;
-    }
-    .hero-card {
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 22px;
-      padding: 22px 20px;
-      box-shadow:
-        0 18px 40px rgba(187, 144, 165, 0.3),
-        0 0 0 1px rgba(242, 207, 226, 0.9);
-    }
-    .hero-card-title {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      margin-bottom: 8px;
-    }
-    .hero-card-text {
-      font-size: 14px;
-      opacity: 0.88;
-    }
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yoni Massage HCM – Women’s Private Massage Saigon">
+  <meta name="twitter:description" content="1-on-1 private massage sessions for women in District 1, Saigon. Warm, discreet and calm home spa.">
+  <meta name="twitter:image" content="https://yonimassagehcm.com/images/cover.jpg">
 
-    /* GRID */
-    .two-cols {
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
-      gap: 28px;
-    }
-    .two-cols p { margin-bottom: 10px; }
+  <!-- FONTS + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    .story-card {
-      background: #ffffff;
-      border-radius: 22px;
-      padding: 20px 18px;
-      box-shadow: 0 16px 32px rgba(195, 147, 167, 0.22);
-      border: 1px solid rgba(232, 188, 210, 0.9);
-    }
-    .story-card h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    .story-card ul {
-      list-style: disc;
-      margin-left: 18px;
-      font-size: 14px;
-      opacity: 0.9;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    /* CARDS – SERVICES */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
+  <!-- SCHEMA JSON-LD (EN version) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Spa", "LocalBusiness"],
+    "name": "Yoni Massage HCM",
+    "image": "https://yonimassagehcm.com/images/cover.jpg",
+    "@id": "https://yonimassagehcm.com/en.html",
+    "url": "https://yonimassagehcm.com/en.html",
+    "telephone": "+84353361684",
+    "priceRange": "$$",
+    "description": "Private women-only massage in District 1, Saigon – warm, discreet home spa space with 1-on-1 sessions and 90–150 minute treatments.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "District 1",
+      "addressLocality": "Ho Chi Minh City",
+      "addressRegion": "HCM",
+      "addressCountry": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.78636,
+      "longitude": 106.69569
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "23:59"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61584497342367",
+      "https://www.instagram.com/yoni365sg/",
+      "https://www.tiktok.com/@365yonisaigon",
+      "https://www.youtube.com/@yonimassagesaigon",
+      "https://zalo.me/0353361684",
+      "viber://chat?number=+84353361684",
+      "https://t.me/+84353361684"
+    ],
+    "areaServed": "Ho Chi Minh City",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yonimassagehcm.com/en.html?s={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
-    .card {
-      background: #ffffff;
-      border-radius: 22px;
-      padding: 20px 18px;
-      box-shadow: 0 14px 30px rgba(193, 149, 170, 0.22);
-      border: 1px solid rgba(231, 184, 208, 0.9);
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .card-featured {
-      box-shadow:
-        0 18px 40px rgba(189, 132, 164, 0.3),
-        0 0 0 1px rgba(229, 156, 197, 0.9);
-    }
-    .card-badge {
-      align-self: flex-start;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      border-radius: 999px;
-      padding: 4px 9px;
-      border: 1px solid rgba(214, 149, 178, 0.9);
-      background: #fff5fb;
-    }
-    .card h3 { font-size: 18px; }
-    .card-price {
-      font-size: 18px;
-      font-weight: 600;
-      color: #b24378;
-    }
-    .card-text {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-    .card-list {
-      list-style: disc;
-      margin-left: 18px;
-      font-size: 14px;
-      opacity: 0.9;
-      margin-bottom: 8px;
-    }
-
-    /* CONTACT */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 30px;
-    }
-    .contact-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      font-size: 14px;
-    }
-    .contact-note {
-      margin-top: 16px;
-      font-size: 13px;
-      opacity: 0.85;
-    }
-    .contact-actions {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-
-    /* BUTTONS */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 9px 18px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 500;
-      border: 1px solid rgba(209, 147, 176, 0.9);
-      background: #ffffff;
-      cursor: pointer;
-      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
-    }
-    .btn.primary {
-      background: linear-gradient(135deg, #f8c2dd, #f3a4c9);
-      color: #3f0f21;
-      border-color: rgba(243, 160, 201, 0.95);
-      box-shadow:
-        0 10px 26px rgba(195, 133, 167, 0.38);
-    }
-    .btn.full { width: 100%; }
-    .btn.ghost {
-      background: transparent;
-    }
-    .btn.outline {
-      background: transparent;
-      border-style: dashed;
-    }
-    .btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 12px 26px rgba(188, 137, 162, 0.35);
-    }
-
-    /* FOOTER */
-    .site-footer {
-      border-top: 1px solid rgba(214, 173, 193, 0.6);
-      background: #fff9fc;
-      padding: 16px 0 22px;
-      font-size: 12px;
-      color: #5c3443;
-    }
-    .footer-inner {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .footer-seo {
-      max-width: 640px;
-      margin: 0 auto;
-      opacity: 0.85;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: minmax(0, 1fr); }
-      .hero-card { margin-top: 18px; }
-      .two-cols, .cards, .contact-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-    @media (max-width: 720px) {
-      .header-inner {
-        flex-wrap: wrap;
-        row-gap: 8px;
-      }
-      .main-nav { display: none; }
-      .hero { padding-top: 56px; }
-      .section { padding: 64px 0; }
-    }
-    @media (max-width: 480px) {
-      .hero-text h1 { font-size: 26px; }
-    }
-  </style>
+  }
+  </script>
 </head>
 <body>
   <!-- HEADER -->
-  <header class="site-header">
+  <header class="header" id="top">
     <div class="container header-inner">
       <div class="logo">
-        <div class="logo-mark">Y</div>
+        <span class="logo-mark">Y</span>
         <div class="logo-text">
-          <span class="logo-title">Yoni 365 Spa</span>
-          <span class="logo-subtitle">Yoni Healing & Feminine Ritual</span>
+          <span class="logo-main">Yoni Massage HCM</span>
+          <span class="logo-sub">Private massage for women • D1</span>
         </div>
       </div>
 
-      <nav class="main-nav">
-        <a href="#story">Story</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Treatments</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Experiences</a>
+        <a href="#booking">Booking</a>
       </nav>
+
+      <a href="#booking" class="btn btn-outline header-cta">
+        Book via Zalo
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#services">Treatments</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Experiences</a>
+      <a href="#booking">Booking</a>
+    </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero-overlay"></div>
+  <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <p class="hero-location">Home spa · 182/2 Nguyen Van Thu, Da Kao, District 1</p>
-        <h1>Yoni 365 Spa – Yoni Healing & Feminine Ritual</h1>
-        <p class="hero-subtitle">
-          A feminine, intimate and warm space for women only – where you can soften,
-          exhale and reconnect with your body, emotions and Yoni.
+        <div class="hero-tag">For women only</div>
+        <div class="hero-tag">Private home spa in District 1</div>
+        <h1>A warm, discreet massage space created just for women</h1>
+        <p class="hero-desc">
+          A quiet home spa where women can soften the body, unwind emotions and refill their energy.
+          1-on-1 sessions in a calm, private room where your boundaries and feelings are respected.
         </p>
-        <ul class="hero-highlights">
-          <li>Women only</li>
-          <li>Private 1:1 sessions</li>
-          <li>Yoni Healing · Bodyflow · Feminine Ritual</li>
-        </ul>
         <div class="hero-actions">
-          <a href="#menu" class="btn primary">View sessions</a>
-          <a href="https://zalo.me/0353361684" class="btn ghost" target="_blank" rel="noopener">
-            Book via Zalo
-          </a>
+          <a href="#booking" class="btn btn-primary">Book a session</a>
+          <a href="tel:+84353361684" class="btn btn-ghost">Call for info: 0353 361 684</a>
         </div>
-        <p class="hero-note">
-          After you message us, we’ll confirm the time, share directions and hold a safe space for you.
-        </p>
+        <ul class="hero-badges">
+          <li>Women-only, 1-on-1</li>
+          <li>Discreet & calm</li>
+          <li>90–150 minute sessions</li>
+        </ul>
       </div>
-
-      <div class="hero-card">
-        <p class="hero-card-title">Warm light · Soft scent · Slow music</p>
-        <p class="hero-card-text">
-          Every detail is curated so your body can slowly unwind, soften and return
-          to its feminine rhythm.
-        </p>
+      <div class="hero-media">
+        <div class="hero-card main">
+          <span class="hero-label">The room</span>
+          <p>Soft warm lights, gentle scent and quiet music – a space designed for women to feel at ease.</p>
+        </div>
+        <div class="hero-card secondary">
+          <span class="hero-label">By appointment only</span>
+          <p>No walk-ins, no waiting rooms, no shared space – each time slot is kept for one guest.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- STORY -->
-  <section class="section" id="story">
-    <div class="container two-cols">
-      <div class="col">
-        <h2>Feminine energy, gentleness & safety</h2>
+  <!-- ABOUT -->
+  <section id="about" class="section section-dark">
+    <div class="container grid-2">
+      <div>
+        <h2>Why Yoni Massage HCM was created</h2>
         <p>
-          Yoni 365 Spa is a small corner for women who want to pause for a moment in the
-          middle of a busy life and listen to their body, Yoni and emotions in a private,
-          warm space.
+          Many women want a place to take care of their body and emotional wellbeing, but still keep
+          privacy and safety. Yoni Massage HCM is a small home spa created for women only – away from
+          crowded, noisy, commercial spas.
         </p>
         <p>
-          We believe every Yoni is a sacred creative center. When she is listened to and held
-          with care, she reminds you of your worth and your soft yet powerful feminine energy
-          within.
+          Each session is a pocket of time for you to reconnect with your body, notice the tiredness,
+          and allow yourself to fully relax.
         </p>
-        <p>
-          Each session is a small ritual: slow, respectful of your boundaries, with no pressure –
-          just presence, gentle touch and breath.
-        </p>
+        <ul class="check-list">
+          <li>Women-only, 1-on-1 sessions by appointment</li>
+          <li>Private home setting, not a busy street spa</li>
+          <li>Respect for your boundaries, pace and comfort</li>
+        </ul>
       </div>
-      <div class="col">
-        <div class="story-card">
-          <h3>Safe space & boundaries</h3>
-          <ul>
-            <li>We only work with one guest per time slot.</li>
-            <li>Your limits and body signals are always respected.</li>
-            <li>No photos/videos without your explicit consent.</li>
-            <li>Your stories and information are kept confidential.</li>
-          </ul>
-        </div>
+      <div class="about-card">
+        <h3>Space & experience</h3>
+        <ul class="about-items">
+          <li><span class="dot"></span>Private room with warm lighting and soft music</li>
+          <li><span class="dot"></span>Gentle massage oil with a light, pleasant scent</li>
+          <li><span class="dot"></span>Fresh towels and sheets prepared for each guest</li>
+          <li><span class="dot"></span>Warm drink before and after your session</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section section-soft" id="menu">
+  <section id="services" class="section">
     <div class="container">
-      <div class="section-head">
-        <h2>Yoni Healing Sessions</h2>
-        <p>Choose a journey that matches your body and rhythm</p>
+      <div class="section-heading">
+        <h2>Treatments for women</h2>
+        <p>
+          Each treatment is designed to help the body soften while the mind slowly quiets down.
+        </p>
       </div>
 
-      <div class="cards">
-        <!-- 90 min -->
+      <div class="cards-3">
         <article class="card">
-          <div class="card-badge">90 minutes</div>
-          <h3>Soft Feminine Reset</h3>
-          <p class="card-price">1,100,000 VND</p>
-          <p class="card-text">
-            Gentle full-body bodyflow to support deep relaxation and softness.
+          <h3>Basic body relaxation</h3>
+          <p class="card-time">Around 90 minutes</p>
+          <p class="card-desc">
+            Full body relaxation to ease muscle tension and help you feel lighter after a long day.
           </p>
           <ul class="card-list">
-            <li>Releases tension from head to toe.</li>
-            <li>Ideal after stressful, overthinking days.</li>
-            <li>For when you need a gentle “reset”.</li>
+            <li>Full body massage with warm oil</li>
+            <li>Focus on neck, shoulders, back and legs</li>
+            <li>Slow, gentle and steady movements</li>
           </ul>
-          <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
-            Book 90-min session
-          </a>
         </article>
 
-        <!-- 120 min -->
         <article class="card">
-          <div class="card-badge">120 minutes</div>
-          <h3>Yoni Gentle Healing</h3>
-          <p class="card-price">1,400,000 VND</p>
-          <p class="card-text">
-            Soft, safe connection with belly, hips, pelvis and Yoni.
+          <h3>Deeper care & emotional unwind</h3>
+          <p class="card-time">Around 120 minutes</p>
+          <p class="card-desc">
+            More time for tense areas and a slower rhythm to allow deeper release in both body and mind.
           </p>
           <ul class="card-list">
-            <li>Slow touch, listening to your body’s responses.</li>
-            <li>Helps you reconnect with emotions and creative center.</li>
-            <li>Ideal for a tender healing journey.</li>
+            <li>Deeper full body work</li>
+            <li>Extra attention to lower back, hips and legs</li>
+            <li>More focus on breathing and body rhythm</li>
           </ul>
-          <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
-            Book 120-min session
-          </a>
         </article>
 
-        <!-- 150 min -->
-        <article class="card card-featured">
-          <div class="card-badge">150 minutes</div>
-          <h3>Sacred Feminine Ritual</h3>
-          <p class="card-price">1,700,000 VND</p>
-          <p class="card-text">
-            Deep ritual with warm herbs, bodyflow and gentle integration at the end.
+        <article class="card">
+          <h3>Full recharge session</h3>
+          <p class="card-time">Around 150 minutes</p>
+          <p class="card-desc">
+            A long, unhurried session for when you feel drained and overwhelmed, giving your whole system time to soften.
           </p>
           <ul class="card-list">
-            <li>Warm herbal support for circulation & relaxation.</li>
-            <li>Perfect for birthdays, transitions or self-honoring moments.</li>
-            <li>Extra time for your body to truly slow down.</li>
+            <li>Extended full body relaxation</li>
+            <li>Combination of different touch rhythms</li>
+            <li>Short pauses to drink water and settle</li>
           </ul>
-          <a href="https://zalo.me/0353361684" class="btn full primary" target="_blank" rel="noopener">
-            Book 150-min ritual
-          </a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
+  <!-- PRICING -->
+  <section id="pricing" class="section section-dark">
     <div class="container">
-      <div class="section-head">
-        <h2>Contact & Booking</h2>
-        <p>Please book in advance so we can prepare the space just for you.</p>
+      <div class="section-heading">
+        <h2>Session pricing</h2>
+        <p>Flat rates with no hidden fees. All sessions are by appointment only.</p>
       </div>
 
-      <div class="contact-grid">
-        <div>
-          <h3>Details</h3>
-          <ul class="contact-list">
-            <li><strong>Phone / Zalo:</strong> <a href="tel:+84353361684">+84 353 361 684</a></li>
-            <li><strong>Email:</strong> <a href="mailto:365yoni@gmail.com">365yoni@gmail.com</a></li>
-            <li><strong>Address:</strong> 182/2 Nguyen Van Thu, Da Kao, District 1, Ho Chi Minh City</li>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Basic relaxation</h3>
+          <p class="price">1,100,000<span class="currency">đ</span></p>
+          <p class="note">Around 90 minutes</p>
+          <ul>
+            <li>Full body relaxation</li>
+            <li>Focus on neck – shoulders – back</li>
+            <li>Private, women-only space</li>
           </ul>
-          <p class="contact-note">
-            When you text on Zalo, you can write:<br />
-            <em>“Hi Yoni 365 Spa, I’d like to book [session name] on [date/time].”</em><br />
-            We’ll reply with confirmation and directions.
-          </p>
         </div>
 
-        <div>
-          <h3>Quick channels</h3>
-          <div class="contact-actions">
-            <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">Zalo</a>
-            <a href="viber://chat?number=%2B84353361684" class="btn full">Viber</a>
-            <a href="https://t.me/+84353361684" class="btn full" target="_blank" rel="noopener">Telegram</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=182+Nguyen+Van+Thu+Quan+1" class="btn full" target="_blank" rel="noopener">
-              Google Map
-            </a>
-            <a href="tel:+84353361684" class="btn outline full">Call one touch</a>
-          </div>
+        <div class="pricing-card highlight">
+          <div class="tag-popular">Most chosen</div>
+          <h3>Deeper care</h3>
+          <p class="price">1,400,000<span class="currency">đ</span></p>
+          <p class="note">Around 120 minutes</p>
+          <ul>
+            <li>More time for tense muscles</li>
+            <li>Extra work on overworked areas</li>
+            <li>Ideal during stressful periods</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Full recharge</h3>
+          <p class="price">1,700,000<span class="currency">đ</span></p>
+          <p class="note">Around 150 minutes</p>
+          <ul>
+            <li>Complete reset for body & mind</li>
+            <li>Enough time to truly unwind</li>
+            <li>Great after long stressful phases</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="pricing-note">
+        <strong>Note:</strong> Women-only space. Please book in advance so a private slot can be kept just for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>What women have shared</h2>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <p class="review-text">
+            “The room feels so warm and safe – more like visiting a close friend’s home than a spa. I didn’t feel tense at all, and I slept really well that night.”
+          </p>
+          <p class="review-meta">Female guest, 28 – office worker</p>
+        </article>
+
+        <article class="review-card">
+          <p class="review-text">
+            “I appreciate how clearly everything was explained and how my preferences were asked about. Nothing felt rushed, and my boundaries were respected.”
+          </p>
+          <p class="review-meta">Female guest, 32 – business owner</p>
+        </article>
+
+        <article class="review-card">
+          <p class="review-text">
+            “I came after a very stressful period. I could feel my body letting go, and my sleep improved a lot after the session.”
+          </p>
+          <p class="review-meta">Female guest, 35 – creative field</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="section section-accent">
+    <div class="container booking-inner">
+      <div>
+        <h2>Booking a session</h2>
+        <p>
+          To keep the space private and calm, all visits are by appointment only. You can send a message first
+          to share what you need, your boundaries and any concerns before we schedule.
+        </p>
+
+        <ul class="check-list">
+          <li>Women-only space</li>
+          <li>Exact address is shared after confirming your booking</li>
+          <li>No walk-ins, no shared waiting area</li>
+        </ul>
+      </div>
+
+      <div class="booking-actions">
+        <a href="https://zalo.me/0353361684" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+          Message via Zalo
+        </a>
+        <a href="tel:+84353361684" class="btn btn-outline btn-block">
+          Call: 0353 361 684
+        </a>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61584497342367" target="_blank" rel="noopener">
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/yoni365sg/" target="_blank" rel="noopener">
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@365yonisaigon" target="_blank" rel="noopener">
+            TikTok
+          </a>
+          <a href="https://www.youtube.com/@yonimassagesaigon" target="_blank" rel="noopener">
+            YouTube
+          </a>
+          <a href="viber://chat?number=+84353361684" target="_blank" rel="noopener">
+            Viber
+          </a>
+          <a href="https://t.me/+84353361684" target="_blank" rel="noopener">
+            Telegram
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2025 Yoni 365 Spa – Yoni Healing & Feminine Ritual · Women-only home spa in District 1.</p>
-      <p class="footer-seo">
-        Yoni massage · Yoni healing · Women-only spa Saigon · Feminine ritual · Private bodywork for women.
-      </p>
+      <div>
+        <div class="logo footer-logo">
+          <span class="logo-mark">Y</span>
+          <div class="logo-text">
+            <span class="logo-main">Yoni Massage HCM</span>
+            <span class="logo-sub">Private massage for women • D1</span>
+          </div>
+        </div>
+        <p class="footer-copy">A small, quiet space created for women to rest and come back to themselves.</p>
+      </div>
+      <div class="footer-info">
+        <p><strong>Area:</strong> District 1, Ho Chi Minh City</p>
+        <p><strong>Contact:</strong> Zalo / Phone: 0353 361 684 (please book in advance)</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="year"></span> Yoni Massage HCM. All rights reserved.</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
+  <!-- CHAT FLOAT BUTTON -->
+  <a href="https://zalo.me/0353361684" class="chat-float" target="_blank" rel="noopener" aria-label="Chat on Zalo with Yoni Massage HCM">
+    <span class="chat-float-icon">💬</span>
+    <span class="chat-float-label">Chat on Zalo</span>
+  </a>
+
   <script>
-    // smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const navMobile = document.getElementById('navMobile');
+
+    menuToggle.addEventListener('click', () => {
+      navMobile.classList.toggle('open');
+      menuToggle.classList.toggle('open');
+    });
+
+    navMobile.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        menuToggle.classList.remove('open');
       });
     });
   </script>
