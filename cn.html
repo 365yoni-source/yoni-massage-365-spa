@@ -1,233 +1,454 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Yoni 365 Spa – 女性私密疗愈 · 阴道能量仪式</title>
-  <meta name="description" content="Yoni 365 Spa 位于胡志明市第一郡，是仅限女性的私密家居 SPA。温暖安静的空间里，提供 Yoni 疗愈、身体流动和女性能量仪式。" />
+  <!-- SEO Title -->
+  <title>Yoni Massage HCM | 胡志明市第一郡女性私密按摩 | 私人家居式 Spa</title>
 
-  <meta property="og:title" content="Yoni 365 Spa – 女性私密疗愈 · 阴道能量仪式" />
-  <meta property="og:description" content="只为女性开放的私密、温暖空间。胡志明市第一郡的 Yoni 365 Spa。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://365yoni-source.github.io/yoni-massage-365-spa/cn.html" />
-  <meta property="og:image" content="https://365yoni-source.github.io/yoni-massage-365-spa/og-image.jpg" />
+  <!-- SEO Description -->
+  <meta name="description" content="Yoni Massage HCM – 位于胡志明市第一郡的女性专属私人家居式 Spa。1 对 1 服务，完全预约制，安静私密空间，90–150 分钟放松护理。可通过 Zalo 轻松预约。">
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://365yoni-source.github.io/yoni-massage-365-spa/favicon.ico" />
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yonimassagehcm.com/cn.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yoni Massage HCM">
+  <meta property="og:title" content="Yoni Massage HCM – 胡志明市第一郡女性专属私密按摩">
+  <meta property="og:description" content="仅为女性准备的安静家居式 Spa。1 对 1、预约制、私密舒适。">
+  <meta property="og:url" content="https://yonimassagehcm.com/cn.html">
+  <meta property="og:image" content="https://yonimassagehcm.com/images/cover.jpg">
+  <meta property="og:locale" content="zh_CN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yoni Massage HCM – 女性专属按摩 · 胡志明市">
+  <meta name="twitter:description" content="胡志明市第一郡女性专属 · 私密家居式 Spa。">
+  <meta name="twitter:image" content="https://yonimassagehcm.com/images/cover.jpg">
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema JSON-LD CN -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Spa", "LocalBusiness"],
+    "name": "Yoni Massage HCM",
+    "image": "https://yonimassagehcm.com/images/cover.jpg",
+    "@id": "https://yonimassagehcm.com/cn.html",
+    "url": "https://yonimassagehcm.com/cn.html",
+    "telephone": "+84353361684",
+    "priceRange": "$$",
+    "description": "位于胡志明市第一郡的女性专属私人家居式按摩与 Spa，提供 1 对 1 放松护理，环境安静、舒适、私密。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "District 1",
+      "addressLocality": "Ho Chi Minh City",
+      "addressRegion": "HCM",
+      "addressCountry": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.78636,
+      "longitude": 106.69569
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "23:59"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61584497342367",
+      "https://www.instagram.com/yoni365sg/",
+      "https://www.tiktok.com/@365yonisaigon",
+      "https://www.youtube.com/@yonimassagesaigon",
+      "https://zalo.me/0353361684",
+      "viber://chat?number=+84353361684",
+      "https://t.me/+84353361684"
+    ],
+    "areaServed": "Ho Chi Minh City"
+  }
+  </script>
 </head>
+
 <body>
-  <header class="site-header">
+
+  <!-- HEADER -->
+  <header class="header" id="top">
     <div class="container header-inner">
+
       <div class="logo">
-        <div class="logo-mark">Y</div>
+        <span class="logo-mark">Y</span>
         <div class="logo-text">
-          <span class="logo-title">Yoni 365 Spa</span>
-          <span class="logo-subtitle">Yoni Healing &amp; Feminine Ritual</span>
+          <span class="logo-main">Yoni Massage HCM</span>
+          <span class="logo-sub">女性专属私人按摩 · 第一郡</span>
         </div>
       </div>
 
-      <nav class="main-nav">
-        <a href="#story">故事</a>
-        <a href="#menu">服务</a>
-        <a href="#contact">预约</a>
+      <nav class="nav">
+        <a href="#about">关于 Yoni</a>
+        <a href="#services">护理项目</a>
+        <a href="#pricing">价格</a>
+        <a href="#reviews">反馈</a>
+        <a href="#booking">预约</a>
       </nav>
 
-      <div class="lang-switcher">
-        <a href="index.html" class="lang" title="Tiếng Việt">🇻🇳</a>
-        <a href="en.html" class="lang" title="English">🇺🇸</a>
-        <a href="jp.html" class="lang" title="日本語">🇯🇵</a>
-        <a href="kr.html" class="lang" title="한국어">🇰🇷</a>
-        <a href="cn.html" class="lang active" title="中文">🇨🇳</a>
+      <!-- 5 flags -->
+      <div class="lang-switch">
+        <a href="index.html">🇻🇳</a>
+        <a href="en.html">🇺🇸</a>
+        <a href="jp.html">🇯🇵</a>
+        <a href="kr.html">🇰🇷</a>
+        <a href="cn.html" class="active">🇨🇳</a>
       </div>
+
+      <a href="#booking" class="btn btn-outline header-cta">Zalo 预约</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+
     </div>
+
+    <!-- Mobile Nav -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#about">关于 Yoni</a>
+      <a href="#services">护理项目</a>
+      <a href="#pricing">价格</a>
+      <a href="#reviews">反馈</a>
+      <a href="#booking">预约</a>
+
+      <div class="lang-switch lang-switch-mobile">
+        <a href="index.html">🇻🇳</a>
+        <a href="en.html">🇺🇸</a>
+        <a href="jp.html">🇯🇵</a>
+        <a href="kr.html">🇰🇷</a>
+        <a href="cn.html" class="active">🇨🇳</a>
+      </div>
+    </nav>
   </header>
 
-  <section class="hero" id="top">
-    <div class="hero-overlay"></div>
+  <!-- HERO -->
+  <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <p class="hero-location">家居 SPA · 182/2 Nguyen Van Thu, Da Kao, 第一郡</p>
-        <h1>Yoni 365 Spa – 女性私密疗愈 &amp; 女性能量仪式</h1>
-        <p class="hero-subtitle">
-          为女性而设的私密、温暖空间。  
-          在这里，你可以慢下来，重新连接身体、情绪与 Yoni。
+
+        <div class="hero-tag">女性专属</div>
+        <div class="hero-tag">胡志明市第一郡 · 私人家居式 Spa</div>
+
+        <h1>为女性准备的安静、温暖且私密的放松空间</h1>
+
+        <p class="hero-desc">
+          Yoni Massage HCM 是一间专为女性设计的小型家居式 Spa，  
+          采用 1 对 1 预约制，在安静的独立房间里，让身体与情绪慢慢放松下来。
         </p>
-        <ul class="hero-highlights">
-          <li>仅限女性</li>
-          <li>一对一 私密疗程</li>
-          <li>Yoni 疗愈 · Bodyflow</li>
-        </ul>
+
         <div class="hero-actions">
-          <a href="#menu" class="btn primary">查看服务</a>
-          <a href="https://zalo.me/0353361684" class="btn ghost" target="_blank" rel="noopener">
-            Zalo 预约
-          </a>
+          <a href="#booking" class="btn btn-primary">立即预约</a>
+          <a href="tel:+84353361684" class="btn btn-ghost">电话咨询：0353 361 684</a>
         </div>
-        <p class="hero-note">
-          发送信息后，我们会回复确认时间并发送具体路线与说明。
-        </p>
+
+        <ul class="hero-badges">
+          <li>仅限女性</li>
+          <li>1 对 1 私密空间</li>
+          <li>90–150 分钟护理</li>
+        </ul>
       </div>
 
-      <div class="hero-card">
-        <p class="hero-card-title">暖黄色灯光 · 淡雅香气 · 缓慢音乐</p>
-        <p class="hero-card-text">
-          每一个细节都为了让你的身体慢慢放松，重新回到柔软而有力量的女性节奏。
-        </p>
+      <div class="hero-media">
+        <div class="hero-card main">
+          <span class="hero-label">房间氛围</span>
+          <p>暖色灯光、淡雅香氛与轻柔音乐，营造安心、放松的私密环境。</p>
+        </div>
+
+        <div class="hero-card secondary">
+          <span class="hero-label">完全预约制</span>
+          <p>时间只为一位客人保留，不与他人同时进行，避免等待与打扰。</p>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <section class="section" id="story">
-    <div class="container two-cols">
-      <div class="col">
-        <h2>女性能量 · 被看见与被温柔对待</h2>
+  <!-- ABOUT -->
+  <section id="about" class="section section-dark">
+    <div class="container grid-2">
+
+      <div>
+        <h2>关于 Yoni Massage HCM</h2>
         <p>
-          Yoni 365 Spa 是为女性准备的一方小空间，  
-          在忙碌生活中，给自己一点时间，听见身体、Yoni 和情绪真正的声音。
+          许多女性希望在一个安静、安全、不被打扰的空间里，好好放松身体与情绪。  
+          Yoni Massage HCM 正是为这样的需求而存在的女性专属私人 Spa。
         </p>
         <p>
-          Yoni 是非常神圣又具有创造力的地方。  
-          当她被温柔地看见与照顾，你也会重新记起自己的价值与内在的女性力量。
+          这里不是嘈杂的商业性 Spa，而是更接近“朋友家的一间安静房间”，  
+          让你可以慢慢卸下防备，轻松舒展身心。
         </p>
-        <p>
-          每一次疗程都是一个小小的仪式：节奏缓慢、尊重你的界限，没有压力，只有陪伴与呼吸。
-        </p>
+
+        <ul class="check-list">
+          <li>仅接待女性，1 对 1 护理</li>
+          <li>家居式环境，氛围安静、不拥挤</li>
+          <li>尊重个人界限与舒适度，节奏不催促</li>
+        </ul>
       </div>
-      <div class="col">
-        <div class="story-card">
-          <h3>安全边界 · 私密空间</h3>
+
+      <div class="about-card">
+        <h3>空间与体验</h3>
+        <ul class="about-items">
+          <li><span class="dot"></span>暖色灯光的独立房间</li>
+          <li><span class="dot"></span>气味柔和的按摩精油</li>
+          <li><span class="dot"></span>每位客人单独更换的床品与毛巾</li>
+          <li><span class="dot"></span>护理前后提供温热饮品</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>护理项目</h2>
+        <p>每一个项目都希望帮助身体舒缓、头脑安静，让你真正地“松下来”。</p>
+      </div>
+
+      <div class="cards-3">
+
+        <article class="card">
+          <h3>基础全身放松</h3>
+          <p class="card-time">约 90 分钟</p>
+          <p class="card-desc">
+            以全身放松为主，缓解常见的紧绷与疲劳，让身体重新变轻松。
+          </p>
+          <ul class="card-list">
+            <li>使用温热精油的全身按摩</li>
+            <li>重点照顾颈部、肩部、背部与双腿</li>
+            <li>手法温柔、节奏舒缓</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>深度护理 & 情绪舒缓</h3>
+          <p class="card-time">约 120 分钟</p>
+          <p class="card-desc">
+            适合累积疲劳较多的情况，有更多时间照顾紧张部位与情绪状态。
+          </p>
+          <ul class="card-list">
+            <li>全身较深入的放松按摩</li>
+            <li>特别关注腰部、骨盆周围和双腿</li>
+            <li>配合呼吸节奏，让内心也逐渐平静</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>全方位充电护理</h3>
+          <p class="card-time">约 150 分钟</p>
+          <p class="card-desc">
+            在压力过大、身心俱疲的时候，用一段足够长的时间，好好照顾自己。
+          </p>
+          <ul class="card-list">
+            <li>长时间的全身舒缓护理</li>
+            <li>结合多种节奏与手法</li>
+            <li>中间预留小休息，让身体慢慢适应</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section section-dark">
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>价格</h2>
+        <p>项目价格为打包价，无额外隐藏费用。仅接待提前预约的女性客人。</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <h3>基础全身放松</h3>
+          <p class="price">1.100.000<span class="currency">đ</span></p>
+          <p class="note">约 90 分钟</p>
           <ul>
-            <li>每个时段只接待一位客人。</li>
-            <li>尊重你的身体反应与所有“不想要”的讯号。</li>
-            <li>未经你清楚同意，不会进行拍照或录影。</li>
-            <li>你的故事与资讯都会被保密。</li>
+            <li>全身放松护理</li>
+            <li>重点缓解颈肩背部疲劳</li>
+            <li>安静私密房间</li>
           </ul>
         </div>
+
+        <div class="pricing-card highlight">
+          <div class="tag-popular">热门</div>
+          <h3>深度护理</h3>
+          <p class="price">1.400.000<span class="currency">đ</span></p>
+          <p class="note">约 120 分钟</p>
+          <ul>
+            <li>适合压力大、紧绷明显的状态</li>
+            <li>更多时间照顾易累部位</li>
+            <li>帮助身心逐步“慢下来”</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <h3>全方位充电</h3>
+          <p class="price">1.700.000<span class="currency">đ</span></p>
+          <p class="note">约 150 分钟</p>
+          <ul>
+            <li>为身体与情绪全面充电</li>
+            <li>适合长期高压之后调养</li>
+            <li>犒劳自己的一次深度休息</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>客户反馈</h2>
+      </div>
+
+      <div class="review-grid">
+
+        <article class="review-card">
+          <p class="review-text">
+            “氛围很像在熟人家里，不会紧张，护理结束后感觉身体轻松很多。”
+          </p>
+          <p class="review-meta">30 多岁 · 女性</p>
+        </article>
+
+        <article class="review-card">
+          <p class="review-text">
+            “开始前会先沟通需求与界限，过程节奏也不急躁，让人很安心。”
+          </p>
+          <p class="review-meta">40 多岁 · 女性</p>
+        </article>
+
+        <article class="review-card">
+          <p class="review-text">
+            “那段时间压力很大、睡不好，做完护理后当天晚上睡得特别好。”
+          </p>
+          <p class="review-meta">30 多岁后期 · 女性</p>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <section class="section section-soft" id="menu">
-    <div class="container">
-      <div class="section-head">
-        <h2>Yoni 疗愈服务</h2>
-        <p>根据你现在的身体状态与节奏，选择适合的一段旅程</p>
+  <!-- BOOKING -->
+  <section id="booking" class="section section-accent">
+    <div class="container booking-inner">
+
+      <div>
+        <h2>预约方式</h2>
+        <p>
+          Yoni Massage HCM 为女性专属、完全预约制。  
+          您可以先通过 Zalo 或电话简单说明时间安排与身体状态，我们会一起确认合适的时段。
+        </p>
+
+        <ul class="check-list">
+          <li>仅接待女性客人</li>
+          <li>预约确认后，会发送详细地址</li>
+          <li>不接待未提前预约的临时上门</li>
+        </ul>
       </div>
 
-      <div class="cards">
-        <article class="card">
-          <div class="card-badge">90 分钟</div>
-          <h3>Soft Feminine Reset</h3>
-          <p class="card-price">1,100,000 VND</p>
-          <p class="card-text">
-            轻柔的全身 Bodyflow，帮助深度放松与“变软”的体验。
-          </p>
-          <ul class="card-list">
-            <li>舒缓从头到脚的紧绷与疲劳。</li>
-            <li>适合思绪很多、压力较大的时期。</li>
-            <li>适合第一次想轻松体验的你。</li>
-          </ul>
-          <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
-            预约 90 分钟疗程
-          </a>
-        </article>
+      <div class="booking-actions">
 
-        <article class="card">
-          <div class="card-badge">120 分钟</div>
-          <h3>Yoni Gentle Healing</h3>
-          <p class="card-price">1,400,000 VND</p>
-          <p class="card-text">
-            以腹部、髋部、骨盆与 Yoni 为中心，慢慢带回觉知与连结。
-          </p>
-          <ul class="card-list">
-            <li>跟随你身体的节奏，不勉强、不急躁。</li>
-            <li>帮助重新连结情绪与创造能量。</li>
-            <li>适合想要温柔而深入疗愈的女性。</li>
-          </ul>
-          <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">
-            预约 120 分钟疗程
-          </a>
-        </article>
+        <a href="https://zalo.me/0353361684" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+          通过 Zalo 预约
+        </a>
+        <a href="tel:+84353361684" class="btn btn-outline btn-block">
+          电话：0353 361 684
+        </a>
 
-        <article class="card card-featured">
-          <div class="card-badge">150 分钟</div>
-          <h3>Sacred Feminine Ritual</h3>
-          <p class="card-price">1,700,000 VND</p>
-          <p class="card-text">
-            结合温热草药、Bodyflow 与最后的整合时间，是一段更深层的女性仪式旅程。
-          </p>
-          <ul class="card-list">
-            <li>温热草药帮助循环与放松。</li>
-            <li>适合生日、阶段转折、自我庆祝的时刻。</li>
-            <li>给自己多一点时间，慢慢回到真实的自己。</li>
-          </ul>
-          <a href="https://zalo.me/0353361684" class="btn full primary" target="_blank" rel="noopener">
-            预约 150 分钟仪式
-          </a>
-        </article>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61584497342367" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/yoni365sg/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@365yonisaigon" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.youtube.com/@yonimassagesaigon" target="_blank" rel="noopener">YouTube</a>
+          <a href="viber://chat?number=+84353361684" target="_blank" rel="noopener">Viber</a>
+          <a href="https://t.me/+84353361684" target="_blank" rel="noopener">Telegram</a>
+        </div>
+
       </div>
+
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>联系 &amp; 预约</h2>
-        <p>采取预约制，请在前来之前先与我们联系。</p>
-      </div>
-
-      <div class="contact-grid">
-        <div>
-          <h3>信息</h3>
-          <ul class="contact-list">
-            <li><strong>电话 / Zalo:</strong> <a href="tel:+84353361684">+84 353 361 684</a></li>
-            <li><strong>邮箱:</strong> <a href="mailto:365yoni@gmail.com">365yoni@gmail.com</a></li>
-            <li><strong>地址:</strong> 182/2 Nguyen Van Thu, Da Kao, 第一郡, 胡志明市</li>
-          </ul>
-
-          <p class="contact-note">
-            在 Zalo 上可以这样发讯息：<br />
-            <em>“你好，Yoni 365 Spa，我想预约［服务名称］，时间是［日期/时间］。”</em>
-          </p>
-        </div>
-
-        <div>
-          <h3>快速通道</h3>
-          <div class="contact-actions">
-            <a href="https://zalo.me/0353361684" class="btn full" target="_blank" rel="noopener">Zalo</a>
-            <a href="viber://chat?number=%2B84353361684" class="btn full">Viber</a>
-            <a href="https://t.me/+84353361684" class="btn full" target="_blank" rel="noopener">Telegram</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=182+Nguyen+Van+Thu+Quan+1" class="btn full" target="_blank" rel="noopener">
-              Google 地图
-            </a>
-            <a href="tel:+84353361684" class="btn outline full">一键拨号</a>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="logo footer-logo">
+          <span class="logo-mark">Y</span>
+          <div class="logo-text">
+            <span class="logo-main">Yoni Massage HCM</span>
+            <span class="logo-sub">女性专属私人家居式 Spa</span>
           </div>
         </div>
+        <p class="footer-copy">这是一间位于胡志明市第一郡的小而安静、仅为女性准备的家居式 Spa。</p>
       </div>
 
+      <div class="footer-info">
+        <p><strong>区域：</strong> 越南胡志明市第一郡</p>
+        <p><strong>联系：</strong> Zalo / 电话：0353 361 684</p>
+      </div>
     </div>
-  </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 Yoni 365 Spa – Yoni Healing &amp; Feminine Ritual · 胡志明市女性私密家居 SPA</p>
-      <p class="footer-seo">
-        Yoni 疗愈 · 女性私密 SPA · 胡志明市 SPA · 女性能量仪式
-      </p>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="year"></span> Yoni Massage HCM</span>
+        <a href="#top">返回顶部 ↑</a>
+      </div>
     </div>
   </footer>
 
+  <!-- CHAT FLOAT -->
+  <a href="https://zalo.me/0353361684" class="chat-float" target="_blank" rel="noopener" aria-label="通过 Zalo 聊天">
+    <span class="chat-float-icon">💬</span>
+    <span class="chat-float-label">Zalo 聊天</span>
+  </a>
+
   <script>
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMobile = document.getElementById("navMobile");
+
+    menuToggle.addEventListener("click", () => {
+      navMobile.classList.toggle("open");
+      menuToggle.classList.toggle("open");
+    });
+
+    navMobile.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMobile.classList.remove("open");
+        menuToggle.classList.remove("open");
       });
     });
   </script>
+
 </body>
 </html>
