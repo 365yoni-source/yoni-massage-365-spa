@@ -215,14 +215,14 @@ a {
   border: 1px solid rgba(215,180,106,0.4);
   background: radial-gradient(circle at 0 0, rgba(215,180,106,0.16), rgba(6,6,10,0.9));
   color: var(--gold);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .hero h1 {
   font-family: "Playfair Display", serif;
   font-size: 34px;
   line-height: 1.25;
-  margin: 0 0 14px;
+  margin: 8px 0 14px;
 }
 
 .hero-desc {
@@ -606,6 +606,7 @@ a {
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 12px;
   font-size: 13px;
@@ -720,6 +721,62 @@ a {
 
 .menu-toggle.open span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
+}
+
+/* FLOAT CHAT BUTTON – UI/UX 2025 */
+
+.chat-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 0 0, #ffffff, #f3f5ff);
+  color: #004a7f;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  z-index: 999;
+  transition: transform .18s ease-out, box-shadow .18s ease-out, opacity .18s ease-out, background .18s ease-out;
+}
+
+.chat-float-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a86ff, #27a6ff);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.chat-float-label {
+  letter-spacing: 0.02em;
+}
+
+.chat-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  background: radial-gradient(circle at 0 0, #ffffff, #eaf3ff);
+}
+
+/* Nhẹ nhàng ẩn text trên màn nhỏ, chỉ giữ icon để đỡ che content */
+
+@media (max-width: 600px) {
+  .chat-float {
+    padding: 10px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .chat-float-label {
+    display: none;
+  }
 }
 
 /* RESPONSIVE */
