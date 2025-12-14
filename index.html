@@ -1,26 +1,51 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Yoni 365 Sài Gòn | Massage Quận 1 TP.HCM | Đặt hẹn</title>
-  <meta name="description" content="Yoni 365 Sài Gòn tại Quận 1 TP.HCM – massage thư giãn riêng tư. Đặt hẹn online, xem Google Maps, liên hệ Zalo, Telegram, Facebook.">
+  <meta name="description" content="Yoni 365 Sài Gòn – massage thư giãn riêng tư Quận 1. Đặt hẹn nhanh, liên hệ Zalo, Telegram, Facebook.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://yonimassagehcm.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Yoni 365 Sài Gòn | Massage Quận 1 | Đặt hẹn">
-  <meta property="og:description" content="Massage thư giãn – đặt hẹn nhanh – liên hệ Zalo, Telegram, Facebook.">
+  <meta property="og:title" content="Yoni 365 Sài Gòn | Massage Quận 1">
+  <meta property="og:description" content="Đặt hẹn nhanh – không gian riêng tư – Quận 1 TP.HCM.">
   <meta property="og:url" content="https://yonimassagehcm.com/">
   <meta property="og:image" content="https://yonimassagehcm.com/img/hero-spa.webp">
 
   <link rel="icon" href="/img/favicon.webp" type="image/webp">
-
   <link rel="stylesheet" href="style.css">
 
-  <!-- Schema -->
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','123456789012345');
+  fbq('track','PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <!-- Local SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,12 +66,9 @@
       "latitude": 10.786364774983346,
       "longitude": 106.69569093689543
     },
-    "hasMap": "https://share.google/D1RPTM2nIN5CW6YAX",
     "sameAs": [
       "https://share.google/D1RPTM2nIN5CW6YAX",
       "https://www.facebook.com/Yoni365saigonmassage/",
-      "https://www.tiktok.com/@365yonisaigon",
-      "https://youtube.com/@yonimassagesaigon",
       "https://t.me/yoni365sg",
       "https://zalo.me/0353361684"
     ],
@@ -55,12 +77,7 @@
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "11:00",
       "closes": "23:00"
-    }],
-    "potentialAction": {
-      "@type": "ReserveAction",
-      "target": "https://calendar.app.google/L5Q8njBA82k55fAd6",
-      "name": "Đặt hẹn online"
-    }
+    }]
   }
   </script>
 </head>
@@ -71,7 +88,6 @@
   <div class="container header-inner">
     <strong class="logo">Yoni 365 Sài Gòn</strong>
     <nav class="main-nav">
-      <a href="#gioi-thieu">Giới thiệu</a>
       <a href="#bang-gia">Bảng giá</a>
       <a href="#lien-he">Liên hệ</a>
     </nav>
@@ -83,8 +99,8 @@
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <h1>Yoni 365 Sài Gòn – Massage thư giãn Quận 1</h1>
-      <p>Không gian riêng tư – đặt hẹn trước – phục vụ lịch sự.</p>
+      <h1>Massage thư giãn riêng tư tại Quận 1</h1>
+      <p>Không gian kín đáo – chỉ nhận khách đặt hẹn trước.</p>
 
       <ul>
         <li>📍 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1</li>
@@ -93,27 +109,38 @@
       </ul>
 
       <div class="hero-actions">
-        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener" class="btn-primary">📅 Đặt hẹn</a>
-        <a href="https://zalo.me/0353361684" target="_blank" rel="noopener" class="btn-outline">💬 Zalo</a>
-        <a href="https://t.me/yoni365sg" target="_blank" rel="noopener" class="btn-outline">✈️ Telegram</a>
-        <a href="https://www.facebook.com/Yoni365saigonmassage/" target="_blank" rel="noopener" class="btn-outline">📘 Facebook</a>
-        <a href="viber://chat?number=+84353361684" class="btn-outline">💜 Viber</a>
-        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank" rel="noopener" class="btn-outline">📍 Maps</a>
+        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener"
+           class="btn-primary"
+           onclick="gtag('event','book_click'); fbq('track','Lead');">
+          📅 Đặt hẹn
+        </a>
+
+        <a href="https://zalo.me/0353361684" target="_blank" rel="noopener"
+           class="btn-outline"
+           onclick="gtag('event','zalo_click'); fbq('track','Contact');">
+          💬 Zalo
+        </a>
+
+        <a href="https://t.me/yoni365sg" target="_blank" rel="noopener"
+           class="btn-outline"
+           onclick="gtag('event','telegram_click'); fbq('track','Contact');">
+          ✈️ Telegram
+        </a>
+
+        <a href="https://www.facebook.com/Yoni365saigonmassage/" target="_blank" rel="noopener"
+           class="btn-outline">
+          📘 Facebook
+        </a>
+
+        <a href="viber://chat?number=+84353361684" class="btn-outline">
+          💜 Viber
+        </a>
       </div>
     </div>
 
-    <img src="/img/hero-spa.webp" alt="Không gian massage riêng tư tại Quận 1" loading="lazy">
-  </div>
-</section>
-
-<section id="gioi-thieu" class="section">
-  <div class="container">
-    <h2>Vì sao chọn Yoni 365 Sài Gòn?</h2>
-    <ul>
-      <li>Không gian yên tĩnh, kín đáo</li>
-      <li>Tư vấn rõ ràng, tôn trọng</li>
-      <li>Đặt hẹn nhanh – đúng giờ</li>
-    </ul>
+    <img src="/img/hero-spa.webp"
+         alt="Không gian massage thư giãn tại Quận 1"
+         loading="lazy">
   </div>
 </section>
 
@@ -129,22 +156,25 @@
 <section id="lien-he" class="section">
   <div class="container grid-2">
     <div>
-      <h2>Liên hệ</h2>
+      <h2>Liên hệ & Địa điểm</h2>
       <p>
         📞 <a href="tel:0353361684">035 336 1684</a><br>
-        💬 <a href="https://zalo.me/0353361684" target="_blank" rel="noopener">Zalo</a> |
-        <a href="https://t.me/yoni365sg" target="_blank" rel="noopener">Telegram</a> |
-        <a href="https://www.facebook.com/Yoni365saigonmassage/" target="_blank" rel="noopener">Facebook</a>
+        💬 <a href="https://zalo.me/0353361684" target="_blank">Zalo</a> |
+        <a href="https://t.me/yoni365sg" target="_blank">Telegram</a> |
+        <a href="https://www.facebook.com/Yoni365saigonmassage/" target="_blank">Facebook</a>
       </p>
       <p>
         📍 182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM<br>
-        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank" rel="noopener">Mở Google Maps</a>
+        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank">Mở Google Maps</a>
       </p>
     </div>
 
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2460195905316!2d106.69350277582235!3d10.786364774983346"
-      width="100%" height="420" style="border:0;border-radius:12px;" loading="lazy">
+      src="https://www.google.com/maps?q=10.786364774983346,106.69569093689543&z=17&output=embed"
+      width="100%" height="420"
+      style="border:0;border-radius:14px;"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 </section>
