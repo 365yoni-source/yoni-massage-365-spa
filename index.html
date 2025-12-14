@@ -23,7 +23,7 @@
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Local SEO Schema -->
+  <!-- Local SEO Schema (Spa + ContactPoint + Booking + Social/Map) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,6 +31,8 @@
     "name": "Yoni 365 Sài Gòn",
     "url": "https://yonimassagehcm.com/",
     "telephone": "+84353361684",
+    "image": "https://yonimassagehcm.com/img/hero-spa.webp",
+    "description": "Massage riêng tư, kín đáo cho nữ tại Quận 1 TP.HCM. Đặt hẹn online hoặc liên hệ qua Telegram/Viber.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
@@ -46,7 +48,24 @@
     "sameAs": [
       "https://share.google/D1RPTM2nIN5CW6YAX",
       "https://www.tiktok.com/@365yonisaigon",
-      "https://youtube.com/@yonimassagesaigon"
+      "https://youtube.com/@yonimassagesaigon",
+      "https://t.me/+84353361684"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+84353361684",
+        "contactType": "customer service",
+        "availableLanguage": ["vi"],
+        "areaServed": "VN"
+      }
+    ],
+    "potentialAction": [
+      {
+        "@type": "ReserveAction",
+        "target": "https://calendar.app.google/L5Q8njBA82k55fAd6",
+        "name": "Đặt hẹn online"
+      }
     ]
   }
   </script>
@@ -82,21 +101,21 @@
 
       <!-- CTA -->
       <div class="hero-actions">
-        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" class="btn-primary">
+        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener" class="btn-primary">
           📅 Đặt hẹn ngay
         </a>
 
         <a href="tel:0353361684" class="btn-outline">📞 Gọi</a>
 
-        <a href="viber://chat?number=+84353361684" class="btn-outline">
+        <a href="viber://chat?number=+84353361684" class="btn-outline" aria-label="Chat Viber 0353361684">
           💬 Viber
         </a>
 
-        <a href="https://t.me/+84353361684" target="_blank" class="btn-outline">
+        <a href="https://t.me/+84353361684" target="_blank" rel="noopener" class="btn-outline" aria-label="Chat Telegram 0353361684">
           ✈️ Telegram
         </a>
 
-        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank" class="btn-outline">
+        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank" rel="noopener" class="btn-outline">
           📍 Chỉ đường
         </a>
       </div>
@@ -124,7 +143,7 @@
     <p><strong>90 phút:</strong> 1.400.000đ</p>
     <p><strong>120 phút:</strong> 1.700.000đ</p>
 
-    <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" class="btn-primary">
+    <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener" class="btn-primary">
       📅 Đặt hẹn online
     </a>
   </div>
@@ -139,13 +158,20 @@
       <p>
         📞 <a href="tel:0353361684">035 336 1684</a><br>
         💬 <a href="viber://chat?number=+84353361684">Viber</a> |
-        <a href="https://t.me/+84353361684" target="_blank">Telegram</a>
+        <a href="https://t.me/+84353361684" target="_blank" rel="noopener">Telegram</a>
       </p>
 
       <p>
         📍 182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1, TP.HCM<br>
-        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank">
+        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank" rel="noopener">
           👉 Mở Google Maps / Chỉ đường
+        </a>
+      </p>
+
+      <p>
+        🔒 Đặt hẹn kín đáo:
+        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener">
+          Đặt hẹn online tại đây
         </a>
       </p>
     </div>
@@ -157,7 +183,8 @@
         width="100%" height="450"
         style="border:0;border-radius:12px;"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Bản đồ Google Maps Yoni 365 Sài Gòn">
       </iframe>
     </div>
   </div>
