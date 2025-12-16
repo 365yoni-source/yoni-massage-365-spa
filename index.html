@@ -18,19 +18,17 @@
 
   <link rel="icon" href="/img/favicon.webp" type="image/webp">
   <link rel="preload" href="/img/hero-spa.webp" as="image">
-  <link rel="preload" href="style.css" as="style">
-  <link rel="stylesheet" href="style.css">
 
-  <!-- GA4 (thay mã thật) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-649HRZRYXM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-649HRZRYXM');
   </script>
 
-  <!-- Meta Pixel (thay ID thật) -->
+  <!-- Meta Pixel -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -39,11 +37,15 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init','123456789012345');
+  fbq('init','841973458449198');
   fbq('track','PageView');
   </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=841973458449198&ev=PageView&noscript=1"/>
+  </noscript>
 
-  <!-- Local SEO: Spa -->
+  <!-- Local SEO Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -80,7 +82,7 @@
   }
   </script>
 
-  <!-- Đặt hẹn -->
+  <!-- ReserveAction -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -96,124 +98,137 @@
   }
   </script>
 
-  <!-- 3 Gói dịch vụ -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"Gói dịch vụ",
-    "itemListElement":[
-      {"@type":"Service","name":"Gói 60 phút","provider":{"@id":"https://yonimassagehcm.com/#spa"},"offers":{"@type":"Offer","priceCurrency":"VND","price":"1100000"}},
-      {"@type":"Service","name":"Gói 90 phút","provider":{"@id":"https://yonimassagehcm.com/#spa"},"offers":{"@type":"Offer","priceCurrency":"VND","price":"1400000"}},
-      {"@type":"Service","name":"Gói 120 phút","provider":{"@id":"https://yonimassagehcm.com/#spa"},"offers":{"@type":"Offer","priceCurrency":"VND","price":"1700000"}}
-    ]
-  }
-  </script>
+  <!-- CSS mobile-first (siêu nhẹ) -->
+  <style>
+    :root{--bg:#0b0c10;--card:#12141b;--text:#e9ecf1;--muted:#a8b0bd;--line:#202531;--brand:#fff;--r:16px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.55}
+    img{max-width:100%;border-radius:16px}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1080px;margin:auto;padding:16px}
+
+    header{position:sticky;top:0;background:#0b0c10d9;border-bottom:1px solid var(--line)}
+    .header-inner{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:900}
+
+    .hero{padding:20px 0}
+    .hero h1{font-size:26px;margin:0 0 10px}
+    .hero p{color:var(--muted)}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+
+    .btn-primary,.btn-outline{
+      padding:10px 14px;border-radius:14px;font-weight:700;border:1px solid var(--line)
+    }
+    .btn-primary{background:#fff;color:#000;border:none}
+    .btn-outline{background:transparent}
+
+    .section{padding:20px 0}
+    .cards{display:grid;grid-template-columns:1fr;gap:12px}
+    .card{background:var(--card);padding:14px;border-radius:16px;border:1px solid var(--line)}
+
+    footer{border-top:1px solid var(--line);padding:12px;color:var(--muted);font-size:13px}
+
+    @media(min-width:900px){
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+      .hero h1{font-size:34px}
+    }
+  </style>
 </head>
 
 <body>
 
-<header class="site-header">
+<header>
   <div class="container header-inner">
-    <strong class="logo">Yoni 365 Sài Gòn</strong>
-    <nav class="main-nav">
-      <a href="#goi-dich-vu">Gói dịch vụ</a>
-      <a href="#danh-gia">Đánh giá</a>
-      <a href="#lien-he">Liên hệ</a>
-      <a href="#map">Bản đồ</a>
-    </nav>
+    <div class="logo">Yoni 365 Sài Gòn</div>
   </div>
 </header>
 
-<main>
+<main class="container">
 
 <section class="hero">
-  <div class="container hero-inner">
-    <div>
-      <h1>Massage thư giãn riêng tư tại Quận 1 – Yoni 365 Sài Gòn</h1>
-      <p>Không gian kín đáo, phục vụ lịch sự. Đặt hẹn nhanh – bảo mật.</p>
+  <div>
+    <h1>Massage thư giãn riêng tư tại Quận 1</h1>
+    <p>Không gian kín đáo – phục vụ lịch sự – đặt hẹn trước.</p>
+    <p>📍 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1<br>⏰ 11:00 – 23:00<br>📞 <a href="tel:0353361684">035 336 1684</a></p>
 
-      <ul>
-        <li>📍 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1</li>
-        <li>⏰ 11:00 – 23:00</li>
-        <li>📞 <a href="tel:0353361684" onclick="gtag('event','call_click');fbq('track','Contact');">035 336 1684</a></li>
-      </ul>
-
-      <div class="hero-actions">
-        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" class="btn-primary"
-           onclick="gtag('event','book_click');fbq('track','Lead');">📅 Đặt hẹn</a>
-        <a href="https://zalo.me/0353361684" target="_blank" class="btn-outline"
-           onclick="gtag('event','zalo_click');fbq('track','Contact');">Zalo</a>
-        <a href="https://t.me/yoni365sg" target="_blank" class="btn-outline"
-           onclick="gtag('event','telegram_click');fbq('track','Contact');">Telegram</a>
-        <a href="viber://chat?number=+84353361684" class="btn-outline"
-           onclick="gtag('event','viber_click');">Viber</a>
-      </div>
+    <div class="hero-actions">
+      <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" class="btn-primary" target="_blank">📅 Đặt hẹn</a>
+      <a href="https://zalo.me/0353361684" class="btn-outline" target="_blank">Zalo</a>
+      <a href="https://t.me/yoni365sg" class="btn-outline" target="_blank">Telegram</a>
+      <a href="viber://chat?number=+84353361684" class="btn-outline">Viber</a>
     </div>
+  </div>
 
-    <img src="/img/hero-spa.webp" alt="Không gian massage riêng tư tại Quận 1" loading="eager">
+  <img src="/img/hero-spa.webp" alt="Không gian massage riêng tư tại Quận 1">
+</section>
+
+<section class="section">
+  <h2>3 gói dịch vụ</h2>
+  <div class="cards">
+    <div class="card"><strong>60 phút</strong><br>1.100.000đ</div>
+    <div class="card"><strong>90 phút</strong><br>1.400.000đ</div>
+    <div class="card"><strong>120 phút</strong><br>1.700.000đ</div>
   </div>
 </section>
 
-<section id="goi-dich-vu" class="section">
-  <div class="container">
-    <h2>3 gói dịch vụ</h2>
-    <div class="cards">
-      <article class="card"><h3>60 phút</h3><p>Thư giãn nhanh.</p><strong>1.100.000đ</strong></article>
-      <article class="card"><h3>90 phút</h3><p>Được chọn nhiều.</p><strong>1.400.000đ</strong></article>
-      <article class="card"><h3>120 phút</h3><p>Thư giãn sâu.</p><strong>1.700.000đ</strong></article>
-    </div>
-  </div>
-</section>
-
-<section id="danh-gia" class="section section-alt">
-  <div class="container">
-    <h2>Cảm nhận từ khách</h2>
-    <div class="cards">
-      <div class="card">“Không gian yên tĩnh, sạch sẽ.”</div>
-      <div class="card">“Tư vấn lịch sự, đặt hẹn nhanh.”</div>
-      <div class="card">“Phù hợp để giảm stress.”</div>
-    </div>
-  </div>
-</section>
-
-<section id="lien-he" class="section">
-  <div class="container grid-2">
-    <div>
-      <h2>Liên hệ & Địa điểm</h2>
-      <p>
-        📞 <a href="tel:0353361684">035 336 1684</a><br>
-        💬 <a href="https://zalo.me/0353361684" target="_blank">Zalo</a> |
-        <a href="https://t.me/yoni365sg" target="_blank">Telegram</a> |
-        <a href="https://www.facebook.com/Yoni365saigonmassage/" target="_blank">Facebook</a>
-      </p>
-      <p>
-        📍 182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM<br>
-        <a href="https://share.google/D1RPTM2nIN5CW6YAX" target="_blank">Mở Google Maps</a>
-      </p>
-    </div>
-
-    <div id="map">
-      <iframe
-        src="https://www.google.com/maps?q=10.786364774983346,106.69569093689543&z=17&output=embed"
-        width="100%" height="420"
-        style="border:0;border-radius:14px"
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
+<section class="section">
+  <h2>Bản đồ</h2>
+  <iframe
+    src="https://www.google.com/maps?q=10.786364774983346,106.69569093689543&z=17&output=embed"
+    width="100%" height="360" style="border:0;border-radius:16px" loading="lazy">
+  </iframe>
 </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    © <span id="year"></span> Yoni 365 Sài Gòn
-  </div>
+<footer class="container">
+  © <span id="year"></span> Yoni 365 Sài Gòn
 </footer>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- GA4 Events -->
+<script>
+(function(){
+  if(typeof gtag!=='function')return;
+
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a'); if(!a)return;
+    const h=a.href||'';
+    if(h.includes('calendar')) gtag('event','book_click');
+    if(h.includes('zalo')) gtag('event','zalo_click');
+    if(h.includes('t.me')) gtag('event','telegram_click');
+    if(h.startsWith('tel:')) gtag('event','call_click');
+  });
+
+  [25,50,75,100].forEach(p=>{
+    let fired=false;
+    window.addEventListener('scroll',()=>{
+      const sc=Math.round((scrollY+innerHeight)/document.body.scrollHeight*100);
+      if(sc>=p&&!fired){fired=true;gtag('event','scroll_'+p);}
+    });
+  });
+
+  [15,30,60,120].forEach(t=>{
+    setTimeout(()=>gtag('event','time_'+t+'s'),t*1000);
+  });
+})();
+</script>
+
+<!-- Pixel mapping -->
+<script>
+(function(){
+  if(typeof fbq!=='function')return;
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a'); if(!a)return;
+    const h=a.href||'';
+    if(h.includes('calendar')) fbq('track','Lead');
+    if(h.startsWith('tel:')||h.includes('zalo')||h.includes('t.me')) fbq('track','Contact');
+  });
+})();
 </script>
 
 </body>
