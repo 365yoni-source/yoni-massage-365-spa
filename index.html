@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Yoni 365 Sài Gòn | Massage Quận 1 TP.HCM | Đặt hẹn</title>
-  <meta name="description" content="Yoni 365 Sài Gòn – massage thư giãn riêng tư Quận 1. 3 gói dịch vụ, đánh giá khách, đặt hẹn nhanh qua Zalo, Telegram, Facebook.">
+  <title>Yoni 365 Sài Gòn | Massage thư giãn Quận 1 TP.HCM | Đặt hẹn</title>
+  <meta name="description" content="Yoni 365 Sài Gòn – massage thư giãn riêng tư tại Quận 1 TP.HCM. 3 gói dịch vụ, đặt hẹn nhanh qua Zalo, Telegram, Facebook, xem Google Maps.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://yonimassagehcm.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Yoni 365 Sài Gòn | Massage Quận 1">
-  <meta property="og:description" content="Không gian riêng tư – 3 gói dịch vụ – đặt hẹn nhanh.">
+  <meta property="og:title" content="Yoni 365 Sài Gòn | Massage Quận 1 TP.HCM">
+  <meta property="og:description" content="Riêng tư – lịch sự – đặt hẹn nhanh.">
   <meta property="og:url" content="https://yonimassagehcm.com/">
   <meta property="og:image" content="https://yonimassagehcm.com/img/hero-spa.webp">
 
   <link rel="icon" href="/img/favicon.webp" type="image/webp">
+  <link rel="preload" href="/img/hero-spa.webp" as="image">
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
 
-  <!-- GA4 -->
+  <!-- GA4 (thay mã thật) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -28,7 +30,7 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
 
-  <!-- Meta Pixel -->
+  <!-- Meta Pixel (thay ID thật) -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -40,44 +42,71 @@
   fbq('init','123456789012345');
   fbq('track','PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
-  </noscript>
 
-  <!-- Local SEO Schema -->
+  <!-- Local SEO: Spa -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Spa",
-    "name": "Yoni 365 Sài Gòn",
-    "url": "https://yonimassagehcm.com/",
-    "telephone": "+84353361684",
-    "image": "https://yonimassagehcm.com/img/hero-spa.webp",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
-      "addressLocality": "Thành phố Hồ Chí Minh",
-      "addressCountry": "VN"
+    "@context":"https://schema.org",
+    "@type":"Spa",
+    "@id":"https://yonimassagehcm.com/#spa",
+    "name":"Yoni 365 Sài Gòn",
+    "url":"https://yonimassagehcm.com/",
+    "telephone":"+84353361684",
+    "image":"https://yonimassagehcm.com/img/hero-spa.webp",
+    "priceRange":"₫₫₫",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
+      "addressLocality":"Thành phố Hồ Chí Minh",
+      "addressCountry":"VN"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 10.786364774983346,
-      "longitude": 106.69569093689543
+    "geo":{
+      "@type":"GeoCoordinates",
+      "latitude":10.786364774983346,
+      "longitude":106.69569093689543
     },
-    "sameAs": [
+    "openingHoursSpecification":[{
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens":"11:00",
+      "closes":"23:00"
+    }],
+    "sameAs":[
       "https://share.google/D1RPTM2nIN5CW6YAX",
       "https://www.facebook.com/Yoni365saigonmassage/",
       "https://t.me/yoni365sg",
       "https://zalo.me/0353361684"
-    ],
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "11:00",
-      "closes": "23:00"
-    }]
+    ]
+  }
+  </script>
+
+  <!-- Đặt hẹn -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ReserveAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"https://calendar.app.google/L5Q8njBA82k55fAd6",
+      "actionPlatform":[
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    }
+  }
+  </script>
+
+  <!-- 3 Gói dịch vụ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Gói dịch vụ",
+    "itemListElement":[
+      {"@type":"Service","name":"Gói 60 phút","provider":{"@id":"https://yonimassagehcm.com/#spa"},"offers":{"@type":"Offer","priceCurrency":"VND","price":"1100000"}},
+      {"@type":"Service","name":"Gói 90 phút","provider":{"@id":"https://yonimassagehcm.com/#spa"},"offers":{"@type":"Offer","priceCurrency":"VND","price":"1400000"}},
+      {"@type":"Service","name":"Gói 120 phút","provider":{"@id":"https://yonimassagehcm.com/#spa"},"offers":{"@type":"Offer","priceCurrency":"VND","price":"1700000"}}
+    ]
   }
   </script>
 </head>
@@ -91,86 +120,63 @@
       <a href="#goi-dich-vu">Gói dịch vụ</a>
       <a href="#danh-gia">Đánh giá</a>
       <a href="#lien-he">Liên hệ</a>
+      <a href="#map">Bản đồ</a>
     </nav>
   </div>
 </header>
 
 <main>
 
-<!-- HERO -->
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <h1>Massage thư giãn riêng tư tại Quận 1</h1>
-      <p>Không gian kín đáo – đặt hẹn trước – phục vụ lịch sự.</p>
+      <h1>Massage thư giãn riêng tư tại Quận 1 – Yoni 365 Sài Gòn</h1>
+      <p>Không gian kín đáo, phục vụ lịch sự. Đặt hẹn nhanh – bảo mật.</p>
 
       <ul>
         <li>📍 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1</li>
         <li>⏰ 11:00 – 23:00</li>
-        <li>📞 <a href="tel:0353361684">035 336 1684</a></li>
+        <li>📞 <a href="tel:0353361684" onclick="gtag('event','call_click');fbq('track','Contact');">035 336 1684</a></li>
       </ul>
 
       <div class="hero-actions">
-        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener"
-           class="btn-primary"
-           onclick="gtag('event','book_click'); fbq('track','Lead');">📅 Đặt hẹn</a>
-
-        <a href="https://zalo.me/0353361684" target="_blank" rel="noopener"
-           class="btn-outline"
-           onclick="gtag('event','zalo_click'); fbq('track','Contact');">💬 Zalo</a>
-
-        <a href="https://t.me/yoni365sg" target="_blank" rel="noopener"
-           class="btn-outline"
-           onclick="gtag('event','telegram_click'); fbq('track','Contact');">✈️ Telegram</a>
-
-        <a href="https://www.facebook.com/Yoni365saigonmassage/" target="_blank" rel="noopener"
-           class="btn-outline">📘 Facebook</a>
-
-        <a href="viber://chat?number=+84353361684" class="btn-outline">💜 Viber</a>
+        <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" class="btn-primary"
+           onclick="gtag('event','book_click');fbq('track','Lead');">📅 Đặt hẹn</a>
+        <a href="https://zalo.me/0353361684" target="_blank" class="btn-outline"
+           onclick="gtag('event','zalo_click');fbq('track','Contact');">Zalo</a>
+        <a href="https://t.me/yoni365sg" target="_blank" class="btn-outline"
+           onclick="gtag('event','telegram_click');fbq('track','Contact');">Telegram</a>
+        <a href="viber://chat?number=+84353361684" class="btn-outline"
+           onclick="gtag('event','viber_click');">Viber</a>
       </div>
     </div>
 
-    <img src="/img/hero-spa.webp" alt="Không gian massage riêng tư tại Quận 1" loading="lazy">
+    <img src="/img/hero-spa.webp" alt="Không gian massage riêng tư tại Quận 1" loading="eager">
   </div>
 </section>
 
-<!-- 3 GÓI DỊCH VỤ -->
 <section id="goi-dich-vu" class="section">
   <div class="container">
     <h2>3 gói dịch vụ</h2>
     <div class="cards">
-      <div class="card">
-        <h3>Gói 60 phút</h3>
-        <p>Thư giãn nhanh – phù hợp lịch bận.</p>
-        <p><strong>1.100.000đ</strong></p>
-      </div>
-      <div class="card">
-        <h3>Gói 90 phút</h3>
-        <p>Cân bằng – được chọn nhiều nhất.</p>
-        <p><strong>1.400.000đ</strong></p>
-      </div>
-      <div class="card">
-        <h3>Gói 120 phút</h3>
-        <p>Trọn vẹn – thư giãn sâu hơn.</p>
-        <p><strong>1.700.000đ</strong></p>
-      </div>
+      <article class="card"><h3>60 phút</h3><p>Thư giãn nhanh.</p><strong>1.100.000đ</strong></article>
+      <article class="card"><h3>90 phút</h3><p>Được chọn nhiều.</p><strong>1.400.000đ</strong></article>
+      <article class="card"><h3>120 phút</h3><p>Thư giãn sâu.</p><strong>1.700.000đ</strong></article>
     </div>
   </div>
 </section>
 
-<!-- ĐÁNH GIÁ -->
 <section id="danh-gia" class="section section-alt">
   <div class="container">
     <h2>Cảm nhận từ khách</h2>
     <div class="cards">
-      <div class="card">“Không gian yên tĩnh, sạch sẽ. Rất dễ chịu.”</div>
+      <div class="card">“Không gian yên tĩnh, sạch sẽ.”</div>
       <div class="card">“Tư vấn lịch sự, đặt hẹn nhanh.”</div>
-      <div class="card">“Phù hợp để giảm stress sau ngày dài.”</div>
+      <div class="card">“Phù hợp để giảm stress.”</div>
     </div>
   </div>
 </section>
 
-<!-- LIÊN HỆ + MAP -->
 <section id="lien-he" class="section">
   <div class="container grid-2">
     <div>
@@ -187,13 +193,14 @@
       </p>
     </div>
 
-    <iframe
-      src="https://www.google.com/maps?q=10.786364774983346,106.69569093689543&z=17&output=embed"
-      width="100%" height="420"
-      style="border:0;border-radius:14px;"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps?q=10.786364774983346,106.69569093689543&z=17&output=embed"
+        width="100%" height="420"
+        style="border:0;border-radius:14px"
+        loading="lazy">
+      </iframe>
+    </div>
   </div>
 </section>
 
