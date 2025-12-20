@@ -11,10 +11,17 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
   <meta property="og:title" content="Yoni Massage HCM – Massage thư giãn riêng tư Quận 1">
   <meta property="og:description" content="Không gian thư giãn riêng tư tại Quận 1 TP.HCM. Đặt hẹn nhanh, xem Google Maps.">
   <meta property="og:url" content="https://yonimassagehcm.com/">
   <meta property="og:image" content="https://yonimassagehcm.com/img/hero-spa.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0b0c10">
 
   <link rel="icon" href="/img/favicon.webp" type="image/webp">
   <link rel="preload" href="/img/hero-spa.webp" as="image">
@@ -39,8 +46,12 @@
     fbq('init','841973458449198');
     fbq('track','PageView');
   </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=841973458449198&ev=PageView&noscript=1"/>
+  </noscript>
 
-  <!-- SCHEMA SPA – CLEAN (NO parent_node ERROR) -->
+  <!-- SCHEMA SPA – CLEAN (avoid Review/parent_node issues by NOT using AggregateRating unless verified) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -58,6 +69,8 @@
       "@type":"PostalAddress",
       "streetAddress":"182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
       "addressLocality":"Thành phố Hồ Chí Minh",
+      "addressRegion":"Hồ Chí Minh",
+      "postalCode":"700000",
       "addressCountry":"VN"
     },
 
@@ -79,35 +92,40 @@
       "closes":"23:00"
     }],
 
-    "aggregateRating":{
-      "@type":"AggregateRating",
-      "ratingValue":"5",
-      "reviewCount":"2"
-    },
+    "contactPoint":[{
+      "@type":"ContactPoint",
+      "telephone":"+84353361684",
+      "contactType":"customer service",
+      "availableLanguage":["vi","en"]
+    }],
 
     "sameAs":[
       "https://maps.app.goo.gl/eXE7Gs6McFtKThZg8",
       "https://www.facebook.com/Yoni365saigonmassage/",
       "https://t.me/yoni365sg",
-      "https://zalo.me/0353361684"
+      "https://zalo.me/0353361684",
+      "https://www.instagram.com/yoni365sg/"
     ]
   }
   </script>
 
   <style>
-    body{margin:0;font-family:system-ui;background:#0b0c10;color:#e9ecf1;line-height:1.6}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e9ecf1;line-height:1.6}
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;border-radius:16px}
+    img{max-width:100%;border-radius:16px;height:auto}
     .wrap{max-width:1080px;margin:auto;padding:16px}
-    header{position:sticky;top:0;background:#0b0c10e6;border-bottom:1px solid #202531}
+    header{position:sticky;top:0;background:#0b0c10e6;border-bottom:1px solid #202531;backdrop-filter:blur(10px)}
     nav a{margin-left:12px;color:#a8b0bd;font-size:14px}
     nav a:hover{color:#fff}
-    h1{font-size:34px;line-height:1.2}
+    h1{font-size:34px;line-height:1.2;margin:0 0 12px}
     h2{margin-top:28px}
     .card{background:#12141b;border:1px solid #202531;padding:16px;border-radius:16px}
     .grid{display:grid;gap:12px}
-    @media(min-width:900px){.grid3{grid-template-columns:repeat(3,1fr)}}
+    .btn{display:block}
+    @media(min-width:900px){.grid3{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1100px){.grid3{grid-template-columns:repeat(2,1fr)}}
     footer{border-top:1px solid #202531;margin-top:32px;padding:20px 0;color:#a8b0bd;font-size:14px}
+    .muted{color:#a8b0bd}
   </style>
 </head>
 
@@ -116,7 +134,7 @@
 <header>
   <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
     <strong>Yoni Massage HCM</strong>
-    <nav>
+    <nav aria-label="Điều hướng">
       <a href="#goi">Gói dịch vụ</a>
       <a href="#dat">Đặt hẹn</a>
       <a href="/365-yoni-sai-gon/">365 Yoni</a>
@@ -126,24 +144,37 @@
 
 <main class="wrap">
 
-<section id="dat" class="grid grid3">
+<section id="dat" class="grid grid3" style="align-items:center">
   <div>
     <h1>Massage thư giãn riêng tư tại Quận 1 TP.HCM</h1>
-    <p>Không gian kín đáo – đặt lịch rõ ràng – ưu tiên trải nghiệm thư giãn.</p>
-    <p>📍 182/2 Nguyễn Văn Thủ, Quận 1<br>⏰ 11:00 – 23:00<br>📞 <a href="tel:0353361684">035 336 1684</a></p>
-    <div class="grid">
-      <a class="card" href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank">📅 Đặt hẹn Calendar</a>
-      <a class="card" href="https://zalo.me/0353361684" target="_blank">💬 Zalo</a>
-      <a class="card" href="https://t.me/yoni365sg" target="_blank">📩 Telegram</a>
-      <a class="card" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8" target="_blank">📍 Google Maps</a>
+    <p class="muted">Không gian kín đáo – đặt lịch rõ ràng – ưu tiên trải nghiệm thư giãn.</p>
+
+    <p>
+      📍 182/2 Nguyễn Văn Thủ, Quận 1<br>
+      ⏰ 11:00 – 23:00<br>
+      📞 <a href="tel:0353361684" aria-label="Gọi số 035 336 1684">035 336 1684</a>
+    </p>
+
+    <div class="grid" aria-label="Liên hệ và đặt hẹn">
+      <a class="card btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener" aria-label="Đặt hẹn qua Google Calendar">📅 Đặt hẹn Calendar</a>
+      <a class="card btn" href="https://zalo.me/0353361684" target="_blank" rel="noopener" aria-label="Nhắn tin Zalo">💬 Zalo</a>
+      <a class="card btn" href="https://t.me/yoni365sg" target="_blank" rel="noopener" aria-label="Nhắn tin Telegram">📩 Telegram</a>
+      <a class="card btn" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8" target="_blank" rel="noopener" aria-label="Mở Google Maps chỉ đường">📍 Google Maps</a>
     </div>
   </div>
-  <img src="/img/hero-spa.webp" alt="Yoni Massage HCM Quận 1">
+
+  <img
+    src="/img/hero-spa.webp"
+    alt="Yoni Massage HCM Quận 1"
+    width="1080"
+    height="1350"
+    loading="eager"
+    decoding="async">
 </section>
 
 <section id="goi">
   <h2>3 gói dịch vụ</h2>
-  <div class="grid grid3">
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
     <div class="card"><strong>Balance 60</strong><br>60 phút · 1.100.000đ</div>
     <div class="card"><strong>Harmony 90</strong><br>90 phút · 1.400.000đ</div>
     <div class="card"><strong>Awaken 120</strong><br>120 phút · 1.700.000đ</div>
@@ -164,3 +195,9 @@
 
 </body>
 </html>
+
+
+
+
+
+
