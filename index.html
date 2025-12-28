@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="vi">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Massage Yoni Quận 1 – Dịch vụ massage thư giãn cho nữ tại TP.HCM | Yoni Massage HCM</title>
-  <meta name="description" content="Massage Yoni Quận 1 TP.HCM – dịch vụ massage thư giãn cho nữ tại Sài Gòn. Không gian riêng tư, đặt hẹn rõ ràng qua Zalo, Telegram, Google Calendar. Xem Google Maps chỉ đường." />
+  <meta name="description" content="Massage Yoni Quận 1 TP.HCM – dịch vụ massage thư giãn cho nữ tại Sài Gòn. Không gian riêng tư, đặt hẹn rõ ràng qua Zalo, Viber, Telegram, Google Calendar. Xem Google Maps chỉ đường." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://yonimassagehcm.com/" />
 
@@ -28,6 +27,8 @@
   <meta property="og:description" content="Không gian kín đáo – ưu tiên thư giãn – đặt hẹn nhanh. Xem Google Maps chỉ đường." />
   <meta property="og:url" content="https://yonimassagehcm.com/" />
   <meta property="og:image" content="https://yonimassagehcm.com/img/hero-spa.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -79,6 +80,7 @@
         "image":"https://yonimassagehcm.com/img/hero-spa.webp",
         "priceRange":"₫₫₫",
         "hasMap":"https://maps.app.goo.gl/eXE7Gs6McFtKThZg8",
+        "areaServed":{"@type":"AdministrativeArea","name":"Quận 1, TP.HCM"},
         "address":{
           "@type":"PostalAddress",
           "streetAddress":"182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
@@ -102,13 +104,20 @@
           "@type":"ContactPoint",
           "telephone":"+84353361684",
           "contactType":"customer service",
-          "availableLanguage":["vi","en"]
+          "availableLanguage":["vi","en"],
+          "sameAs":[
+            "https://zalo.me/0353361684",
+            "https://viber.me/0353361684",
+            "https://t.me/yoni365sg",
+            "https://calendar.app.google/L5Q8njBA82k55fAd6"
+          ]
         }],
         "sameAs":[
           "https://maps.app.goo.gl/eXE7Gs6McFtKThZg8",
           "https://www.facebook.com/Yoni365saigonmassage/",
           "https://t.me/yoni365sg",
           "https://zalo.me/0353361684",
+          "https://viber.me/0353361684",
           "https://www.instagram.com/yoni365sg/"
         ]
       },
@@ -121,7 +130,7 @@
             "name":"Massage Yoni Quận 1 ở đâu riêng tư và dễ đặt lịch?",
             "acceptedAnswer":{
               "@type":"Answer",
-              "text":"Bạn có thể đặt lịch trước tại Yoni Massage HCM (Quận 1 TP.HCM) qua Zalo, Telegram hoặc Google Calendar để giữ khung giờ phù hợp. Không gian riêng tư, quy trình rõ ràng, ưu tiên trải nghiệm thư giãn."
+              "text":"Bạn có thể đặt lịch trước tại Yoni Massage HCM (Quận 1 TP.HCM) qua Zalo, Viber, Telegram hoặc Google Calendar để giữ khung giờ phù hợp. Không gian riêng tư, quy trình rõ ràng, ưu tiên trải nghiệm thư giãn."
             }
           },
           {
@@ -129,7 +138,7 @@
             "name":"Tôi nên đặt lịch trước bao lâu?",
             "acceptedAnswer":{
               "@type":"Answer",
-              "text":"Nên đặt trước 30–60 phút (hoặc sớm hơn vào cuối tuần) để chủ động khung giờ. Bạn có thể đặt hẹn nhanh qua Calendar hoặc nhắn Zalo/Telegram."
+              "text":"Nên đặt trước 30–60 phút (hoặc sớm hơn vào cuối tuần) để chủ động khung giờ. Bạn có thể đặt hẹn nhanh qua Calendar hoặc nhắn Zalo/Viber/Telegram."
             }
           },
           {
@@ -213,10 +222,20 @@
       </p>
 
       <div class="grid" aria-label="Liên hệ và đặt hẹn">
-        <a class="card btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener">📅 Đặt hẹn Calendar</a>
-        <a class="card btn" href="https://zalo.me/0353361684" target="_blank" rel="noopener">💬 Zalo</a>
-        <a class="card btn" href="https://t.me/yoni365sg" target="_blank" rel="noopener">📩 Telegram</a>
-        <a class="card btn" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8" target="_blank" rel="noopener">📍 Google Maps</a>
+        <a class="card btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener"
+           onclick="try{fbq('trackCustom','ClickCalendar');gtag('event','click_calendar',{event_category:'contact'});}catch(e){}">📅 Đặt hẹn Calendar</a>
+
+        <a class="card btn" href="https://zalo.me/0353361684" target="_blank" rel="noopener"
+           onclick="try{fbq('trackCustom','ClickZalo');gtag('event','click_zalo',{event_category:'contact'});}catch(e){}">💬 Zalo</a>
+
+        <a class="card btn" href="https://viber.me/0353361684" target="_blank" rel="noopener"
+           onclick="try{fbq('trackCustom','ClickViber');gtag('event','click_viber',{event_category:'contact'});}catch(e){}">📞 Viber</a>
+
+        <a class="card btn" href="https://t.me/yoni365sg" target="_blank" rel="noopener"
+           onclick="try{fbq('trackCustom','ClickTelegram');gtag('event','click_telegram',{event_category:'contact'});}catch(e){}">📩 Telegram</a>
+
+        <a class="card btn" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8" target="_blank" rel="noopener"
+           onclick="try{fbq('trackCustom','ClickMaps');gtag('event','click_maps',{event_category:'contact'});}catch(e){}">📍 Google Maps</a>
       </div>
 
       <!-- Internal link 365 (contextual) -->
@@ -265,12 +284,12 @@
     <div class="grid">
       <details>
         <summary>Massage Yoni Quận 1 ở đâu riêng tư và dễ đặt lịch?</summary>
-        <p class="muted">Bạn có thể đặt lịch trước tại Yoni Massage HCM (Quận 1 TP.HCM) qua Zalo, Telegram hoặc Google Calendar để giữ khung giờ phù hợp. Không gian riêng tư, quy trình rõ ràng, ưu tiên trải nghiệm thư giãn.</p>
+        <p class="muted">Bạn có thể đặt lịch trước tại Yoni Massage HCM (Quận 1 TP.HCM) qua Zalo, Viber, Telegram hoặc Google Calendar để giữ khung giờ phù hợp. Không gian riêng tư, quy trình rõ ràng, ưu tiên trải nghiệm thư giãn.</p>
       </details>
 
       <details>
         <summary>Tôi nên đặt lịch trước bao lâu?</summary>
-        <p class="muted">Nên đặt trước 30–60 phút (hoặc sớm hơn vào cuối tuần) để chủ động khung giờ. Bạn có thể đặt hẹn nhanh qua Calendar hoặc nhắn Zalo/Telegram.</p>
+        <p class="muted">Nên đặt trước 30–60 phút (hoặc sớm hơn vào cuối tuần) để chủ động khung giờ. Bạn có thể đặt hẹn nhanh qua Calendar hoặc nhắn Zalo/Viber/Telegram.</p>
       </details>
 
       <details>
@@ -293,7 +312,11 @@
 
 <footer>
   <div class="wrap">
-    © <span id="y"></span> Yoni Massage HCM · Quận 1 TP.HCM
+    © <span id="y"></span> Yoni Massage HCM · Quận 1 TP.HCM ·
+    <a href="https://zalo.me/0353361684" target="_blank" rel="noopener">Zalo</a> ·
+    <a href="https://viber.me/0353361684" target="_blank" rel="noopener">Viber</a> ·
+    <a href="https://t.me/yoni365sg" target="_blank" rel="noopener">Telegram</a> ·
+    <a href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank" rel="noopener">Calendar</a>
   </div>
 </footer>
 
