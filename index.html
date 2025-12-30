@@ -61,7 +61,7 @@
       src="https://www.facebook.com/tr?id=841973458449198&ev=PageView&noscript=1"/>
   </noscript>
 
-  <!-- Schema: Spa + FAQ (clean) -->
+  <!-- Schema: Spa + FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -125,6 +125,22 @@
         ]
       }
     ]
+  }
+  </script>
+
+  <!-- Review / AggregateRating Schema (Local + Trust) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AggregateRating",
+    "@id":"https://yonimassagehcm.com/#rating",
+    "itemReviewed":{
+      "@type":"Spa",
+      "name":"Yoni Massage HCM",
+      "url":"https://yonimassagehcm.com/"
+    },
+    "ratingValue":"4.9",
+    "reviewCount":"27"
   }
   </script>
 
