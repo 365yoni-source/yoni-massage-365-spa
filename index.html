@@ -1,5 +1,6 @@
-<!doctype html>
-<html lang="vi">
+<!-- FIXED VERSION - HEAD PART ONLY -->
+<!-- Chỉ thay phần <head> của anh bằng bản này. Body giữ nguyên -->
+
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -7,8 +8,10 @@
   <title>Spa & massage thư giãn Quận 1 – Dịch vụ riêng tư cho nữ TP.HCM | Yoni Massage HCM</title>
   <meta name="description" content="Spa & massage thư giãn riêng tư tại Quận 1 TP.HCM. Đặt hẹn nhanh qua Zalo, Viber, Telegram, Google Calendar. Xem Google Maps chỉ đường."/>
   <meta name="robots" content="index,follow"/>
+
   <link rel="canonical" href="https://yonimassagehcm.com/"/>
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+  <link rel="alternate" hreflang="vi" href="https://yonimassagehcm.com/"/>
+  <link rel="sitemap" type="application/xml" href="https://yonimassagehcm.com/sitemap.xml"/>
 
   <!-- Fix /index.html -->
   <script>
@@ -56,18 +59,14 @@
     (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init','841973458449198'); fbq('track','PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" alt=""
-      src="https://www.facebook.com/tr?id=841973458449198&ev=PageView&noscript=1"/>
-  </noscript>
 
-  <!-- Schema: Spa + FAQ -->
+  <!-- SCHEMA FIXED -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
       {
-        "@type":"Spa",
+        "@type":["Spa","LocalBusiness"],
         "@id":"https://yonimassagehcm.com/#spa",
         "name":"Yoni Massage HCM",
         "url":"https://yonimassagehcm.com/",
@@ -75,32 +74,34 @@
         "image":"https://yonimassagehcm.com/img/hero-spa.webp",
         "priceRange":"₫₫₫",
         "areaServed":"Quận 1, TP.HCM",
-        "geo":{
-          "@type":"GeoCoordinates",
-          "latitude":10.7877,
-          "longitude":106.6944
-        },
         "address":{
           "@type":"PostalAddress",
           "streetAddress":"182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
           "addressLocality":"TP.HCM",
           "addressCountry":"VN"
         },
-        "openingHoursSpecification":[
-          {
-            "@type":"OpeningHoursSpecification",
-            "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-            "opens":"11:00",
-            "closes":"23:00"
-          }
-        ],
+        "geo":{
+          "@type":"GeoCoordinates",
+          "latitude":10.7877,
+          "longitude":106.6944
+        },
+        "openingHoursSpecification":[{
+          "@type":"OpeningHoursSpecification",
+          "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens":"11:00",
+          "closes":"23:00"
+        }],
         "sameAs":[
           "https://maps.app.goo.gl/eXE7Gs6McFtKThZg8",
           "https://zalo.me/0353361684",
           "https://viber.me/0353361684",
-          "https://t.me/yoni365sg",
-          "https://calendar.app.google/L5Q8njBA82k55fAd6"
-        ]
+          "https://t.me/yoni365sg"
+        ],
+        "aggregateRating":{
+          "@type":"AggregateRating",
+          "ratingValue":"4.9",
+          "reviewCount":"27"
+        }
       },
       {
         "@type":"FAQPage",
@@ -128,184 +129,4 @@
   }
   </script>
 
-  <!-- Review / AggregateRating Schema (Local + Trust) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"AggregateRating",
-    "@id":"https://yonimassagehcm.com/#rating",
-    "itemReviewed":{
-      "@type":"Spa",
-      "name":"Yoni Massage HCM",
-      "url":"https://yonimassagehcm.com/"
-    },
-    "ratingValue":"4.9",
-    "reviewCount":"27"
-  }
-  </script>
-
-  <style>
-    :root{color-scheme:dark}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e9ecf1;line-height:1.6}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;border-radius:16px}
-    .wrap{max-width:1080px;margin:auto;padding:16px}
-    header{position:sticky;top:0;background:#0b0c10e6;border-bottom:1px solid #202531;backdrop-filter:blur(10px);z-index:10}
-    nav a{margin-left:12px;color:#a8b0bd;font-size:14px}
-    nav a:hover{color:#fff}
-    h1{font-size:34px;margin:0 0 10px;line-height:1.2}
-    h2{margin-top:28px}
-    .card{background:#12141b;border:1px solid #202531;padding:16px;border-radius:16px}
-    .grid{display:grid;gap:12px}
-    .grid2{display:grid;gap:12px}
-    .btn{display:block;text-align:center}
-    .muted{color:#a8b0bd}
-    .pill{display:inline-block;padding:6px 10px;border:1px solid #202531;border-radius:999px;background:#12141b;color:#a8b0bd;font-size:12px}
-    .trust{margin-top:10px;font-size:14px}
-    .trust span{display:inline-block;margin-right:10px}
-    @media(min-width:900px){.grid2{grid-template-columns:repeat(2,1fr)}}
-    /* Sticky CTA */
-    .sticky-cta{position:fixed;bottom:12px;left:12px;right:12px;display:flex;gap:10px;z-index:9999}
-    .sticky-cta a{flex:1;padding:14px;border-radius:14px;background:#12141b;border:1px solid #202531;font-weight:600}
-    @media(min-width:900px){.sticky-cta{display:none}}
-    /* Footer */
-    footer{border-top:1px solid #202531;margin-top:18px}
-    .kpi{display:grid;gap:12px}
-    @media(min-width:900px){.kpi{grid-template-columns:repeat(3,1fr)}}
-  </style>
 </head>
-
-<body>
-<header>
-  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-    <strong>Yoni Massage HCM</strong>
-    <nav aria-label="Điều hướng">
-      <a href="#dat">Đặt hẹn</a>
-      <a href="#info">Thông tin</a>
-      <a href="#faq">FAQ</a>
-      <a href="/365-yoni-sai-gon/">365 Yoni</a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-  <!-- HERO -->
-  <section id="dat" class="grid2" style="align-items:center">
-    <div>
-      <span class="pill">Quận 1 · TP.HCM</span>
-      <h1>Spa & massage thư giãn Quận 1 – Riêng tư cho nữ</h1>
-      <p class="muted">Không gian kín đáo – đặt lịch rõ ràng – chủ động thời gian.</p>
-
-      <!-- TRUST LINE -->
-      <p class="muted trust">
-        <span>✔ Riêng tư</span>
-        <span>✔ Đặt lịch trước</span>
-        <span>✔ Không ép buộc</span>
-      </p>
-
-      <!-- CTA ABOVE THE FOLD -->
-      <div class="grid" style="margin-top:12px">
-        <a class="card btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6"
-           onclick="try{fbq('trackCustom','HeroCalendar');gtag('event','hero_calendar');}catch(e){}">
-           📅 Đặt lịch trước (giữ khung giờ)
-        </a>
-        <a class="card btn" href="https://zalo.me/0353361684"
-           onclick="try{fbq('trackCustom','HeroZalo');gtag('event','hero_zalo');}catch(e){}">
-           💬 Nhắn Zalo (phản hồi nhanh)
-        </a>
-      </div>
-    </div>
-
-    <img src="/img/hero-spa.webp" alt="Spa thư giãn Quận 1 TP.HCM" loading="eager" decoding="async"/>
-  </section>
-
-  <!-- KEYWORD H2 (SEO) -->
-  <section id="info" class="card" style="margin-top:16px">
-    <h2>Spa & massage thư giãn riêng tư cho nữ tại Quận 1 TP.HCM</h2>
-    <p class="muted">
-      Phù hợp với khách cần thư giãn, không gian kín đáo, quy trình rõ ràng và chủ động khung giờ.
-    </p>
-
-    <div class="kpi" style="margin-top:12px">
-      <div class="card">
-        <strong>Giờ hoạt động</strong>
-        <p class="muted" style="margin:8px 0 0">11:00–23:00 mỗi ngày</p>
-      </div>
-      <div class="card">
-        <strong>Địa chỉ</strong>
-        <p class="muted" style="margin:8px 0 0">182/2 Nguyễn Văn Thủ, P. Đa Kao, Quận 1</p>
-      </div>
-      <div class="card">
-        <strong>Chỉ đường</strong>
-        <p class="muted" style="margin:8px 0 0">
-          <a class="pill" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8"
-             onclick="try{gtag('event','open_maps');}catch(e){}">Mở Google Maps</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="grid2" style="margin-top:12px">
-      <a class="card btn" href="https://viber.me/0353361684"
-         onclick="try{fbq('trackCustom','InfoViber');gtag('event','info_viber');}catch(e){}">
-        📞 Viber
-      </a>
-      <a class="card btn" href="https://t.me/yoni365sg"
-         onclick="try{fbq('trackCustom','InfoTelegram');gtag('event','info_telegram');}catch(e){}">
-        ✈️ Telegram
-      </a>
-    </div>
-  </section>
-
-  <!-- CTA DECISION POINT -->
-  <div class="card" style="margin-top:16px;text-align:center">
-    <p class="muted">Sẵn sàng đặt lịch để giữ khung giờ phù hợp?</p>
-    <a class="card btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6"
-       onclick="try{fbq('trackCustom','DecisionCalendar');gtag('event','decision_calendar');}catch(e){}">
-       📅 Đặt lịch ngay
-    </a>
-  </div>
-
-  <!-- FAQ -->
-  <section id="faq" style="margin-top:18px">
-    <h2>Câu hỏi thường gặp</h2>
-    <div class="grid">
-      <div class="card">
-        <strong>Giờ mở cửa?</strong>
-        <p class="muted" style="margin:8px 0 0">11:00–23:00 mỗi ngày.</p>
-      </div>
-      <div class="card">
-        <strong>Đặt lịch thế nào?</strong>
-        <p class="muted" style="margin:8px 0 0">Qua Zalo/Viber/Telegram hoặc Google Calendar.</p>
-      </div>
-      <div class="card">
-        <strong>Địa chỉ ở đâu?</strong>
-        <p class="muted" style="margin:8px 0 0">182/2 Nguyễn Văn Thủ, P. Đa Kao, Quận 1, TP.HCM.</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap muted" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
-    <div>© <span id="y"></span> Yoni Massage HCM · Quận 1 TP.HCM</div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <a class="pill" href="https://zalo.me/0353361684">Zalo</a>
-      <a class="pill" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8">Google Maps</a>
-      <a class="pill" href="/365-yoni-sai-gon/">365 Yoni</a>
-    </div>
-  </div>
-</footer>
-
-<!-- STICKY CTA MOBILE -->
-<div class="sticky-cta" aria-label="Nút đặt hẹn nhanh">
-  <a href="https://calendar.app.google/L5Q8njBA82k55fAd6"
-     onclick="try{fbq('trackCustom','StickyCalendar');gtag('event','sticky_calendar');}catch(e){}">📅 Đặt lịch</a>
-  <a href="https://zalo.me/0353361684"
-     onclick="try{fbq('trackCustom','StickyZalo');gtag('event','sticky_zalo');}catch(e){}">💬 Zalo</a>
-</div>
-
-<script>
-  document.getElementById('y').textContent=new Date().getFullYear();
-</script>
-</body>
-</html>
