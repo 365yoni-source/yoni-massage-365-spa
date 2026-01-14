@@ -4,19 +4,19 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-<title>Spa & Massage thư giãn Quận 1 – Riêng tư TP.HCM</title>
-<meta name="description" content="Spa thư giãn riêng tư Quận 1 TP.HCM. Đặt hẹn qua Zalo, Viber, Telegram."/>
+<title>Spa & Massage thư giãn Quận 1 – Riêng tư cho nữ TP.HCM | Yoni Massage HCM</title>
+<meta name="description" content="Spa thư giãn riêng tư Quận 1 TP.HCM. Không gian kín đáo, quy trình rõ ràng. Đặt hẹn qua Zalo, Viber, Telegram. Xem Google Maps."/>
 <meta name="robots" content="index,follow"/>
 
 <link rel="canonical" href="https://yonimassagehcm.com/"/>
-<link rel="sitemap" href="https://yonimassagehcm.com/sitemap.xml"/>
-<link rel="icon" href="/img/favicon.webp">
+<link rel="icon" href="/img/favicon.webp" type="image/webp"/>
+<link rel="preload" href="/img/hero-spa.webp" as="image" fetchpriority="high"/>
 
 <!-- Fix /index.html -->
 <script>
-if(location.pathname.endsWith('/index.html')){
- location.replace('https://yonimassagehcm.com/');
-}
+(function(){try{
+  if(location.pathname.endsWith('/index.html')) location.replace('https://yonimassagehcm.com/');
+}catch(e){}})();
 </script>
 
 <!-- Schema LocalBusiness -->
@@ -27,12 +27,18 @@ if(location.pathname.endsWith('/index.html')){
  "name":"Yoni Massage HCM",
  "url":"https://yonimassagehcm.com/",
  "telephone":"+84353361684",
+ "image":"https://yonimassagehcm.com/img/hero-spa.webp",
  "address":{
    "@type":"PostalAddress",
    "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
    "addressLocality":"TP.HCM",
    "addressCountry":"VN"
  },
+ "openingHoursSpecification":[{
+   "@type":"OpeningHoursSpecification",
+   "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+   "opens":"11:00","closes":"23:00"
+ }],
  "sameAs":[
    "https://maps.app.goo.gl/eXE7Gs6McFtKThZg8",
    "https://zalo.me/0353361684",
@@ -44,58 +50,305 @@ if(location.pathname.endsWith('/index.html')){
 
 <style>
 :root{color-scheme:dark}
-body{margin:0;font-family:system-ui;background:#0b0c10;color:#fff}
-.wrap{max-width:1080px;margin:auto;padding:22px}
-.grid2{display:grid;gap:16px;align-items:center}
-@media(min-width:900px){.grid2{grid-template-columns:1.1fr .9fr}}
-.btn{display:block;text-align:center;padding:14px;margin-top:10px;border-radius:12px;background:#1c1f2a;color:white;text-decoration:none}
-.card{background:#12141b;padding:16px;border-radius:12px;margin-top:14px}
-.heroimg{width:100%;height:auto;border-radius:16px}
-.pill{display:inline-block;padding:6px 10px;border:1px solid #2a2f3b;border-radius:999px;font-size:12px;opacity:.85}
-.muted{opacity:.85}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e9ecf1;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:auto;padding:18px}
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,12,16,.78);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #242a38;
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 18px;
+}
+.brand{display:flex;gap:10px;align-items:center}
+.logo{
+  width:34px;height:34px;border-radius:12px;
+  background:linear-gradient(135deg,#1d2230,#0f1118);
+  border:1px solid #2a2f3b;
+}
+nav a{margin-left:12px;color:#a8b0bd;font-size:14px}
+nav a:hover{color:#fff}
+
+.hero{
+  display:grid;gap:18px;align-items:center;
+  padding:18px 0 6px;
+}
+@media(min-width:900px){.hero{grid-template-columns:1.12fr .88fr}}
+
+h1{font-size:40px;line-height:1.15;margin:10px 0}
+h2{font-size:22px;margin:0 0 10px}
+p{margin:0}
+
+.pill{
+  display:inline-flex;gap:8px;align-items:center;
+  padding:7px 12px;border:1px solid #2a2f3b;border-radius:999px;
+  font-size:12px;color:#a8b0bd;background:#12141b;
+}
+.muted{color:#a8b0bd}
+
+.heroimg{
+  width:100%;height:auto;border-radius:22px;
+  border:1px solid #242a38;
+}
+
+.btnrow{display:grid;gap:10px;margin-top:14px}
+@media(min-width:520px){.btnrow{grid-template-columns:1fr 1fr}}
+.btn{
+  display:flex;justify-content:center;align-items:center;gap:10px;
+  padding:14px 14px;border-radius:16px;
+  background:#161a23;border:1px solid #2a2f3b;
+  font-weight:700;
+}
+.btn:hover{background:#1f2430}
+.btn.secondary{background:#12141b}
+
+.trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;font-size:14px}
+.trust span{display:inline-flex;gap:8px;align-items:center;color:#a8b0bd}
+
+.section{margin-top:16px}
+.card{
+  background:#12141b;border:1px solid #242a38;
+  border-radius:18px;padding:16px;
+}
+.grid3{display:grid;gap:12px}
+@media(min-width:900px){.grid3{grid-template-columns:repeat(3,1fr)}}
+
+.feature{
+  display:flex;gap:12px;align-items:flex-start;
+}
+.icon{
+  width:36px;height:36px;border-radius:14px;
+  border:1px solid #2a2f3b;background:#161a23;
+  display:flex;align-items:center;justify-content:center;
+  flex:0 0 auto;
+}
+
+.gallery{display:grid;gap:12px}
+@media(min-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gimg{
+  width:100%;height:220px;object-fit:cover;border-radius:18px;
+  border:1px solid #242a38;background:#0f1118;
+}
+@media(min-width:900px){.gimg{height:240px}}
+
+.faq{display:grid;gap:10px}
+details{
+  background:#12141b;border:1px solid #242a38;border-radius:16px;
+  padding:12px 14px;
+}
+summary{cursor:pointer;font-weight:700}
+details p{margin-top:8px;color:#a8b0bd}
+
+.footer{
+  margin-top:18px;border-top:1px solid #242a38;
+  padding:16px 0;color:#a8b0bd;font-size:14px;
+  display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;align-items:center;
+}
+.footer a{color:#a8b0bd}
+.footer a:hover{color:#fff}
+
+.sticky{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;
+  display:flex;gap:10px;
+}
+.sticky a{
+  flex:1;padding:14px;border-radius:16px;
+  background:#12141b;border:1px solid #242a38;
+  font-weight:800;text-align:center;
+}
+@media(min-width:900px){.sticky{display:none}}
 </style>
 </head>
 
 <body>
-<div class="wrap">
 
-<section class="grid2">
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <strong>Yoni Massage HCM</strong>
+    </div>
+    <nav aria-label="Điều hướng">
+      <a href="#dat">Đặt hẹn</a>
+      <a href="#info">Thông tin</a>
+      <a href="#gallery">Không gian</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
 
-  <div>
-    <span class="pill">Quận 1 · TP.HCM</span>
-    <h1>Spa & Massage thư giãn Quận 1</h1>
-    <p class="muted">Riêng tư – đặt lịch trước – chủ động thời gian</p>
+<main class="wrap">
 
-    <!-- VIBER -->
-    <a class="btn"
-      href="viber://chat?number=+84353361684"
-      onclick="setTimeout(()=>{location.href='https://viber.me/+84353361684'},1200)">
-      💜 Chat Viber
-    </a>
+  <!-- HERO -->
+  <section id="dat" class="hero">
+    <div>
+      <span class="pill">Quận 1 · TP.HCM</span>
+      <h1>Spa & Massage thư giãn<br/>Riêng tư cho nữ</h1>
+      <p class="muted">Không gian kín đáo – đặt lịch trước – chủ động thời gian.</p>
 
-    <!-- TELEGRAM -->
-    <a class="btn"
-      href="tg://resolve?domain=Yoni365saigon"
-      onclick="setTimeout(()=>{location.href='https://t.me/Yoni365saigon?start=hi'},800)">
-      ✈️ Chat Telegram
-    </a>
+      <div class="trust">
+        <span>✔ Riêng tư</span>
+        <span>✔ Đặt lịch trước</span>
+        <span>✔ Quy trình rõ ràng</span>
+      </div>
 
-    <!-- ZALO -->
-    <a class="btn" href="https://zalo.me/0353361684">
-      💬 Chat Zalo
-    </a>
+      <div class="btnrow">
+        <!-- VIBER: deep link + fallback -->
+        <a class="btn" href="viber://chat?number=+84353361684"
+           onclick="setTimeout(()=>{location.href='https://viber.me/+84353361684'},1200)">
+          💜 Chat Viber
+        </a>
+
+        <!-- TELEGRAM: deep link + fallback -->
+        <a class="btn" href="tg://resolve?domain=Yoni365saigon"
+           onclick="setTimeout(()=>{location.href='https://t.me/Yoni365saigon?start=hi'},900)">
+          ✈️ Chat Telegram
+        </a>
+
+        <a class="btn secondary" href="https://zalo.me/0353361684">💬 Chat Zalo</a>
+        <a class="btn secondary" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8">📍 Mở Google Maps</a>
+      </div>
+    </div>
+
+    <img class="heroimg" src="/img/hero-spa.webp" alt="Spa thư giãn Quận 1 TP.HCM" loading="eager" decoding="async"/>
+  </section>
+
+  <!-- INFO / USP -->
+  <section id="info" class="section">
+    <div class="card">
+      <h2>Vì sao khách chọn không gian này?</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card feature">
+          <div class="icon">🛋️</div>
+          <div>
+            <strong>Không gian kín đáo</strong>
+            <p class="muted">Tập trung thư giãn, riêng tư và thoải mái.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="icon">🕒</div>
+          <div>
+            <strong>Giữ khung giờ nhanh</strong>
+            <p class="muted">Nhắn trước để chọn giờ phù hợp, tránh chờ.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="icon">📍</div>
+          <div>
+            <strong>Trung tâm Quận 1</strong>
+            <p class="muted">182/2 Nguyễn Văn Thủ, tiện di chuyển.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid3" style="margin-top:12px">
+        <div class="card">
+          <strong>Địa chỉ</strong>
+          <p class="muted">182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM</p>
+        </div>
+        <div class="card">
+          <strong>Giờ hoạt động</strong>
+          <p class="muted">11:00 – 23:00 mỗi ngày</p>
+        </div>
+        <div class="card">
+          <strong>Gợi ý</strong>
+          <p class="muted">Nhắn trước 10–15 phút để chuẩn bị phòng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="card">
+      <h2>Không gian</h2>
+      <p class="muted">Anh thay ảnh bằng file thật của anh (giữ đúng đường dẫn).</p>
+
+      <div class="gallery" style="margin-top:12px">
+        <img class="gimg" src="/img/hero-spa.webp" alt="Không gian spa 1" loading="lazy">
+        <img class="gimg" src="/img/room-1.webp" alt="Không gian spa 2" loading="lazy" onerror="this.style.display='none'">
+        <img class="gimg" src="/img/room-2.webp" alt="Không gian spa 3" loading="lazy" onerror="this.style.display='none'">
+      </div>
+
+      <div class="grid3" style="margin-top:12px">
+        <div class="card">
+          <strong>Ảnh gợi ý</strong>
+          <p class="muted">/img/room-1.webp, /img/room-2.webp, /img/room-3.webp</p>
+        </div>
+        <div class="card">
+          <strong>Tip nhanh</strong>
+          <p class="muted">Ảnh WebP, ngang 1200px+, dung lượng &lt; 250KB.</p>
+        </div>
+        <div class="card">
+          <strong>Hiển thị</strong>
+          <p class="muted">Nếu chưa có room-1/2, web tự ẩn ảnh đó.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="card">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq" style="margin-top:12px">
+        <details>
+          <summary>Đặt lịch như thế nào để giữ khung giờ?</summary>
+          <p>Nhắn Zalo/Viber/Telegram để chọn giờ. Nếu bấm mà không mở app, link sẽ tự rơi về bản web.</p>
+        </details>
+        <details>
+          <summary>Giờ mở cửa?</summary>
+          <p>11:00 – 23:00 mỗi ngày.</p>
+        </details>
+        <details>
+          <summary>Địa chỉ ở đâu?</summary>
+          <p>182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM. Có nút “Mở Google Maps” ở đầu trang.</p>
+        </details>
+      </div>
+
+      <div class="card" style="margin-top:12px;text-align:center">
+        <p class="muted">Muốn giữ khung giờ đẹp?</p>
+        <a class="btn secondary" href="#dat">⬆️ Quay lại Đặt hẹn</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div>© <span id="y"></span> Yoni Massage HCM · Quận 1 TP.HCM</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="https://zalo.me/0353361684">Zalo</a>
+      <a href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8">Google Maps</a>
+      <a href="#faq">FAQ</a>
+    </div>
   </div>
 
-  <!-- HERO IMAGE -->
-  <img class="heroimg" src="/img/hero-spa.webp" alt="Spa thư giãn Quận 1 TP.HCM" loading="eager">
+</main>
 
-</section>
-
-<div class="card">
-📍 182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM  
-<br>🕐 11:00 – 23:00 mỗi ngày
+<!-- STICKY CTA MOBILE -->
+<div class="sticky" aria-label="Nút chat nhanh">
+  <a href="tg://resolve?domain=Yoni365saigon"
+     onclick="setTimeout(()=>{location.href='https://t.me/Yoni365saigon?start=hi'},900)">
+    ✈️ Telegram
+  </a>
+  <a href="viber://chat?number=+84353361684"
+     onclick="setTimeout(()=>{location.href='https://viber.me/+84353361684'},1200)">
+    💜 Viber
+  </a>
 </div>
 
-</div>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
