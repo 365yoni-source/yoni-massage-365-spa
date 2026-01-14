@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
 <title>Spa & Massage thư giãn Quận 1 – Riêng tư cho nữ TP.HCM</title>
-<meta name="description" content="Spa thư giãn riêng tư Quận 1 TP.HCM. Không gian kín đáo, đặt lịch nhanh qua Zalo, Viber, Telegram."/>
+<meta name="description" content="Spa thư giãn riêng tư Quận 1 TP.HCM. Đặt lịch nhanh qua Zalo, Viber, Telegram."/>
 <meta name="robots" content="index,follow"/>
 
 <link rel="canonical" href="https://yonimassagehcm.com/"/>
 <link rel="icon" href="/img/favicon.webp">
+<link rel="preload" href="/img/hero-spa.webp" as="image" fetchpriority="high"/>
 
 <script>
 if(location.pathname.endsWith('/index.html')){
@@ -55,11 +56,9 @@ a{text-decoration:none;color:inherit}
 display:grid;gap:18px;align-items:center;
 padding-top:10px;
 }
-@media(min-width:900px){.hero{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.hero{grid-template-columns:1.1fr .9fr}}
 
 h1{font-size:40px;margin:8px 0}
-h2{margin:0 0 8px}
-
 .pill{display:inline-block;padding:6px 12px;border:1px solid #2a2f3b;border-radius:999px;font-size:12px;color:#a8b0bd}
 .muted{color:#a8b0bd}
 
@@ -72,13 +71,19 @@ font-weight:700;
 }
 .btn:hover{background:#1f2430}
 
+.trust{margin-top:10px;font-size:14px}
+.trust span{margin-right:12px;color:#a8b0bd}
+
 .card{
 background:#12141b;border:1px solid #2a2f3b;
 padding:16px;border-radius:16px;margin-top:14px
 }
 
-.trust{margin-top:10px;font-size:14px}
-.trust span{margin-right:12px;color:#a8b0bd}
+.heroimg{
+width:100%;
+border-radius:18px;
+border:1px solid #2a2f3b;
+}
 
 .grid3{display:grid;gap:12px}
 @media(min-width:900px){.grid3{grid-template-columns:repeat(3,1fr)}}
@@ -106,6 +111,7 @@ background:#12141b;border:1px solid #2a2f3b;font-weight:800
 
 <!-- HERO -->
 <section class="hero" id="dat">
+
   <div>
     <span class="pill">Quận 1 · TP.HCM</span>
     <h1>Spa & Massage thư giãn<br>Riêng tư cho nữ</h1>
@@ -140,12 +146,15 @@ background:#12141b;border:1px solid #2a2f3b;font-weight:800
       📍 Mở Google Maps
     </a>
   </div>
+
+  <!-- SINGLE HERO IMAGE -->
+  <img class="heroimg" src="/img/hero-spa.webp" alt="Spa thư giãn Quận 1 TP.HCM" loading="eager">
+
 </section>
 
 <!-- INFO -->
 <section class="card" id="info">
-  <h2>Thông tin spa</h2>
-  <div class="grid3" style="margin-top:10px">
+  <div class="grid3">
     <div class="card">
       <strong>Địa chỉ</strong>
       <p class="muted">182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM</p>
@@ -156,20 +165,17 @@ background:#12141b;border:1px solid #2a2f3b;font-weight:800
     </div>
     <div class="card">
       <strong>Gợi ý</strong>
-      <p class="muted">Nhắn trước 10–15 phút để giữ phòng tốt</p>
+      <p class="muted">Nhắn trước 10–15 phút để giữ khung giờ tốt</p>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="card" id="faq">
-  <h2>Câu hỏi thường gặp</h2>
-
+  <strong>Câu hỏi thường gặp</strong>
   <p class="muted">• Đặt lịch qua Zalo / Viber / Telegram</p>
   <p class="muted">• Giờ mở cửa: 11:00 – 23:00</p>
-  <p class="muted">• Vị trí trung tâm Quận 1, dễ di chuyển</p>
-
-  <a class="btn" href="#dat">⬆️ Quay lại đặt hẹn</a>
+  <p class="muted">• Vị trí trung tâm Quận 1</p>
 </section>
 
 <!-- FOOTER -->
