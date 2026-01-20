@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
 <title>Yoni 365 Sai Gon Massage – Spa thư giãn Quận 1 TP.HCM | Mở cửa 24/24</title>
-<meta name="description" content="Yoni 365 Sai Gon Massage – không gian thư giãn riêng tư tại Quận 1 TP.HCM. Mở cửa 24/24. Đặt lịch nhanh qua Google Calendar, Zalo, WhatsApp, Messenger. Xem Google Maps chỉ đường."/>
+<meta name="description" content="Yoni 365 Sai Gon Massage – không gian thư giãn riêng tư tại Quận 1 TP.HCM. Mở cửa 24/24. Đặt lịch nhanh qua Google Calendar, Zalo. Xem Google Maps chỉ đường."/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://yonimassagehcm.com/"/>
 <link rel="icon" href="/img/favicon.webp">
@@ -37,13 +37,6 @@ if(location.pathname.endsWith('/index.html')){
    ]
   },
   {
-   "@type":"WebSite",
-   "@id":"https://yonimassagehcm.com/#website",
-   "url":"https://yonimassagehcm.com/",
-   "name":"Yoni 365 Sai Gon Massage",
-   "publisher":{"@id":"https://yonimassagehcm.com/#org"}
-  },
-  {
    "@type":["Spa","LocalBusiness"],
    "@id":"https://yonimassagehcm.com/#place",
    "name":"Yoni 365 Sai Gon Massage",
@@ -55,7 +48,6 @@ if(location.pathname.endsWith('/index.html')){
      "@type":"PostalAddress",
      "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
      "addressLocality":"TP.HCM",
-     "addressRegion":"Ho Chi Minh",
      "addressCountry":"VN"
    },
    "geo":{
@@ -64,13 +56,6 @@ if(location.pathname.endsWith('/index.html')){
      "longitude":"106.6951545"
    },
    "hasMap":"https://maps.google.com/?q=10.786154,106.6951545",
-   "contactPoint":{
-     "@type":"ContactPoint",
-     "telephone":"+84353361684",
-     "contactType":"customer service",
-     "areaServed":"VN",
-     "availableLanguage":["vi","en"]
-   },
    "openingHoursSpecification":[{
      "@type":"OpeningHoursSpecification",
      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -108,18 +93,28 @@ a{text-decoration:none;color:inherit}
 @media(min-width:900px){.hero{grid-template-columns:1.1fr .9fr}}
 h1{font-size:36px;margin:10px 0}
 .muted{color:#a8b0bd}
-.btn{display:block;text-align:center;padding:14px;margin-top:10px;border-radius:14px;background:#161a23;border:1px solid #2a2f3b;font-weight:900}
+.btn{
+ display:block;text-align:center;padding:14px;margin-top:10px;
+ border-radius:14px;background:#161a23;border:1px solid #2a2f3b;font-weight:900
+}
 .heroimg{width:100%;border-radius:18px;border:1px solid #2a2f3b}
 .card{background:#12141b;border:1px solid #2a2f3b;padding:16px;border-radius:16px;margin-top:14px}
 
-.social-icons{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
-.social-icons a{
- width:52px;height:52px;border-radius:50%;
- display:flex;align-items:center;justify-content:center;
- background:#1b2030;border:1px solid #2a2f3b;transition:.2s
+/* ICON BRAND STYLE */
+.social-icons{
+ display:flex;flex-wrap:wrap;gap:14px;margin-top:14px
 }
-.social-icons a:hover{transform:scale(1.08);background:#242a3a}
-.social-icons svg{width:26px;height:26px}
+.social-icons a{
+ width:56px;height:56px;
+ border-radius:14px;
+ display:flex;align-items:center;justify-content:center;
+ background:#fff;
+ box-shadow:0 4px 10px rgba(0,0,0,.25);
+ transition:.2s
+}
+.social-icons a:hover{transform:translateY(-3px) scale(1.05)}
+.social-icons img{width:32px;height:32px}
+
 </style>
 </head>
 
@@ -131,8 +126,8 @@ h1{font-size:36px;margin:10px 0}
 <h1>Yoni 365 Sai Gon Massage<br>Spa thư giãn riêng tư Quận 1</h1>
 <p class="muted">Không gian riêng tư · Đặt lịch trước · Mở cửa 24/24</p>
 
-<a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R" target="_blank">📅 Đặt hẹn</a>
-<a class="btn" href="https://zalo.me/0353361684" target="_blank">💬 Zalo</a>
+<a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R" target="_blank">📅 Đặt hẹn Google Calendar</a>
+<a class="btn" href="https://zalo.me/0353361684" target="_blank">💬 Chat Zalo</a>
 <a class="btn" href="tel:+84353361684">📞 Gọi ngay</a>
 <a class="btn" href="https://maps.google.com/?q=10.786154,106.6951545" target="_blank">📍 Google Maps</a>
 </div>
@@ -145,53 +140,37 @@ h1{font-size:36px;margin:10px 0}
 <p class="muted">Giờ hoạt động: Mở cửa 24/24</p>
 </section>
 
+<!-- GOOGLE MAP EMBED FIX -->
 <section class="card">
 <h3>Chỉ đường</h3>
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.235699489823!2d106.6925796!3d10.786154"
-width="100%" height="320" style="border:0;border-radius:12px" loading="lazy"></iframe>
+<iframe
+ width="100%" height="320"
+ style="border:0;border-radius:12px"
+ loading="lazy" allowfullscreen
+ src="https://www.google.com/maps?output=embed&q=10.786154,106.6951545">
+</iframe>
 </section>
 
+<!-- SOCIAL + CHAT ICONS -->
 <section class="card">
 <h3>Kết nối nhanh</h3>
 
 <div class="social-icons">
 
-<!-- TikTok -->
-<a href="https://www.tiktok.com/@365yonisaigon" target="_blank"><svg viewBox="0 0 24 24"><path fill="#fff" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-2.89-2.89V9.42a6.28 6.28 0 1 0 6.28 6.28V8.79a8.18 8.18 0 0 0 4.94 1.69V7.13a4.82 4.82 0 0 1-2-.44z"/></svg></a>
+<a href="https://zalo.me/0353361684"><img src="/img/icon-zalo.png"></a>
+<a href="https://viber.me/0353361684"><img src="/img/icon-viber.png"></a>
+<a href="https://wa.me/84353361684"><img src="/img/icon-whatsapp.png"></a>
+<a href="https://t.me/Yoni365saigon"><img src="/img/icon-telegram.png"></a>
+<a href="https://line.me/R/ti/p/@yoni365massagesaigon"><img src="/img/icon-line.png"></a>
+<a href="weixin://dl/chat?yoni365saigonmassage"><img src="/img/icon-wechat.png"></a>
+<a href="kakaotalk://chat?openChatId=yoni365saigon"><img src="/img/icon-kakao.png"></a>
 
-<!-- Facebook -->
-<a href="https://www.facebook.com/Yoni365saigonspa" target="_blank"><svg viewBox="0 0 24 24"><path fill="#1877F2" d="M22.68 0H1.32A1.32 1.32 0 0 0 0 1.32v21.36A1.32 1.32 0 0 0 1.32 24h11.49v-9.29H9.69V11.1h3.12V8.41c0-3.1 1.89-4.79 4.66-4.79 1.32 0 2.46.1 2.79.14v3.24h-1.91c-1.5 0-1.79.71-1.79 1.76v2.31h3.58l-.47 3.61h-3.11V24h6.09A1.32 1.32 0 0 0 24 22.68V1.32A1.32 1.32 0 0 0 22.68 0z"/></svg></a>
-
-<!-- Instagram -->
-<a href="https://www.instagram.com/yoni365sg/" target="_blank"><svg viewBox="0 0 24 24"><path fill="#E1306C" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/></svg></a>
-
-<!-- YouTube -->
-<a href="https://www.youtube.com/@Yoni365saigonmassage" target="_blank"><svg viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.19a2.99 2.99 0 0 0-2.1-2.12C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.4.57A2.99 2.99 0 0 0 .5 6.19 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.81 2.99 2.99 0 0 0 2.1 2.12c1.84.57 9.4.57 9.4.57s7.56 0 9.4-.57a2.99 2.99 0 0 0 2.1-2.12A31.7 31.7 0 0 0 24 12z"/></svg></a>
-
-<!-- Messenger -->
-<a href="https://m.me/Yoni365saigonspa" target="_blank"><svg viewBox="0 0 24 24"><path fill="#00B2FF" d="M12 2C6.48 2 2 6.02 2 11c0 2.74 1.33 5.18 3.41 6.81V22l3.9-2.14c.86.24 1.77.37 2.69.37 5.52 0 10-4.02 10-9s-4.48-9-10-9z"/></svg></a>
-
-<!-- X -->
-<a href="https://x.com/saigon365yoni" target="_blank"><svg viewBox="0 0 24 24"><path fill="#fff" d="M18.9 2H22l-6.7 7.7L23 22h-6.5l-4.5-6-5.3 6H3.6l7.2-8.3L1 2h6.6l4.1 5.5z"/></svg></a>
-
-<!-- WhatsApp -->
-<a href="https://wa.me/84353361684" target="_blank"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M20.5 3.5A11 11 0 0 0 2.4 17.6L1 23l5.6-1.5A11 11 0 1 0 20.5 3.5z"/></svg></a>
-
-<!-- Telegram -->
-<a href="https://t.me/Yoni365saigon" target="_blank"><svg viewBox="0 0 24 24"><path fill="#29B6F6" d="M22.5 2.3L1.7 10.3l5.3 1.7L19 5.6l-10 9.1-.4 5.2 3.8-3.1 5.2 3.8z"/></svg></a>
-
-<!-- Viber -->
-<a href="https://viber.me/0353361684" target="_blank"><svg viewBox="0 0 24 24"><path fill="#7C4DFF" d="M12 2C6.5 2 2 5.9 2 10.7c0 2.8 1.5 5.4 4 7v3.6l3.5-1.9c.8.2 1.6.3 2.5.3 5.5 0 10-3.9 10-8.7S17.5 2 12 2z"/></svg></a>
-
-<!-- LINE -->
-<a href="https://line.me/R/ti/p/@yoni365massagesaigon" target="_blank"><svg viewBox="0 0 24 24"><path fill="#00C300" d="M12 2C6.48 2 2 5.72 2 10.3c0 2.92 1.8 5.5 4.6 7.02l-.25 2.52 3.03-2.07c5.52 0 10-3.72 10-8.3S17.52 2 12 2z"/></svg></a>
-
-<!-- WeChat -->
-<a href="weixin://dl/chat?yoni365saigonmassage"><svg viewBox="0 0 24 24"><path fill="#09B83E" d="M9.5 4C5.36 4 2 6.74 2 10.12c0 1.9 1.06 3.6 2.74 4.73l2.25-.88c.83.23 1.72.36 2.72.36-1-3 2-6 6-6-1-3-4-5-7.21-5z"/></svg></a>
-
-<!-- KakaoTalk -->
-<a href="kakaotalk://chat?openChatId=yoni365saigon"><svg viewBox="0 0 24 24"><path fill="#FEE500" d="M12 3C6.48 3 2 6.58 2 11c0 2.86 1.93 5.36 4.86 6.75l-.62 3.06 3.51-2.38c5.52 0 10-3.58 10-8s-4.48-8-10-8z"/></svg></a>
+<a href="https://www.facebook.com/Yoni365saigonspa"><img src="/img/icon-facebook.png"></a>
+<a href="https://www.instagram.com/yoni365sg/"><img src="/img/icon-instagram.png"></a>
+<a href="https://www.tiktok.com/@365yonisaigon"><img src="/img/icon-tiktok.png"></a>
+<a href="https://www.youtube.com/@Yoni365saigonmassage"><img src="/img/icon-youtube.png"></a>
+<a href="https://m.me/Yoni365saigonspa"><img src="/img/icon-messenger.png"></a>
+<a href="https://x.com/saigon365yoni"><img src="/img/icon-x.png"></a>
 
 </div>
 </section>
