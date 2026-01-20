@@ -18,39 +18,77 @@ if(location.pathname.endsWith('/index.html')){
 }
 </script>
 
-<!-- ===== SCHEMA ===== -->
+<!-- ===== FULL ENTITY SCHEMA ===== -->
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@graph":[
-  {
-   "@type":["Spa","LocalBusiness"],
-   "@id":"https://yonimassagehcm.com/#place",
-   "name":"Yoni 365 Sai Gon Massage",
-   "url":"https://yonimassagehcm.com/",
-   "telephone":"+84353361684",
-   "image":"https://yonimassagehcm.com/img/hero-spa.webp",
-   "priceRange":"$$",
-   "address":{
-     "@type":"PostalAddress",
-     "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
-     "addressLocality":"TP.HCM",
-     "addressCountry":"VN"
-   },
-   "geo":{
-     "@type":"GeoCoordinates",
-     "latitude":"10.786154",
-     "longitude":"106.6951545"
-   },
-   "hasMap":"https://maps.google.com/?q=10.786154,106.6951545",
-   "openingHoursSpecification":[{
-     "@type":"OpeningHoursSpecification",
-     "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-     "opens":"00:00",
-     "closes":"23:59"
-   }]
-  }
- ]
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://yonimassagehcm.com/#org",
+      "name":"Yoni 365 Sai Gon Massage",
+      "url":"https://yonimassagehcm.com/",
+      "logo":"https://yonimassagehcm.com/img/favicon.webp",
+      "sameAs":[
+        "https://www.facebook.com/Yoni365saigonspa",
+        "https://www.instagram.com/yoni365sg/",
+        "https://www.youtube.com/@Yoni365saigonmassage",
+        "https://www.tiktok.com/@365yonisaigon",
+        "https://x.com/saigon365yoni"
+      ]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://yonimassagehcm.com/#website",
+      "url":"https://yonimassagehcm.com/",
+      "name":"Yoni 365 Sai Gon Massage",
+      "publisher":{"@id":"https://yonimassagehcm.com/#org"}
+    },
+    {
+      "@type":["Spa","LocalBusiness"],
+      "@id":"https://yonimassagehcm.com/#place",
+      "name":"Yoni 365 Sai Gon Massage",
+      "url":"https://yonimassagehcm.com/",
+      "telephone":"+84353361684",
+      "image":"https://yonimassagehcm.com/img/hero-spa.webp",
+      "priceRange":"$$",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
+        "addressLocality":"TP.HCM",
+        "addressRegion":"Ho Chi Minh",
+        "addressCountry":"VN"
+      },
+      "geo":{
+        "@type":"GeoCoordinates",
+        "latitude":"10.786154",
+        "longitude":"106.6951545"
+      },
+      "hasMap":"https://maps.google.com/?q=10.786154,106.6951545",
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "telephone":"+84353361684",
+        "contactType":"customer service",
+        "areaServed":"VN",
+        "availableLanguage":["vi","en"]
+      },
+      "openingHoursSpecification":[{
+        "@type":"OpeningHoursSpecification",
+        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens":"00:00",
+        "closes":"23:59"
+      }],
+      "sameAs":[
+        "https://www.google.com/maps/place/Yoni+365+sai+gon+massage/",
+        "https://zalo.me/0353361684",
+        "https://wa.me/84353361684",
+        "https://viber.me/0353361684",
+        "https://t.me/Yoni365saigon",
+        "https://m.me/Yoni365saigonspa",
+        "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R"
+      ]
+    }
+  ]
 }
 </script>
 
@@ -96,7 +134,7 @@ h1{font-size:36px;margin:10px 0}
 <p class="muted">Giờ hoạt động: Mở cửa 24/24</p>
 </section>
 
-<!-- ===== GOOGLE MAP EMBED ===== -->
+<!-- GOOGLE MAP EMBED -->
 <section class="card">
 <h3>Chỉ đường đến spa</h3>
 <iframe 
@@ -114,7 +152,7 @@ loading="lazy" allowfullscreen>
 </div>
 
 <div class="sticky">
-<a href="https://calendar.google.com/">📅 Hẹn</a>
+<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R">📅 Hẹn</a>
 <a href="https://zalo.me/0353361684">💬 Zalo</a>
 <a href="tel:+84353361684">📞 Gọi</a>
 <a href="https://maps.google.com/?q=10.786154,106.6951545">📍 Map</a>
