@@ -17,55 +17,47 @@ if(location.pathname.endsWith('/index.html')){
 }
 </script>
 
-<!-- ===== FULL ENTITY SCHEMA ===== -->
+<!-- ===== ENTITY SCHEMA ===== -->
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
- "@graph":[
-  {
-   "@type":["Spa","LocalBusiness"],
-   "@id":"https://yonimassagehcm.com/#place",
-   "name":"Yoni 365 Sai Gon Massage",
-   "url":"https://yonimassagehcm.com/",
-   "telephone":"+84353361684",
-   "image":"https://yonimassagehcm.com/img/hero-spa.webp",
-   "priceRange":"$$",
-   "address":{
-     "@type":"PostalAddress",
-     "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
-     "addressLocality":"TP.HCM",
-     "addressCountry":"VN"
-   },
-   "geo":{
-     "@type":"GeoCoordinates",
-     "latitude":"10.786154",
-     "longitude":"106.6951545"
-   },
-   "hasMap":"https://maps.google.com/?q=10.786154,106.6951545",
-   "openingHoursSpecification":[{
-     "@type":"OpeningHoursSpecification",
-     "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-     "opens":"00:00",
-     "closes":"23:59"
-   }],
-   "sameAs":[
-     "https://www.google.com/maps/place/Yoni+365+sai+gon+massage/",
-     "https://calendar.google.com/",
-     "https://zalo.me/0353361684",
-     "https://wa.me/84353361684",
-     "https://viber.me/0353361684",
-     "https://t.me/Yoni365saigon",
-     "https://m.me/Yoni365saigonspa",
-     "https://line.me/R/ti/p/@yoni365massagesaigon",
-     "weixin://dl/chat?yoni365saigonmassage",
-     "kakaotalk://chat?openChatId=yoni365saigon",
-     "https://x.com/saigon365yoni",
-     "https://www.tiktok.com/@365yonisaigon",
-     "https://www.facebook.com/Yoni365saigonspa",
-     "https://www.instagram.com/yoni365sg/",
-     "https://www.youtube.com/@Yoni365saigonmassage"
-   ]
-  }
+ "@type":["Spa","LocalBusiness"],
+ "@id":"https://yonimassagehcm.com/#place",
+ "name":"Yoni 365 Sai Gon Massage",
+ "url":"https://yonimassagehcm.com/",
+ "telephone":"+84353361684",
+ "image":"https://yonimassagehcm.com/img/hero-spa.webp",
+ "priceRange":"$$",
+ "address":{
+   "@type":"PostalAddress",
+   "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
+   "addressLocality":"TP.HCM",
+   "addressCountry":"VN"
+ },
+ "geo":{
+   "@type":"GeoCoordinates",
+   "latitude":"10.786154",
+   "longitude":"106.6951545"
+ },
+ "hasMap":"https://maps.google.com/?q=10.786154,106.6951545",
+ "openingHoursSpecification":[{
+   "@type":"OpeningHoursSpecification",
+   "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+   "opens":"00:00",
+   "closes":"23:59"
+ }],
+ "sameAs":[
+   "https://www.google.com/maps/place/Yoni+365+sai+gon+massage/",
+   "https://zalo.me/0353361684",
+   "https://wa.me/84353361684",
+   "https://t.me/Yoni365saigon",
+   "https://m.me/Yoni365saigonspa",
+   "https://line.me/R/ti/p/@yoni365massagesaigon",
+   "https://www.facebook.com/Yoni365saigonspa",
+   "https://www.instagram.com/yoni365sg/",
+   "https://www.tiktok.com/@365yonisaigon",
+   "https://www.youtube.com/@Yoni365saigonmassage",
+   "https://x.com/saigon365yoni"
  ]
 }
 </script>
@@ -86,7 +78,7 @@ h1{font-size:36px;margin:10px 0}
 .heroimg{width:100%;border-radius:18px;border:1px solid #2a2f3b}
 .card{background:#12141b;border:1px solid #2a2f3b;padding:16px;border-radius:16px;margin-top:14px}
 
-/* ICON CDN STYLE */
+/* ICON STYLE */
 .social-icons{
  display:flex;flex-wrap:wrap;gap:14px;margin-top:14px
 }
@@ -100,6 +92,7 @@ h1{font-size:36px;margin:10px 0}
 }
 .social-icons a:hover{transform:translateY(-3px) scale(1.05)}
 .social-icons img{width:32px;height:32px}
+.social-icons a.kakao{background:#FEE500}
 </style>
 </head>
 
@@ -140,22 +133,64 @@ h1{font-size:36px;margin:10px 0}
 
 <div class="social-icons">
 
-<!-- Chat -->
-<a href="https://zalo.me/0353361684"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png"></a>
-<a href="https://viber.me/0353361684"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111705.png"></a>
-<a href="https://wa.me/84353361684"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a>
-<a href="https://t.me/Yoni365saigon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"></a>
-<a href="https://line.me/R/ti/p/@yoni365massagesaigon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111683.png"></a>
-<a href="weixin://dl/chat?yoni365saigonmassage"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111720.png"></a>
-<a href="kakaotalk://chat?openChatId=yoni365saigon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111707.png"></a>
+<!-- Chat VN -->
+<a href="https://zalo.me/0353361684">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png">
+</a>
+
+<!-- Viber FIX chat -->
+<a href="viber://chat?number=%2B84353361684">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111705.png">
+</a>
+
+<a href="https://wa.me/84353361684">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<a href="https://t.me/Yoni365saigon">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+</a>
+
+<!-- LINE correct -->
+<a href="https://line.me/R/ti/p/@yoni365massagesaigon">
+<img src="https://cdn.simpleicons.org/line/00C300">
+</a>
+
+<!-- WeChat correct -->
+<a href="weixin://dl/chat?yoni365saigonmassage">
+<img src="https://cdn.simpleicons.org/wechat/09B83E">
+</a>
+
+<!-- Kakao correct -->
+<a class="kakao" href="kakaotalk://chat?openChatId=yoni365saigon">
+<img src="https://cdn.simpleicons.org/kakaotalk/3A1D1D">
+</a>
 
 <!-- Social -->
-<a href="https://www.facebook.com/Yoni365saigonspa"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
-<a href="https://www.instagram.com/yoni365sg/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
-<a href="https://www.tiktok.com/@365yonisaigon"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png"></a>
-<a href="https://www.youtube.com/@Yoni365saigonmassage"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a>
-<a href="https://m.me/Yoni365saigonspa"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111339.png"></a>
-<a href="https://x.com/saigon365yoni"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png"></a>
+<a href="https://www.facebook.com/Yoni365saigonspa">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+</a>
+
+<a href="https://www.instagram.com/yoni365sg/">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</a>
+
+<a href="https://www.tiktok.com/@365yonisaigon">
+<img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png">
+</a>
+
+<a href="https://www.youtube.com/@Yoni365saigonmassage">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+</a>
+
+<!-- Messenger correct -->
+<a href="https://m.me/Yoni365saigonspa">
+<img src="https://cdn.simpleicons.org/facebookmessenger/00B2FF">
+</a>
+
+<a href="https://x.com/saigon365yoni">
+<img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png">
+</a>
 
 </div>
 </section>
