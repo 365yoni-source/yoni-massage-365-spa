@@ -18,25 +18,11 @@ if(location.pathname.endsWith('/index.html')){
 }
 </script>
 
-<!-- ===== SCHEMA (SEO + GEO chuẩn tọa độ Google Maps) ===== -->
+<!-- ===== SCHEMA ===== -->
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
  "@graph":[
-  {
-   "@type":"Organization",
-   "@id":"https://yonimassagehcm.com/#org",
-   "name":"Yoni 365 Sai Gon Massage",
-   "url":"https://yonimassagehcm.com/",
-   "logo":"https://yonimassagehcm.com/img/favicon.webp",
-   "sameAs":[
-     "https://x.com/saigon365yoni",
-     "https://www.tiktok.com/@365yonisaigon",
-     "https://www.facebook.com/Yoni365saigonspa",
-     "https://www.instagram.com/yoni365sg/",
-     "https://www.youtube.com/@Yoni365saigonmassage"
-   ]
-  },
   {
    "@type":["Spa","LocalBusiness"],
    "@id":"https://yonimassagehcm.com/#place",
@@ -49,50 +35,20 @@ if(location.pathname.endsWith('/index.html')){
      "@type":"PostalAddress",
      "streetAddress":"182/2 Nguyễn Văn Thủ, Quận 1",
      "addressLocality":"TP.HCM",
-     "addressRegion":"Ho Chi Minh",
      "addressCountry":"VN"
    },
-
    "geo":{
      "@type":"GeoCoordinates",
      "latitude":"10.786154",
      "longitude":"106.6951545"
    },
-
    "hasMap":"https://maps.google.com/?q=10.786154,106.6951545",
-
-   "areaServed":{
-     "@type":"Place",
-     "name":"Quận 1, TP.HCM"
-   },
-
-   "contactPoint":{
-     "@type":"ContactPoint",
-     "telephone":"+84353361684",
-     "contactType":"customer service",
-     "areaServed":"VN",
-     "availableLanguage":["vi","en"]
-   },
-
    "openingHoursSpecification":[{
      "@type":"OpeningHoursSpecification",
      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
      "opens":"00:00",
      "closes":"23:59"
-   }],
-
-   "sameAs":[
-     "https://x.com/saigon365yoni",
-     "https://www.tiktok.com/@365yonisaigon",
-     "https://www.facebook.com/Yoni365saigonspa",
-     "https://www.instagram.com/yoni365sg/",
-     "https://www.youtube.com/@Yoni365saigonmassage",
-     "https://zalo.me/0353361684",
-     "https://wa.me/84353361684",
-     "https://t.me/Yoni365saigon",
-     "https://m.me/Yoni365saigonspa",
-     "https://www.google.com/maps/place/Yoni+365+sai+gon+massage/@10.7861593,106.6925796,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f0050f53fe1:0x30f2f0d97cc09d22!8m2!3d10.786154!4d106.6951545!16s%2Fg%2F11ymnmf2hl?entry=ttu"
-   ]
+   }]
   }
  ]
 }
@@ -111,33 +67,9 @@ h1{font-size:36px;margin:10px 0}
 .btn:hover{background:#1f2430}
 .heroimg{width:100%;border-radius:18px;border:1px solid #2a2f3b}
 .card{background:#12141b;border:1px solid #2a2f3b;padding:16px;border-radius:16px;margin-top:14px}
-.footer{margin-top:18px;border-top:1px solid #2a2f3b;padding-top:14px;color:#a8b0bd;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-
-/* Social chips (nổi bật) */
-.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.social a{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;background:#1b2030;border:1px solid #2a2f3b;font-weight:900;font-size:14px}
-.social a:hover{background:#262c3b}
-
-/* Sticky 4 nút */
-.sticky{
- position:fixed;
- left:8px; right:8px; bottom:10px;
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:6px;
- z-index:50;
- transition:opacity .25s ease,transform .25s ease;
-}
-.sticky a{
- text-align:center;
- padding:12px 6px;
- border-radius:12px;
- background:#12141b;
- border:1px solid #2a2f3b;
- font-weight:800;
- font-size:13px;
-}
-.sticky.is-hidden{opacity:0;transform:translateY(12px);pointer-events:none}
+.footer{margin-top:18px;border-top:1px solid #2a2f3b;padding-top:14px;color:#a8b0bd;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap}
+.sticky{position:fixed;left:8px;right:8px;bottom:10px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;z-index:50}
+.sticky a{text-align:center;padding:12px 6px;border-radius:12px;background:#12141b;border:1px solid #2a2f3b;font-weight:800;font-size:13px}
 @media(min-width:900px){.sticky{display:none}}
 </style>
 </head>
@@ -150,25 +82,10 @@ h1{font-size:36px;margin:10px 0}
 <h1>Yoni 365 Sai Gon Massage<br>Spa thư giãn riêng tư Quận 1</h1>
 <p class="muted">Không gian riêng tư · Đặt lịch trước · Mở cửa 24/24</p>
 
-<a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R" target="_blank" rel="nofollow noopener">📅 Đặt hẹn Google Calendar</a>
-
-<a class="btn" href="tel:+84353361684">📞 Gọi ngay: 035 336 1684</a>
-<a class="btn" href="https://zalo.me/0353361684" target="_blank" rel="nofollow noopener">💬 Chat Zalo</a>
-<a class="btn" href="https://wa.me/84353361684" target="_blank" rel="nofollow noopener">🟢 Chat WhatsApp</a>
-<a class="btn" href="viber://chat?number=+84353361684">💜 Chat Viber</a>
-<a class="btn" href="tg://resolve?domain=Yoni365saigon">✈️ Chat Telegram</a>
-<a class="btn" href="https://m.me/Yoni365saigonspa" target="_blank" rel="nofollow noopener">💬 Chat Messenger</a>
-
-<a class="btn" href="https://maps.google.com/?q=10.786154,106.6951545" target="_blank" rel="nofollow noopener">📍 Google Maps</a>
-
-<!-- Social nổi bật -->
-<div class="social">
-  <a href="https://x.com/saigon365yoni" target="_blank" rel="nofollow noopener">X</a>
-  <a href="https://www.tiktok.com/@365yonisaigon" target="_blank" rel="nofollow noopener">TikTok</a>
-  <a href="https://www.facebook.com/Yoni365saigonspa" target="_blank" rel="nofollow noopener">Facebook</a>
-  <a href="https://www.instagram.com/yoni365sg/" target="_blank" rel="nofollow noopener">Instagram</a>
-  <a href="https://www.youtube.com/@Yoni365saigonmassage" target="_blank" rel="nofollow noopener">YouTube</a>
-</div>
+<a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R" target="_blank">📅 Đặt hẹn Google Calendar</a>
+<a class="btn" href="https://zalo.me/0353361684" target="_blank">💬 Chat Zalo</a>
+<a class="btn" href="tel:+84353361684">📞 Gọi ngay</a>
+<a class="btn" href="https://maps.google.com/?q=10.786154,106.6951545" target="_blank">📍 Google Maps</a>
 </div>
 
 <img class="heroimg" src="/img/hero-spa.webp" alt="Yoni 365 Sai Gon Massage">
@@ -179,39 +96,32 @@ h1{font-size:36px;margin:10px 0}
 <p class="muted">Giờ hoạt động: Mở cửa 24/24</p>
 </section>
 
-<div class="footer" id="site-footer">
+<!-- ===== GOOGLE MAP EMBED ===== -->
+<section class="card">
+<h3>Chỉ đường đến spa</h3>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.235699489823!2d106.6925796!3d10.786154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0050f53fe1%3A0x30f2f0d97cc09d22!2sYoni%20365%20sai%20gon%20massage!5e0!3m2!1svi!2s!4v1705654321000"
+width="100%" height="350"
+style="border:0;border-radius:12px"
+loading="lazy" allowfullscreen>
+</iframe>
+</section>
+
+<div class="footer">
 <div>© <span id="y"></span> Yoni 365 Sai Gon Massage</div>
-<div><a href="https://maps.google.com/?q=10.786154,106.6951545" target="_blank" rel="nofollow noopener">Google Maps</a></div>
 </div>
 
 </div>
 
-<!-- Sticky Mobile (4 nút) -->
-<div class="sticky" id="sticky-cta">
-  <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2U9-F9ab1_Ec2uMbqOY--nqZXIF9f3pKE9F2ZmIohsyUvhoWqlZUFRbzhUpCtaPjreGVAX-H5R" target="_blank" rel="nofollow noopener">📅 Hẹn</a>
-  <a href="https://zalo.me/0353361684" target="_blank" rel="nofollow noopener">💬 Zalo</a>
-  <a href="https://m.me/Yoni365saigonspa" target="_blank" rel="nofollow noopener">💙 Chat</a>
-  <a href="tel:+84353361684">📞 Gọi</a>
+<div class="sticky">
+<a href="https://calendar.google.com/">📅 Hẹn</a>
+<a href="https://zalo.me/0353361684">💬 Zalo</a>
+<a href="tel:+84353361684">📞 Gọi</a>
+<a href="https://maps.google.com/?q=10.786154,106.6951545">📍 Map</a>
 </div>
 
 <script>
 document.getElementById('y').textContent=new Date().getFullYear();
-
-/* Auto hide sticky when near footer */
-(function(){
-  const sticky=document.getElementById('sticky-cta');
-  const footer=document.getElementById('site-footer');
-  if(!sticky||!footer) return;
-
-  const obs=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting) sticky.classList.add('is-hidden');
-      else sticky.classList.remove('is-hidden');
-    });
-  }, {threshold:0.01});
-
-  obs.observe(footer);
-})();
 </script>
 
 </body>
