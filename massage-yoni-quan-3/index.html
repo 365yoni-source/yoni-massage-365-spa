@@ -73,7 +73,7 @@
         "name":"Yoni Massage HCM"
       },
       {
-        "@type":"Spa",
+        "@type":["Spa","LocalBusiness"],
         "@id":"https://yonimassagehcm.com/#spa",
         "name":"Yoni Massage HCM",
         "url":"https://yonimassagehcm.com/",
@@ -84,8 +84,15 @@
           "@type":"PostalAddress",
           "streetAddress":"182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
           "addressLocality":"TP.HCM",
+          "addressRegion":"Ho Chi Minh",
           "addressCountry":"VN"
         },
+        "geo":{
+          "@type":"GeoCoordinates",
+          "latitude":"10.786154",
+          "longitude":"106.6951545"
+        },
+        "hasMap":"https://google.com/maps/place/Yoni+365+sai+gon+massage/@10.7571445,106.6880843,15z/data=!4m6!3m5!1s0x31752f0050f53fe1:0x30f2f0d97cc09d22!8m2!3d10.786154!4d106.6951545!16s%2Fg%2F11ymnmf2hl?entry=ttu",
         "openingHoursSpecification":[
           {
             "@type":"OpeningHoursSpecification",
@@ -95,9 +102,9 @@
           }
         ],
         "sameAs":[
-          "https://maps.app.goo.gl/eXE7Gs6McFtKThZg8",
           "https://zalo.me/0353361684",
-          "https://viber.me/0353361684",
+          "https://wa.me/84353361684",
+          "https://m.me/Yoni365saigonspa",
           "https://t.me/yoni365sg",
           "https://calendar.app.google/L5Q8njBA82k55fAd6"
         ]
@@ -107,10 +114,7 @@
         "@id":"https://yonimassagehcm.com/massage-yoni-quan-3/#service",
         "name":"Dịch vụ thư giãn riêng tư cho nữ – phục vụ khách Quận 3",
         "provider":{"@id":"https://yonimassagehcm.com/#spa"},
-        "areaServed":{
-          "@type":"AdministrativeArea",
-          "name":"Quận 3, TP.HCM"
-        },
+        "areaServed":{"@type":"AdministrativeArea","name":"Quận 3, TP.HCM"},
         "serviceType":"Spa / Massage thư giãn",
         "url":"https://yonimassagehcm.com/massage-yoni-quan-3/"
       },
@@ -131,23 +135,11 @@
           {
             "@type":"Question",
             "name":"Có mở chỉ đường Google Maps không?",
-            "acceptedAnswer":{"@type":"Answer","text":"Có. Bạn bấm nút Google Maps để mở định vị và chỉ đường trực tiếp."}
+            "acceptedAnswer":{"@type":"Answer","text":"Có. Bạn bấm nút Google Maps hoặc xem bản đồ nhúng để mở định vị và chỉ đường trực tiếp."}
           }
         ]
       }
     ]
-  }
-  </script>
-
-  <!-- Review / AggregateRating (tuỳ chọn, giữ đồng bộ toàn site) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"AggregateRating",
-    "@id":"https://yonimassagehcm.com/#rating",
-    "itemReviewed":{"@type":"Spa","name":"Yoni Massage HCM","url":"https://yonimassagehcm.com/"},
-    "ratingValue":"4.9",
-    "reviewCount":"27"
   }
   </script>
 
@@ -156,7 +148,7 @@
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e9ecf1;line-height:1.6}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;border-radius:16px}
-    .wrap{max-width:1080px;margin:auto;padding:16pxpx;padding:16px}
+    .wrap{max-width:1080px;margin:auto;padding:16px}
     header{position:sticky;top:0;background:#0b0c10e6;border-bottom:1px solid #202531;backdrop-filter:blur(10px);z-index:10}
     nav a{margin-left:12px;color:#a8b0bd;font-size:14px}
     nav a:hover{color:#fff}
@@ -178,6 +170,7 @@
     .kpi{display:grid;gap:12px}
     @media(min-width:900px){.kpi{grid-template-columns:repeat(3,1fr)}}
     .links a{margin-right:10px}
+    iframe{border:0}
   </style>
 </head>
 
@@ -247,18 +240,32 @@
       <div class="card">
         <strong>Chỉ đường</strong>
         <p class="muted" style="margin:8px 0 0">
-          <a class="pill" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8"
+          <a class="pill" href="https://google.com/maps/place/Yoni+365+sai+gon+massage/@10.7571445,106.6880843,15z/data=!4m6!3m5!1s0x31752f0050f53fe1:0x30f2f0d97cc09d22!8m2!3d10.786154!4d106.6951545!16s%2Fg%2F11ymnmf2hl?entry=ttu"
+             target="_blank" rel="nofollow noopener"
              onclick="try{gtag('event','q3_open_maps');}catch(e){}">Mở Google Maps</a>
         </p>
       </div>
     </div>
 
+    <!-- MAP EMBED (để Google hết nhắc "thêm đường đi") -->
+    <div class="card" style="margin-top:12px">
+      <h2 style="margin:0 0 10px">Bản đồ & chỉ đường</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.235699489823!2d106.6925796!3d10.786154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0050f53fe1%3A0x30f2f0d97cc09d22!2sYoni%20365%20sai%20gon%20massage!5e0!3m2!1svi!2s!4v1705654321000"
+        width="100%" height="350"
+        style="border:0;border-radius:12px"
+        loading="lazy" allowfullscreen>
+      </iframe>
+    </div>
+
     <div class="grid2" style="margin-top:12px">
       <a class="card btn" href="https://t.me/yoni365sg"
+         target="_blank" rel="nofollow noopener"
          onclick="try{fbq('trackCustom','Q3_Telegram');gtag('event','q3_telegram');}catch(e){}">
         ✈️ Telegram
       </a>
       <a class="card btn" href="https://viber.me/0353361684"
+         target="_blank" rel="nofollow noopener"
          onclick="try{fbq('trackCustom','Q3_Viber');gtag('event','q3_viber');}catch(e){}">
         📞 Viber
       </a>
@@ -298,7 +305,7 @@
       </div>
       <div class="card">
         <strong>Có xem chỉ đường Google Maps không?</strong>
-        <p class="muted" style="margin:8px 0 0">Có. Bấm “Google Maps” để mở định vị và chỉ đường trực tiếp.</p>
+        <p class="muted" style="margin:8px 0 0">Có. Bấm “Google Maps” hoặc xem bản đồ nhúng để mở định vị và chỉ đường trực tiếp.</p>
       </div>
     </div>
 
@@ -306,8 +313,6 @@
       <strong>Khu vực khác:</strong>
       <p class="muted" style="margin:8px 0 0">
         <a class="pill" href="/">Quận 1</a>
-        <a class="pill" href="/quan-7/">Quận 7</a>
-        <a class="pill" href="/binh-thanh/">Bình Thạnh</a>
         <a class="pill" href="/365-yoni-sai-gon/">365 Yoni</a>
       </p>
     </div>
@@ -318,8 +323,9 @@
   <div class="wrap muted" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
     <div>© <span id="y"></span> Yoni Massage HCM · Quận 1 TP.HCM</div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <a class="pill" href="https://zalo.me/0353361684">Zalo</a>
-      <a class="pill" href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8">Google Maps</a>
+      <a class="pill" href="https://zalo.me/0353361684" target="_blank" rel="nofollow noopener">Zalo</a>
+      <a class="pill" href="https://google.com/maps/place/Yoni+365+sai+gon+massage/@10.7571445,106.6880843,15z/data=!4m6!3m5!1s0x31752f0050f53fe1:0x30f2f0d97cc09d22!8m2!3d10.786154!4d106.6951545!16s%2Fg%2F11ymnmf2hl?entry=ttu"
+         target="_blank" rel="nofollow noopener">Google Maps</a>
       <a class="pill" href="/365-yoni-sai-gon/">365 Yoni</a>
     </div>
   </div>
