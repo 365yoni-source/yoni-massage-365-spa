@@ -1,36 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Trang chính -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
   <url>
     <loc>https://yonimassagehcm.com/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://yonimassagehcm.com/images/spa1.webp</image:loc>
+      <image:caption>Yoni Massage HCM - phòng thư giãn</image:caption>
+    </image:image>
   </url>
 
-  <!-- Trang thương hiệu -->
+  <!-- Core service pages -->
   <url>
-    <loc>https://yonimassagehcm.com/365-yoni-sai-gon/</loc>
-    <priority>0.9</priority>
+    <loc>https://yonimassagehcm.com/dich-vu/massage-60-phut</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
 
-  <!-- Các quận đã triển khai -->
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-2/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-3/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-4/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-5/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-6/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-7/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-8/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-9/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-10/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-11/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-quan-12/</loc><priority>0.8</priority></url>
+  <url>
+    <loc>https://yonimassagehcm.com/dich-vu/massage-90-phut</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 
-  <!-- Quận / khu vực mở rộng -->
-  <url><loc>https://yonimassagehcm.com/massage-yoni-binh-thanh/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-go-vap/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-tan-binh/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-phu-nhuan/</loc><priority>0.8</priority></url>
-  <url><loc>https://yonimassagehcm.com/massage-yoni-tan-phu/</loc><priority>0.8</priority></url>
+  <url>
+    <loc>https://yonimassagehcm.com/dich-vu/massage-120-phut</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 
+  <!-- SEO landing pages requested -->
+  <url>
+    <loc>https://yonimassagehcm.com/massage-yoni-quan-1</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://yonimassagehcm.com/massage-yoni-hcm</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://yonimassagehcm.com/massage-thu-gian-quan-1</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://yonimassagehcm.com/massage-tan-noi-sai-gon</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://yonimassagehcm.com/massage-24-24-hcm</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Utility pages -->
+  <url>
+    <loc>https://yonimassagehcm.com/lien-he</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://yonimassagehcm.com/privacy-policy</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.10</priority>
+  </url>
 </urlset>
