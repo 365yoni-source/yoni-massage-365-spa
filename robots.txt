@@ -1,3 +1,7 @@
 User-agent: *
-Allow: /
+Disallow:
+
+# Crawl-delay (nếu cần, ví dụ cho một số bot): Crawl-delay: 10
+
+# Sitemap location
 Sitemap: https://yonimassagehcm.com/sitemap.xml
