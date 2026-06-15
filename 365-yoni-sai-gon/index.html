@@ -66,10 +66,13 @@
     nav a{margin-left:12px;color:#a8b0bd;font-size:14px}
     h1{font-size:34px;margin:0 0 12px}
     h2{margin:26px 0 10px}
+    h3{margin:16px 0 8px}
     .card{background:#12141b;border:1px solid #202531;padding:16px;border-radius:18px}
     .grid{display:grid;gap:12px}
     .btn{display:block;text-align:center;background:#00c896;color:#0b0c10;padding:12px;border-radius:8px;font-weight:bold}
     footer{border-top:1px solid #202531;margin-top:32px;padding:20px 0;color:#a8b0bd;font-size:14px}
+    form input, form textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #202531;background:#1a1d24;color:#e9ecf1}
+    form button{background:#00c896;color:#0b0c10;padding:12px;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
   </style>
 </head>
 
@@ -82,6 +85,7 @@
       <a href="#dat">Đặt hẹn</a>
       <a href="#goi">Gói dịch vụ</a>
       <a href="#review">Đánh giá</a>
+      <a href="#faq">FAQ</a>
       <a href="#lienhe">Liên hệ</a>
     </nav>
   </div>
@@ -103,9 +107,9 @@
 <section id="goi" style="margin-top:24px">
   <h2>Gói dịch vụ</h2>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
-    <div class="card"><strong>Balance 60</strong><br>60 phút · 1.100.000đ</div>
-    <div class="card"><strong>Harmony 90</strong><br>90 phút · 1.400.000đ</div>
-    <div class="card"><strong>Awaken 120</strong><br>120 phút · 1.700.000đ</div>
+    <div class="card"><h3>Balance 60</h3><p>60 phút · 1.100.000đ</p></div>
+    <div class="card"><h3>Harmony 90</h3><p>90 phút · 1.400.000đ</p></div>
+    <div class="card"><h3>Awaken 120</h3><p>120 phút · 1.700.000đ</p></div>
   </div>
 </section>
 
@@ -115,26 +119,25 @@
   <div class="card">⭐️⭐️⭐️⭐️ “Dịch vụ tốt, đặt lịch nhanh chóng.” – Lan P.</div>
 </section>
 
+<section id="faq" style="margin-top:24px">
+  <h2>Câu hỏi thường gặp</h2>
+  <div class="card"><strong>❓ Có cần đặt lịch trước không?</strong><br>✅ Nên đặt lịch để đảm bảo có phòng và nhân viên phục vụ.</div>
+  <div class="card"><strong>❓ Có hỗ trợ thanh toán thẻ không?</strong><br>✅ Có, chúng tôi chấp nhận thẻ và chuyển khoản.</div>
+</section>
+
+<section id="form" style="margin-top:24px">
+  <h2>Đặt hẹn trực tiếp</h2>
+  <form>
+    <input type="text" name="name" placeholder="Tên của bạn" required>
+    <input type="tel" name="phone" placeholder="Số điện thoại" required>
+    <textarea name="note" placeholder="Ghi chú thêm (tuỳ chọn)"></textarea>
+    <button type="submit">Gửi yêu cầu đặt hẹn</button>
+  </form>
+</section>
+
 <section id="lienhe" style="margin-top:24px">
   <h2>Liên hệ nhanh</h2>
   <p>
     <a href="https://zalo.me/0353361684">💬 Zalo</a> ·
     <a href="https://t.me/yoni365sg">📩 Telegram</a> ·
-    <a href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8">📍 Google Maps</a>
-  </p>
-</section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    © <span id="y"></span> Yoni Massage HCM · Quận 1 TP.HCM
-  </div>
-</footer>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+    <a href="https://maps.app.goo.gl/eXE7Gs6McFtKThZg8
