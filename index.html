@@ -17,9 +17,8 @@
 
     <link rel="sitemap" type="application/xml" href="https://yonimassagehcm.com/sitemap.xml" />
 
-    <!-- Performance: Preload font & critical resources -->
+    <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
     <style>
         :root{
@@ -33,10 +32,6 @@
         }
         html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:var(--bg); color:#fff; line-height:1.6;}
         .container{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
-        header{background:var(--panel);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.05);}
-        nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
-        .brand{font-weight:700;letter-spacing:0.6px;font-size:1.35rem;}
-        .navlinks a{color:#e6eef8;text-decoration:none;margin-left:18px;font-size:15px;}
         .hero{padding:48px 0;text-align:center;}
         .hero img{width:100%;max-width:1100px;border-radius:12px;object-fit:cover;}
         .btn{display:inline-block;padding:12px 26px;background:var(--accent);color:#001;font-weight:700;border-radius:10px;text-decoration:none;margin:6px;}
@@ -49,7 +44,6 @@
         footer{background:var(--panel);padding:40px 0;border-top:1px solid rgba(255,255,255,0.05);}
         @media (max-width:880px){
             .hero h1{font-size:28px;}
-            .navlinks a{margin-left:10px;font-size:14px;}
         }
     </style>
 
@@ -60,6 +54,7 @@
       "@graph": [
         {
           "@type": "LocalBusiness",
+          "@id": "https://yonimassagehcm.com/#localbusiness",
           "name": "Yoni Massage HCM",
           "image": ["https://yonimassagehcm.com/images/spa1.webp","https://yonimassagehcm.com/images/spa2.webp","https://yonimassagehcm.com/images/spa3.webp"],
           "url": "https://yonimassagehcm.com/",
@@ -109,20 +104,6 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <nav aria-label="Main navigation">
-      <div class="brand">YONI MASSAGE HCM</div>
-      <div class="navlinks">
-        <a href="#gioithieu">Giới thiệu</a>
-        <a href="#dichvu">Dịch vụ</a>
-        <a href="/massage-yoni-quan-1">Quận 1</a>
-        <a href="#lienhe">Liên hệ</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
 <main>
   <!-- Hero -->
   <section class="hero">
@@ -133,7 +114,7 @@
            alt="Phòng massage thư giãn sang trọng tại Yoni Massage HCM Quận 1"
            loading="eager" fetchpriority="high">
       <h1>Yoni Massage HCM – Massage Yoni Quận 1 TP.HCM 24/24</h1>
-      <p>Không gian riêng tư • Chuyên viên chuyên nghiệp • Giảm đau lưng vai gáy</p>
+      <p>Không gian riêng tư • Chuyên viên chuyên nghiệp • Giảm đau lưng vai gáy • Phục vụ tận tâm</p>
       <div>
         <a class="btn" href="#lienhe" aria-label="Đặt lịch massage ngay">Đặt lịch ngay</a>
         <a class="btn" href="tel:0353361684" style="background:#0ea5a4;" aria-label="Gọi hotline 0353 361 684">📞 Gọi ngay</a>
@@ -145,7 +126,7 @@
   <section id="gioithieu">
     <div class="container">
       <h2>Giới thiệu về Yoni Massage HCM</h2>
-      <p class="small">Tọa lạc tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1. Chúng tôi chuyên các liệu trình massage thư giãn và phục hồi cho dân văn phòng.</p>
+      <p class="small">Tọa lạc tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1. Chúng tôi chuyên cung cấp các liệu trình massage thư giãn, giảm đau lưng vai gáy và phục hồi sức khỏe cho dân văn phòng tại TP.HCM.</p>
     </div>
   </section>
 
@@ -153,46 +134,46 @@
   <section id="dichvu">
     <div class="container">
       <h2>Dịch vụ Massage</h2>
-      
       <div class="cards">
         <div class="card">
           <h3>Massage Thư Giãn 60 phút</h3>
-          <img src="https://yonimassagehcm.com/images/spa2.webp" alt="Massage 60 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
-          <p class="small">Giảm mệt mỏi nhanh. Giá: 1.100.000 VNĐ</p>
+          <img src="https://yonimassagehcm.com/images/spa2.webp" alt="Massage thư giãn 60 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p class="small">Giảm mệt mỏi nhanh chóng. Giá tham khảo: 1.100.000 VNĐ</p>
           <a class="btn" href="#lienhe" aria-label="Đặt lịch 60 phút">Đặt lịch</a>
         </div>
 
         <div class="card">
           <h3>Massage Thư Giãn 90 phút</h3>
-          <img src="https://yonimassagehcm.com/images/spa3.webp" alt="Massage 90 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
-          <p class="small">Chăm sóc sâu lưng - vai - cổ. Giá: 1.400.000 VNĐ</p>
+          <img src="https://yonimassagehcm.com/images/spa3.webp" alt="Massage thư giãn 90 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p class="small">Chăm sóc sâu lưng, vai, cổ. Giá tham khảo: 1.400.000 VNĐ</p>
           <a class="btn" href="#lienhe" aria-label="Đặt lịch 90 phút">Đặt lịch</a>
         </div>
 
         <div class="card">
           <h3>Massage Thư Giãn 120 phút</h3>
-          <img src="https://yonimassagehcm.com/images/spa1.webp" alt="Massage 120 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
-          <p class="small">Liệu trình toàn diện. Giá: 1.700.000 VNĐ</p>
+          <img src="https://yonimassagehcm.com/images/spa1.webp" alt="Massage thư giãn 120 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p class="small">Liệu trình toàn diện, phục hồi sâu. Giá tham khảo: 1.700.000 VNĐ</p>
           <a class="btn" href="#lienhe" aria-label="Đặt lịch 120 phút">Đặt lịch</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Các phần khác -->
+  <!-- Giảm đau lưng -->
   <section id="massage-giam-dau-lung">
     <div class="container">
-      <h2>Massage Giảm Đau Lưng</h2>
+      <h2>Massage Giảm Đau Lưng Quận 1</h2>
       <h3>Lợi ích nổi bật</h3>
-      <p class="small">Giảm căng cơ, cải thiện tư thế cho người ngồi văn phòng lâu.</p>
+      <p class="small">Giúp giảm căng cơ, co thắt lưng, cải thiện tư thế cho người ngồi văn phòng lâu.</p>
     </div>
   </section>
 
+  <!-- Vai gáy -->
   <section id="massage-vai-gay">
     <div class="container">
       <h2>Massage Vai Gáy Quận 1</h2>
       <h3>Phù hợp với ai?</h3>
-      <p class="small">Người làm việc máy tính, lái xe, mang vác nặng.</p>
+      <p class="small">Người làm việc máy tính, lái xe, nhân viên văn phòng hay bị mỏi cổ vai.</p>
     </div>
   </section>
 
@@ -216,8 +197,13 @@
 </footer>
 
 <!-- Nút nổi -->
-<a href="https://zalo.me/0353361684" style="position:fixed;bottom:150px;right:20px;background:#0068ff;color:white;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.3);" aria-label="Nhắn Zalo">💬 Zalo</a>
-<a href="tel:0353361684" style="position:fixed;bottom:85px;right:20px;background:#10b981;color:white;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.3);" aria-label="Gọi hotline">📞 Gọi ngay</a>
+<a href="https://zalo.me/0353361684" 
+   style="position:fixed;bottom:150px;right:20px;background:#0068ff;color:white;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.3);" 
+   aria-label="Nhắn Zalo">💬 Zalo</a>
+
+<a href="tel:0353361684" 
+   style="position:fixed;bottom:85px;right:20px;background:#10b981;color:white;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.3);" 
+   aria-label="Gọi hotline">📞 Gọi ngay</a>
 
 </body>
 </html>
