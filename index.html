@@ -3,23 +3,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yoni Massage HCM | Massage Yoni Quận 1 TP.HCM - 24/24</title>
-    <meta name="description" content="Yoni Massage HCM tại Quận 1 TP.HCM. Massage thư giãn, giảm đau lưng vai gáy, phục vụ 24/24. Đặt lịch nhanh Zalo 0353361684." />
+    <title>Yoni Massage HCM | Massage Yoni Quận 1 TP.HCM - Đặt Lịch 24/24</title>
+    <meta name="description" content="Yoni Massage HCM tại Quận 1 TP.HCM. Massage thư giãn, giảm đau lưng vai gáy, phục vụ 24/24. Chuyên viên chuyên nghiệp, không gian riêng tư. Zalo: 0353361684" />
     <link rel="canonical" href="https://yonimassagehcm.com/" />
     <meta name="robots" content="index,follow" />
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Yoni Massage HCM | Massage Yoni Quận 1 TP.HCM" />
-    <meta property="og:description" content="Massage thư giãn chuyên nghiệp tại Quận 1. Không gian riêng tư, chuyên viên tận tâm, phục vụ 24/24." />
+    <meta property="og:description" content="Massage thư giãn chuyên nghiệp tại Quận 1 - Phục vụ 24/24" />
     <meta property="og:url" content="https://yonimassagehcm.com/" />
     <meta property="og:image" content="https://yonimassagehcm.com/images/spa1.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="vi_VN" />
 
     <link rel="sitemap" type="application/xml" href="https://yonimassagehcm.com/sitemap.xml" />
-    
+
+    <!-- Performance: Preload font & critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
     <style>
         :root{
             --bg:#0f172a;
@@ -28,78 +29,195 @@
             --panel:#111827;
             --card:#1e293b;
             --radius:12px;
+            --maxw:1100px;
         }
         html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:var(--bg); color:#fff; line-height:1.6;}
-        .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+        .container{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
         header{background:var(--panel);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.05);}
         nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
-        .brand{font-weight:700;letter-spacing:0.6px;font-size:1.3rem;}
+        .brand{font-weight:700;letter-spacing:0.6px;font-size:1.35rem;}
         .navlinks a{color:#e6eef8;text-decoration:none;margin-left:18px;font-size:15px;}
-        .hero{padding:60px 0 40px;text-align:center;}
+        .hero{padding:48px 0;text-align:center;}
         .hero img{width:100%;max-width:1100px;border-radius:12px;object-fit:cover;}
-        .hero h1{font-size:32px;margin:20px 0 12px;line-height:1.1;}
-        .hero p{color:var(--muted);max-width:800px;margin:0 auto 24px;}
         .btn{display:inline-block;padding:12px 26px;background:var(--accent);color:#001;font-weight:700;border-radius:10px;text-decoration:none;margin:6px;}
-        section{padding:50px 0;}
-        h2{font-size:26px;margin-bottom:16px;}
+        section{padding:48px 0;}
+        h2{font-size:26px;margin-bottom:18px;}
+        h3{font-size:20px;margin:16px 0 10px;}
         .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
         .card{background:var(--card);padding:24px;border-radius:var(--radius);}
+        .small{font-size:14.5px;color:var(--muted);}
         footer{background:var(--panel);padding:40px 0;border-top:1px solid rgba(255,255,255,0.05);}
         @media (max-width:880px){
             .hero h1{font-size:28px;}
             .navlinks a{margin-left:10px;font-size:14px;}
         }
     </style>
+
+    <!-- Schema Markup Đầy Đủ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "name": "Yoni Massage HCM",
+          "image": ["https://yonimassagehcm.com/images/spa1.webp","https://yonimassagehcm.com/images/spa2.webp","https://yonimassagehcm.com/images/spa3.webp"],
+          "url": "https://yonimassagehcm.com/",
+          "telephone": "+84353361684",
+          "priceRange": "₫₫",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "182/2 Nguyễn Văn Thủ",
+            "addressLocality": "Đa Kao, Quận 1",
+            "addressRegion": "TP Hồ Chí Minh",
+            "postalCode": "700000",
+            "addressCountry": "VN"
+          },
+          "openingHours": ["Mo-Su 00:00-23:59"],
+          "areaServed": "Hồ Chí Minh"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://yonimassagehcm.com/"}
+          ]
+        },
+        {
+          "@type": "Service",
+          "name": "Massage Thư Giãn 60 phút",
+          "serviceType": "Massage thư giãn",
+          "provider": {"@id": "https://yonimassagehcm.com/#localbusiness"},
+          "offers": {"@type":"Offer","price":"1100000","priceCurrency":"VND"}
+        },
+        {
+          "@type": "Service",
+          "name": "Massage Thư Giãn 90 phút",
+          "serviceType": "Massage thư giãn",
+          "provider": {"@id": "https://yonimassagehcm.com/#localbusiness"},
+          "offers": {"@type":"Offer","price":"1400000","priceCurrency":"VND"}
+        },
+        {
+          "@type": "Service",
+          "name": "Massage Thư Giãn 120 phút",
+          "serviceType": "Massage thư giãn",
+          "provider": {"@id": "https://yonimassagehcm.com/#localbusiness"},
+          "offers": {"@type":"Offer","price":"1700000","priceCurrency":"VND"}
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
 <header>
-    <div class="container">
-        <nav>
-            <div class="brand">YONI MASSAGE HCM</div>
-            <div class="navlinks">
-                <a href="#dichvu">Dịch vụ</a>
-                <a href="#gioithieu">Giới thiệu</a>
-                <a href="/massage-yoni-quan-1">Quận 1</a>
-                <a href="#lienhe">Liên hệ</a>
-            </div>
-        </nav>
-    </div>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <div class="brand">YONI MASSAGE HCM</div>
+      <div class="navlinks">
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#dichvu">Dịch vụ</a>
+        <a href="/massage-yoni-quan-1">Quận 1</a>
+        <a href="#lienhe">Liên hệ</a>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main>
-    <section class="hero">
-        <div class="container">
-            <img src="https://yonimassagehcm.com/images/spa1.webp" 
-                 alt="Yoni Massage HCM Quận 1" 
-                 loading="eager">
-            <h1>Yoni Massage HCM – Massage Thư Giãn Quận 1 TP.HCM</h1>
-            <p>Phục vụ 24/24 • Không gian riêng tư • Chuyên viên chuyên nghiệp • Giảm đau lưng vai gáy</p>
-            <div>
-                <a class="btn" href="#lienhe">Đặt lịch ngay</a>
-                <a class="btn" href="tel:0353361684" style="background:#0ea5a4;">Gọi 0353 361 684</a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <img src="https://yonimassagehcm.com/images/spa1.webp" 
+           srcset="https://yonimassagehcm.com/images/spa1-480.webp 480w, https://yonimassagehcm.com/images/spa1-800.webp 800w, https://yonimassagehcm.com/images/spa1.webp 1200w"
+           sizes="(max-width:600px) 90vw, 1100px"
+           alt="Phòng massage thư giãn sang trọng tại Yoni Massage HCM Quận 1"
+           loading="eager" fetchpriority="high">
+      <h1>Yoni Massage HCM – Massage Yoni Quận 1 TP.HCM 24/24</h1>
+      <p>Không gian riêng tư • Chuyên viên chuyên nghiệp • Giảm đau lưng vai gáy</p>
+      <div>
+        <a class="btn" href="#lienhe" aria-label="Đặt lịch massage ngay">Đặt lịch ngay</a>
+        <a class="btn" href="tel:0353361684" style="background:#0ea5a4;" aria-label="Gọi hotline 0353 361 684">📞 Gọi ngay</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Các section khác giữ nguyên như code cũ của bạn, tôi rút gọn để dễ quản lý -->
-    <!-- Bạn có thể paste lại các section dài từ code cũ vào đây -->
+  <!-- Giới thiệu -->
+  <section id="gioithieu">
+    <div class="container">
+      <h2>Giới thiệu về Yoni Massage HCM</h2>
+      <p class="small">Tọa lạc tại 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1. Chúng tôi chuyên các liệu trình massage thư giãn và phục hồi cho dân văn phòng.</p>
+    </div>
+  </section>
 
-    <section id="lienhe">
-        <div class="container">
-            <h2>Liên hệ & Đặt lịch</h2>
-            <p>Địa chỉ: 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP.HCM</p>
-            <p>Hotline: <a href="tel:0353361684">0353 361 684</a> (Zalo/Call)</p>
-            <p>Mở cửa: 24/24</p>
+  <!-- Dịch vụ -->
+  <section id="dichvu">
+    <div class="container">
+      <h2>Dịch vụ Massage</h2>
+      
+      <div class="cards">
+        <div class="card">
+          <h3>Massage Thư Giãn 60 phút</h3>
+          <img src="https://yonimassagehcm.com/images/spa2.webp" alt="Massage 60 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p class="small">Giảm mệt mỏi nhanh. Giá: 1.100.000 VNĐ</p>
+          <a class="btn" href="#lienhe" aria-label="Đặt lịch 60 phút">Đặt lịch</a>
         </div>
-    </section>
+
+        <div class="card">
+          <h3>Massage Thư Giãn 90 phút</h3>
+          <img src="https://yonimassagehcm.com/images/spa3.webp" alt="Massage 90 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p class="small">Chăm sóc sâu lưng - vai - cổ. Giá: 1.400.000 VNĐ</p>
+          <a class="btn" href="#lienhe" aria-label="Đặt lịch 90 phút">Đặt lịch</a>
+        </div>
+
+        <div class="card">
+          <h3>Massage Thư Giãn 120 phút</h3>
+          <img src="https://yonimassagehcm.com/images/spa1.webp" alt="Massage 120 phút" loading="lazy" width="400" height="250" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p class="small">Liệu trình toàn diện. Giá: 1.700.000 VNĐ</p>
+          <a class="btn" href="#lienhe" aria-label="Đặt lịch 120 phút">Đặt lịch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Các phần khác -->
+  <section id="massage-giam-dau-lung">
+    <div class="container">
+      <h2>Massage Giảm Đau Lưng</h2>
+      <h3>Lợi ích nổi bật</h3>
+      <p class="small">Giảm căng cơ, cải thiện tư thế cho người ngồi văn phòng lâu.</p>
+    </div>
+  </section>
+
+  <section id="massage-vai-gay">
+    <div class="container">
+      <h2>Massage Vai Gáy Quận 1</h2>
+      <h3>Phù hợp với ai?</h3>
+      <p class="small">Người làm việc máy tính, lái xe, mang vác nặng.</p>
+    </div>
+  </section>
+
+  <!-- Liên hệ -->
+  <section id="lienhe">
+    <div class="container">
+      <h2>Liên hệ & Đặt lịch</h2>
+      <p><strong>Địa chỉ:</strong> 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP.HCM</p>
+      <p><strong>Hotline / Zalo:</strong> <a href="tel:0353361684" aria-label="Gọi 0353 361 684">0353 361 684</a></p>
+      <p><strong>Giờ mở cửa:</strong> 24/24</p>
+      <a class="btn" href="https://zalo.me/0353361684" aria-label="Nhắn Zalo đặt lịch">Nhắn Zalo Đặt Lịch</a>
+    </div>
+  </section>
 </main>
 
 <footer>
-    <div class="container">
-        <p>Yoni Massage HCM © 2026 | <a href="/sitemap.xml" style="color:#94a3b8;">Sitemap</a></p>
-    </div>
+  <div class="container">
+    <p>Yoni Massage HCM © 2026 • <a href="/sitemap.xml">Sitemap</a></p>
+    <p class="small">182/2 Nguyễn Văn Thủ, Quận 1, TP.HCM</p>
+  </div>
 </footer>
+
+<!-- Nút nổi -->
+<a href="https://zalo.me/0353361684" style="position:fixed;bottom:150px;right:20px;background:#0068ff;color:white;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.3);" aria-label="Nhắn Zalo">💬 Zalo</a>
+<a href="tel:0353361684" style="position:fixed;bottom:85px;right:20px;background:#10b981;color:white;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.3);" aria-label="Gọi hotline">📞 Gọi ngay</a>
 
 </body>
 </html>
