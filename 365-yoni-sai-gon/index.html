@@ -59,43 +59,50 @@
    "@context":"https://schema.org",
    "@type":"FAQPage",
    "mainEntity":[
-     {
-       "@type":"Question",
-       "name":"Có cần đặt lịch trước không?",
-       "acceptedAnswer":{
-         "@type":"Answer",
-         "text":"Nên đặt lịch trước để đảm bảo còn phòng."
-       }
-     },
-     {
-       "@type":"Question",
-       "name":"Có hỗ trợ thanh toán thẻ không?",
-       "acceptedAnswer":{
-         "@type":"Answer",
-         "text":"Có, chúng tôi chấp nhận thẻ và chuyển khoản."
-       }
-     }
+      {
+        "@type":"Question",
+        "name":"Có cần đặt lịch trước khi đến Yoni Massage HCM không?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Để đảm bảo không gian thư giãn riêng tư tuyệt đối và không phải chờ đợi, bạn nên đặt lịch trước ít nhất 30 - 60 phút qua Hotline, Zalo hoặc Google Calendar. Chúng tôi sẽ chuẩn bị phòng và kỹ thuật viên chu đáo nhất cho bạn."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Dịch vụ massage tại Quận 1 có bảo mật thông tin không?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yoni Massage HCM cam kết bảo mật toàn bộ thông tin cá nhân và lịch trình của khách hàng. Không gian trải nghiệm hoàn toàn khép kín, yên tĩnh và riêng tư, giúp bạn hoàn toàn an tâm thư giãn tinh thần."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Hình thức thanh toán tại spa như thế nào?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Chúng tôi hỗ trợ linh hoạt các hình thức thanh toán bao gồm: Tiền mặt, chuyển khoản ngân hàng qua mã QR nhanh hoặc thanh toán bằng các loại thẻ nội địa và quốc tế."
+        }
+      }
    ]
   }
   </script>
 
   <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e9ecf1}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e9ecf1;line-height:1.5}
     a{color:#00c896;text-decoration:none}
     .wrap{max-width:1120px;margin:auto;padding:16px}
-    header{position:sticky;top:0;background:#0b0c10e6;border-bottom:1px solid #202531}
+    header{position:sticky;top:0;background:#0b0c10e6;border-bottom:1px solid #202531;z-index:100}
     nav a{margin-left:12px;color:#a8b0bd;font-size:14px}
     h1{font-size:34px;margin:0 0 12px}
-    h2{margin:26px 0 10px}
-    h3{margin:16px 0 8px}
-    .card{background:#12141b;border:1px solid #202531;padding:16px;border-radius:18px}
-    .grid{display:grid;gap:12px}
-    .btn{display:block;text-align:center;background:#00c896;color:#0b0c10;padding:12px;border-radius:8px;font-weight:bold}
-    footer{border-top:1px solid #202531;margin-top:32px;padding:20px 0;color:#a8b0bd;font-size:14px}
-    form input, form textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #202531;background:#1a1d24;color:#e9ecf1}
-    form button{background:#00c896;color:#0b0c10;padding:12px;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
-    .cta-fixed{position:fixed;bottom:12px;right:12px;display:flex;flex-direction:column;gap:8px}
-    .cta-fixed a{background:#00c896;color:#0b0c10;padding:10px;border-radius:50%;text-align:center;font-size:20px}
+    h2{margin:36px 0 16px;border-left:4px solid #00c896;padding-left:10px}
+    h3{margin:16px 0 8px;color:#00c896}
+    .card{background:#12141b;border:1px solid #202531;padding:20px;border-radius:18px}
+    .grid{display:grid;gap:16px}
+    .btn{display:block;text-align:center;background:#00c896;color:#0b0c10;padding:14px;border-radius:8px;font-weight:bold;transition:background 0.3s}
+    .btn:hover{background:#00a37b}
+    footer{border-top:1px solid #202531;margin-top:48px;padding:24px 0;color:#a8b0bd;font-size:14px;text-align:center}
+    .cta-fixed{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:12px;z-index:999}
+    .cta-fixed a{background:#00c896;color:#0b0c10;padding:14px;border-radius:50%;text-align:center;font-size:22px;box-shadow:0 4px 12px rgba(0,200,150,0.3);width:24px;height:24px;display:flex;align-items:center;justify-content:center}
     @media (max-width:768px){
       #dat{grid-template-columns:1fr !important;}
       nav{display:none}
@@ -111,44 +118,101 @@
     <nav>
       <a href="#dat">Đặt hẹn</a>
       <a href="#goi">Gói dịch vụ</a>
-      <a href="#review">Đánh giá</a>
+      <a href="#loi-ich">Lợi ích</a>
       <a href="#faq">FAQ</a>
-      <a href="#lienhe">Liên hệ</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
 
-<section id="dat" class="grid" style="grid-template-columns:1.1fr .9fr;align-items:center">
+<section id="dat" class="grid" style="grid-template-columns:1.1fr .9fr;align-items:center;margin-top:20px">
   <div>
     <h1>Yoni Massage HCM – Massage thư giãn riêng tư tại Quận 1 TP.HCM</h1>
-    <p>📍 182/2 Nguyễn Văn Thủ, Quận 1 · ⏰ 11:00–23:00</p>
-    <p>📞 <a href="tel:0353361684"><strong>035 336 1684</strong></a></p>
-    <a class="btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank">📅 Đặt lịch ngay</a>
+    <p>📍 Địa chỉ: 182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1, TP.HCM</p>
+    <p>⏰ Thời gian hoạt động: 11:00 – 23:00 hàng ngày</p>
+    <p>📞 Hotline/Zalo: <a href="tel:0353361684"><strong>035 336 1684</strong></a></p>
+    <a class="btn" href="https://calendar.app.google/L5Q8njBA82k55fAd6" target="_blank">📅 Đặt lịch qua Google Calendar</a>
   </div>
-  <img src="/hero-spa.webp" alt="Không gian massage thư giãn tại Quận 1" width="1200" height="800" loading="eager" decoding="async" style="width:100%;border-radius:18px">
+  <div>
+    <img src="/hero-spa.webp" alt="Không gian massage thư giãn riêng tư tại Quận 1" width="1200" height="800" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:18px">
+  </div>
 </section>
 
 <section id="goi" style="margin-top:24px">
-  <h2>Gói dịch vụ</h2>
-  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
-    <div class="card"><h3>Balance 60</h3><p>60 phút · 1.100.000đ</p></div>
-    <div class="card"><h3>Harmony 90</h3><p>90 phút · 1.400.000đ</p></div>
-    <div class="card"><h3>Awaken 120</h3><p>120 phút · 1.700.000đ</p></div>
+  <h2>Gói dịch vụ chi tiết</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+    <div class="card">
+      <h3>Balance 60</h3>
+      <p><strong>Thời gian:</strong> 60 phút</p>
+      <p><strong>Giá dịch vụ:</strong> 1.100.000đ</p>
+      <p style="color:#a8b0bd;font-size:14px">Liệu trình cơ bản giúp giải tỏa nhanh các vùng cơ căng cứng, phục hồi năng lượng tinh thần nhẹ nhàng.</p>
+    </div>
+    <div class="card">
+      <h3>Harmony 90</h3>
+      <p><strong>Thời gian:</strong> 90 phút</p>
+      <p><strong>Giá dịch vụ:</strong> 1.400.000đ</p>
+      <p style="color:#a8b0bd;font-size:14px">Sự kết hợp hoàn hảo giữa kỹ thuật chuyên sâu và thư giãn, giúp cơ thể tìm lại trạng thái cân bằng tuyệt đối.</p>
+    </div>
+    <div class="card">
+      <h3>Awaken 120</h3>
+      <p><strong>Thời gian:</strong> 120 phút</p>
+      <p><strong>Giá dịch vụ:</strong> 1.700.000đ</p>
+      <p style="color:#a8b0bd;font-size:14px">Liệu trình chuyên sâu toàn diện giúp đánh thức mọi giác quan, mang đến trải nghiệm thư giãn đẳng cấp và trọn vẹn.</p>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Lợi ích của massage thư giãn</h2>
-  <h3>Giảm căng thẳng</h3>
-  <p>Massage giúp giảm căng thẳng và mệt mỏi sau ngày dài.</p>
-  <h3>Cải thiện giấc ngủ</h3>
-  <p>Liệu pháp massage hỗ trợ giấc ngủ sâu và ngon hơn.</p>
-  <h3>Thư giãn tinh thần</h3>
-  <p>Giúp tinh thần thoải mái, cân bằng năng lượng.</p>
+<section id="loi-ich">
+  <h2>Lợi ích của liệu pháp massage thư giãn</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="card">
+      <h3>Giảm căng thẳng & Lo âu</h3>
+      <p>Liệu pháp massage chuyên sâu tác động nhẹ nhàng lên hệ thần kinh, giúp làm giảm hàm lượng cortisol (hormone căng thẳng), mang lại cảm giác nhẹ nhõm và an yên sau những giờ làm việc mệt mỏi.</p>
+    </div>
+    <div class="card">
+      <h3>Cải thiện chất lượng giấc ngủ</h3>
+      <p>Việc thư giãn các mô cơ sâu và kích thích lưu thông tuần hoàn máu hỗ trợ cơ thể sản sinh melatonin tự nhiên, giúp bạn dễ dàng chìm vào giấc ngủ sâu, ngủ ngon và thức dậy với tinh thần sảng khoái.</p>
+    </div>
+    <div class="card">
+      <h3>Cân bằng & Phục hồi năng lượng</h3>
+      <p>Không chỉ giải tỏa các vùng cơ bị co thắt do ngồi lâu, massage thư giãn tại không gian yên tĩnh còn giúp tái tạo nguồn năng lượng tích cực, trả lại sự linh hoạt và cân bằng cho cơ thể.</p>
+    </div>
+  </div>
 </section>
 
 <section id="faq" style="margin-top:24px">
-  <h2>Câu hỏi thường gặp</h2>
-  <div class="card
+  <h2>Câu hỏi thường gặp (FAQ)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Có cần đặt lịch trước khi đến Yoni Massage HCM không?</h3>
+      <p>Để đảm bảo không gian thư giãn riêng tư tuyệt đối và không phải chờ đợi, bạn nên đặt lịch trước ít nhất 30 - 60 phút qua Hotline, Zalo hoặc Google Calendar. Chúng tôi sẽ chuẩn bị phòng và kỹ thuật viên chu đáo nhất cho bạn.</p>
+    </div>
+    <div class="card">
+      <h3>Dịch vụ massage tại Quận 1 có bảo mật thông tin không?</h3>
+      <p>Yoni Massage HCM cam kết bảo mật toàn bộ thông tin cá nhân và lịch trình của khách hàng. Không gian trải nghiệm hoàn toàn khép kín, yên tĩnh và riêng tư, giúp bạn hoàn toàn an tâm thư giãn tinh thần.</p>
+    </div>
+    <div class="card">
+      <h3>Hình thức thanh toán tại spa như thế nào?</h3>
+      <p>Chúng tôi hỗ trợ linh hoạt các hình thức thanh toán bao gồm: Tiền mặt, chuyển khoản ngân hàng qua mã QR nhanh hoặc thanh toán bằng các loại thẻ nội địa và quốc tế.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Fixed CTA Mobile Buttons -->
+<div class="cta-fixed">
+  <a href="tel:0353361684" title="Gọi hotline">📞</a>
+  <a href="https://zalo.me/0353361684" target="_blank" title="Chat Zalo">💬</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Yoni Massage HCM - Massage Yoni Quận 1 TP.HCM</p>
+    <p>Địa chỉ: 182/2 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh</p>
+  </div>
+</footer>
+
+</body>
+</html>
